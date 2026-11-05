@@ -1,0 +1,4 @@
+feature: qdrant_ops
+lesson: 13_qdrant
+example: examples/01_from_scratch.py
+native: examples/05_snapshots_tenants.py

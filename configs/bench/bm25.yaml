@@ -1,0 +1,5 @@
+feature: bm25
+lesson: 10_filtering_hybrid
+example: examples/01_from_scratch.py
+native: examples/02_production.py
+retrieval_config: tier2/hybrid-rrf.yaml

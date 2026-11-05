@@ -1,0 +1,4 @@
+feature: managed_services
+lesson: 16_landscape
+example: examples/01_from_scratch.py
+native: examples/09_managed_cost.py

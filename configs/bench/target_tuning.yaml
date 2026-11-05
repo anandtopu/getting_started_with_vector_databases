@@ -1,0 +1,6 @@
+feature: target_tuning
+lesson: 22_performance
+example: examples/02_production.py
+native: examples/02_production.py
+seed: 42
+scope: operational diagnostic, not a comparable database leaderboard

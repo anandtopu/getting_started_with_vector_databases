@@ -1,0 +1,50 @@
+{
+  "search_ids": [
+    "p0000040",
+    "p0000320",
+    "p0000700",
+    "p0000000",
+    "p0000340"
+  ],
+  "filters": {
+    "op": "and",
+    "clauses": [
+      {
+        "op": "lt",
+        "field": "price",
+        "value": 100.0
+      },
+      {
+        "op": "gt",
+        "field": "stock",
+        "value": 0
+      },
+      {
+        "op": "eq",
+        "field": "region",
+        "value": "north"
+      }
+    ]
+  },
+  "query_timings_ms": {
+    "retrieval": 69.61810000939295,
+    "reranking": 0.1446999958716333,
+    "embedding": 30088.605599972652
+  },
+  "resized_photo_ids": [
+    "p0000160",
+    "p0000049",
+    "p0000020",
+    "p0000018",
+    "p0000000"
+  ],
+  "text_to_image_ids": [
+    "p0000160",
+    "p0000049",
+    "p0000020",
+    "p0000000",
+    "p0000018"
+  ],
+  "total_seconds": 41.40843350000796,
+  "scope": "Actual cached MiniLM and SigLIP inference through the integrated service on Qdrant local. No relevance claim beyond execution."
+}

@@ -1,0 +1,57 @@
+{
+  "model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+  "query": "something to keep my coffee hot on my desk",
+  "query_id": "q000",
+  "source_space": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41:5b60aec4bb912259",
+  "candidates": [
+    {
+      "id": "p0000100",
+      "score": 6.532857894897461
+    },
+    {
+      "id": "p0000120",
+      "score": 6.651162147521973
+    },
+    {
+      "id": "p0000080",
+      "score": 6.113173484802246
+    },
+    {
+      "id": "p0000060",
+      "score": 6.363205909729004
+    },
+    {
+      "id": "p0000040",
+      "score": 6.123805999755859
+    },
+    {
+      "id": "p0000020",
+      "score": 6.2634663581848145
+    },
+    {
+      "id": "p0000000",
+      "score": 6.18975830078125
+    },
+    {
+      "id": "p0000049",
+      "score": 5.8971381187438965
+    },
+    {
+      "id": "p0000123",
+      "score": -8.30417251586914
+    },
+    {
+      "id": "p0000023",
+      "score": -8.293943405151367
+    },
+    {
+      "id": "p0000083",
+      "score": -8.270774841308594
+    },
+    {
+      "id": "p0000003",
+      "score": -8.995198249816895
+    }
+  ]
+}

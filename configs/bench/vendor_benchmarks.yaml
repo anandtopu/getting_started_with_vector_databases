@@ -1,0 +1,4 @@
+feature: vendor_benchmarks
+lesson: 16_landscape
+example: examples/01_from_scratch.py
+native: examples/03_measure.py

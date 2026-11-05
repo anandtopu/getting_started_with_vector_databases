@@ -1,0 +1,19 @@
+schema product {
+  document product {
+    field key type string { indexing: attribute | summary
+      match: exact
+    }
+    field scope type string { indexing: attribute | summary
+      match: exact
+    }
+    field body type string { indexing: index | summary }
+    field packed type string { indexing: summary }
+    field v type tensor<float>(x[384]) { indexing: attribute | index
+      attribute { distance-metric: angular }
+    }
+  }
+  rank-profile semantic {
+    inputs { query(q) tensor<float>(x[384]) }
+    first-phase { expression: sum(attribute(v)*query(q)) }
+  }
+}

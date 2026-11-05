@@ -1,0 +1,27 @@
+LEARNING_PATH.md: docs/PHASE_8_REPORT.md
+README.md: docs/PHASE_8_REPORT.md
+README.md: docs/DEFINITION_OF_DONE.md
+docs\FEATURE_MAP.md: DEFINITION_OF_DONE.md
+docs\REPOSITORY_TREE.md: DEFINITION_OF_DONE.md
+modules\bonus\B4_whats_new\README.md: ../../../docs/DEFINITION_OF_DONE.md
+modules\bonus\B1_other_languages\results\README.md: ../../../../docs/PHASE_8_REPORT.md
+modules\bonus\B2_tinyvec_service\results\README.md: ../../../../docs/PHASE_8_REPORT.md
+modules\bonus\B3_research_benchmarks\results\README.md: ../../../../docs/PHASE_8_REPORT.md
+modules\bonus\B4_whats_new\results\README.md: ../../../../docs/PHASE_8_REPORT.md
+capstones\README.md: ../docs/DEFINITION_OF_DONE.md
+capstones\01_tinyvec\results\README.md: ../../../docs/PHASE_8_REPORT.md
+capstones\02_database_bakeoff\results\README.md: ../../../docs/PHASE_8_REPORT.md
+capstones\03_rag_assistant\results\README.md: ../../../docs/PHASE_8_REPORT.md
+capstones\04_multitenant_search\results\README.md: ../../../docs/PHASE_8_REPORT.md
+capstones\05_marlowe_search\results\README.md: ../../../docs/PHASE_8_REPORT.md
+HTTP [Errno 11002] getaddrinfo failed: https://docs.vespa.ai/
+HTTP [Errno 11001] getaddrinfo failed: https://docs.vespa.ai/en/querying/nearest-neighbor-search-guide.html
+HTTP 403: https://doi.org/10.1145/276698.276876
+HTTP 403: https://doi.org/10.1145/290941.291025
+HTTP 403: https://doi.org/10.1145/582415.582418
+HTTP 403: https://milvus.io/docs
+HTTP 403: https://milvus.io/docs/consistency.md
+HTTP 403: https://milvus.io/docs/full-text-search.md
+HTTP 403: https://milvus.io/docs/install_standalone-windows.md
+HTTP 403: https://milvus.io/docs/ivf-rabitq.md
+HTTP 403: https://milvus.io/docs/milvus_lite.md

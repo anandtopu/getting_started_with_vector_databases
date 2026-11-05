@@ -1,0 +1,5 @@
+feature: chroma
+lesson: 11_embedded
+example: examples/01_from_scratch.py
+native: examples/02_production.py
+retrieval_config: tier3/chroma.yaml

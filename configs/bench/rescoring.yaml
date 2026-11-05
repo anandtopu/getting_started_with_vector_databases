@@ -1,0 +1,5 @@
+feature: rescoring
+lesson: 08_quantization
+example: examples/03_measure.py
+native: examples/02_production.py
+retrieval_config: tier2/pq.yaml

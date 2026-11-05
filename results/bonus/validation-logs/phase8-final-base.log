@@ -1,0 +1,96 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0
+rootdir: D:\Learning_Projects\getting_started_with_vector_databases
+configfile: pyproject.toml
+testpaths: tests, modules, capstones
+plugins: anyio-4.16.0, Faker-40.44.0, platformdirs-4.14.5, socket-0.8.1
+collected 271 items / 12 deselected / 259 selected
+
+tests\test_artifacts.py ..                                               [  0%]
+tests\test_benchmark.py .                                                [  1%]
+tests\test_bonus_core.py .....s                                          [  3%]
+tests\test_cleanup.py .                                                  [  3%]
+tests\test_data.py .                                                     [  4%]
+tests\test_database_stores.py .sss                                       [  5%]
+tests\test_embedded_native.py sss                                        [  6%]
+tests\test_embeddings.py .                                               [  7%]
+tests\test_exact_kernel.py .sss                                          [  8%]
+tests\test_metrics.py ..                                                 [  9%]
+tests\test_playground.py sssss                                           [ 11%]
+tests\test_store_contract.py .ss.ss..........ssssssssssssssssssss.ss...s [ 28%]
+sssss.ss...ssssss.ss                                                     [ 35%]
+tests\test_tier2_indexes.py ............                                 [ 40%]
+tests\test_tier4_apps.py ..ss......sssss                                 [ 46%]
+tests\test_tier5.py ......ssss                                           [ 50%]
+tests\test_tinyvec.py ...........                                        [ 54%]
+modules\00_setup\tests\test_00_setup.py ......                           [ 56%]
+modules\01_vectors_similarity\tests\test_01_vectors_similarity.py ...... [ 59%]
+                                                                         [ 59%]
+modules\02_embeddings\tests\test_02_embeddings.py ......                 [ 61%]
+modules\03_tinyvec\tests\test_03_tinyvec.py ......                       [ 63%]
+modules\04_benchmarking\tests\test_04_benchmarking.py ......             [ 66%]
+modules\05_ann_lsh\tests\test_05_ann_lsh.py ......                       [ 68%]
+modules\06_ivf\tests\test_06_ivf.py ......                               [ 70%]
+modules\07_hnsw\tests\test_07_hnsw.py ......                             [ 72%]
+modules\08_quantization\tests\test_08_quantization.py ......             [ 75%]
+modules\09_disk_scale\tests\test_09_disk_scale.py ......                 [ 77%]
+modules\10_filtering_hybrid\tests\test_10_filtering_hybrid.py ......     [ 79%]
+modules\11_embedded\tests\test_11_embedded.py ......                     [ 82%]
+modules\12_pgvector\tests\test_12_pgvector.py ......                     [ 84%]
+modules\13_qdrant\tests\test_13_qdrant.py ......                         [ 86%]
+modules\14_weaviate\tests\test_14_weaviate.py ......                     [ 89%]
+modules\15_milvus\tests\test_15_milvus.py ......                         [ 91%]
+modules\16_landscape\tests\test_16_landscape.py ......                   [ 93%]
+modules\17_product_search\tests\test_17_exercises.py .                   [ 94%]
+modules\18_rag\tests\test_18_exercises.py .                              [ 94%]
+modules\19_recommendations\tests\test_19_exercises.py .                  [ 94%]
+modules\20_multimodal\tests\test_20_exercises.py .                       [ 95%]
+modules\21_operations\tests\test_21_exercises.py .                       [ 95%]
+modules\22_performance\tests\test_22_exercises.py .                      [ 96%]
+modules\23_security_reliability\tests\test_23_exercises.py .             [ 96%]
+modules\bonus\B1_other_languages\tests\test_B1_exercises.py .            [ 96%]
+modules\bonus\B2_tinyvec_service\tests\test_B2_exercises.py .            [ 97%]
+modules\bonus\B3_research_benchmarks\tests\test_B3_exercises.py .        [ 97%]
+modules\bonus\B4_whats_new\tests\test_B4_exercises.py .                  [ 98%]
+capstones\01_tinyvec\tests\test_01_project.py .                          [ 98%]
+capstones\02_database_bakeoff\tests\test_02_project.py .                 [ 98%]
+capstones\03_rag_assistant\tests\test_03_project.py .                    [ 99%]
+capstones\04_multitenant_search\tests\test_04_project.py .               [ 99%]
+capstones\05_marlowe_search\tests\test_05_project.py .                   [100%]
+
+=========================== short test summary info ===========================
+SKIPPED [1] tests\test_bonus_core.py:84: could not import 'fastapi': No module named 'fastapi'
+SKIPPED [1] tests\test_database_stores.py:110: could not import 'chromadb': No module named 'chromadb'
+SKIPPED [1] tests\test_database_stores.py:110: could not import 'lancedb': No module named 'lancedb'
+SKIPPED [1] tests\test_database_stores.py:110: could not import 'duckdb': No module named 'duckdb'
+SKIPPED [1] tests\test_embedded_native.py:9: could not import 'chromadb': No module named 'chromadb'
+SKIPPED [1] tests\test_embedded_native.py:34: could not import 'lancedb': No module named 'lancedb'
+SKIPPED [1] tests\test_embedded_native.py:56: could not import 'duckdb': No module named 'duckdb'
+SKIPPED [3] tests\test_exact_kernel.py:19: could not import 'faiss': No module named 'faiss'
+SKIPPED [3] tests\test_playground.py:11: could not import 'streamlit.testing.v1': No module named 'streamlit'
+SKIPPED [1] tests\test_playground.py:35: could not import 'streamlit.testing.v1': No module named 'streamlit'
+SKIPPED [1] tests\test_playground.py:46: could not import 'streamlit.testing.v1': No module named 'streamlit'
+SKIPPED [1] tests\test_store_contract.py:11: Install --extra embedded to run SQLite adapter contracts
+SKIPPED [1] tests\test_store_contract.py:11: Install --extra libs for FAISS contracts
+SKIPPED [1] tests\test_store_contract.py:19: Install --extra embedded to run SQLite adapter contracts
+SKIPPED [1] tests\test_store_contract.py:19: Install --extra libs for FAISS contracts
+SKIPPED [10] tests\test_store_contract.py:30: Install --extra embedded to run SQLite adapter contracts
+SKIPPED [10] tests\test_store_contract.py:30: Install --extra libs for FAISS contracts
+SKIPPED [1] tests\test_store_contract.py:68: Install --extra embedded to run SQLite adapter contracts
+SKIPPED [1] tests\test_store_contract.py:68: Install --extra libs for FAISS contracts
+SKIPPED [3] tests\test_store_contract.py:79: Install --extra embedded to run SQLite adapter contracts
+SKIPPED [3] tests\test_store_contract.py:79: Install --extra libs for FAISS contracts
+SKIPPED [1] tests\test_store_contract.py:85: Install --extra embedded to run SQLite adapter contracts
+SKIPPED [1] tests\test_store_contract.py:85: Install --extra libs for FAISS contracts
+SKIPPED [3] tests\test_store_contract.py:97: Install --extra embedded to run SQLite adapter contracts
+SKIPPED [3] tests\test_store_contract.py:97: Install --extra libs for FAISS contracts
+SKIPPED [1] tests\test_store_contract.py:103: Install --extra embedded to run SQLite adapter contracts
+SKIPPED [1] tests\test_store_contract.py:103: Install --extra libs for FAISS contracts
+SKIPPED [1] tests\test_tier4_apps.py:36: could not import 'qdrant_client': No module named 'qdrant_client'
+SKIPPED [1] tests\test_tier4_apps.py:38: could not import 'sqlite_vec': No module named 'sqlite_vec'
+SKIPPED [1] tests\test_tier4_apps.py:123: could not import 'qdrant_client': No module named 'qdrant_client'
+SKIPPED [3] tests\test_tier4_apps.py:141: could not import 'fastapi': No module named 'fastapi'
+SKIPPED [1] tests\test_tier4_apps.py:172: could not import 'streamlit.testing.v1': No module named 'streamlit'
+SKIPPED [1] tests\test_tier5.py:113: could not import 'streamlit.testing.v1': No module named 'streamlit'
+SKIPPED [3] tests\test_tier5.py:127: could not import 'fastapi': No module named 'fastapi'
+=============== 191 passed, 68 skipped, 12 deselected in 59.19s ===============

@@ -1,0 +1,4 @@
+feature: faiss_service
+lesson: 16_landscape
+example: examples/02_production.py
+native: examples/08_faiss_service.py

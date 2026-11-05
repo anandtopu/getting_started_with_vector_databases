@@ -1,0 +1,5 @@
+feature: rag_chunking
+lesson: 18_rag
+example: examples/01_from_scratch.py
+native: examples/02_production.py
+scope: Application diagnostic; compare quality and stage timings in the Tier 4 checkpoint.

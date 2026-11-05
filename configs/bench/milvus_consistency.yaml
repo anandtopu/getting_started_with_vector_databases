@@ -1,0 +1,4 @@
+feature: milvus_consistency
+lesson: 15_milvus
+example: examples/01_from_scratch.py
+native: examples/05_partitions_consistency.py

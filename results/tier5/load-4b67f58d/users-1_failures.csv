@@ -1,0 +1,2 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+POST,/search,HTTPError('400 Client Error: Bad Request for url: /search'),17,2026-11-05T18:38:23Z,2026-11-05T18:38:35Z

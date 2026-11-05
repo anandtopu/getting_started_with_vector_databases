@@ -1,0 +1,208 @@
+[
+  {
+    "family": "binary",
+    "target": 0.9,
+    "development": [
+      "tier2-binary-000-20261104T230414-f20f8b6f",
+      "tier2-binary-001-20261104T230416-0e567e62"
+    ],
+    "selected": "tier2-binary-001-20261104T230416-0e567e62",
+    "test": "tier2-binary-test-20261104T230418-9daa9c72",
+    "recall": 0.776,
+    "target_met": false
+  },
+  {
+    "family": "exact",
+    "target": 0.9,
+    "development": [
+      "tier2-exact-20261104T230420-d5c337d7"
+    ],
+    "selected": "tier2-exact-20261104T230420-d5c337d7",
+    "test": "tier2-exact-test-20261104T230422-f02515ab",
+    "recall": 1.0,
+    "target_met": true
+  },
+  {
+    "family": "faiss-hnsw",
+    "target": 0.9,
+    "development": [
+      "tier2-faiss-hnsw-20261104T230424-e1e3cda1"
+    ],
+    "selected": "tier2-faiss-hnsw-20261104T230424-e1e3cda1",
+    "test": "tier2-faiss-hnsw-test-20261104T230425-df36f06e",
+    "recall": 0.996,
+    "target_met": true
+  },
+  {
+    "family": "faiss-ivf",
+    "target": 0.9,
+    "development": [
+      "tier2-faiss-ivf-20261104T230427-c9b99b6e"
+    ],
+    "selected": "tier2-faiss-ivf-20261104T230427-c9b99b6e",
+    "test": "tier2-faiss-ivf-test-20261104T230429-701b6a91",
+    "recall": 0.996,
+    "target_met": true
+  },
+  {
+    "family": "faiss-ivfpq",
+    "target": 0.9,
+    "development": [
+      "tier2-faiss-ivfpq-000-20261104T230431-1ab0f28a",
+      "tier2-faiss-ivfpq-001-20261104T230432-24898dd7",
+      "tier2-faiss-ivfpq-002-20261104T230434-aa7e2c6b",
+      "tier2-faiss-ivfpq-003-20261104T230436-21ca3a40"
+    ],
+    "selected": "tier2-faiss-ivfpq-001-20261104T230432-24898dd7",
+    "test": "tier2-faiss-ivfpq-test-20261104T230437-91771b69",
+    "recall": 0.848,
+    "target_met": false
+  },
+  {
+    "family": "faiss-lsh",
+    "target": 0.9,
+    "development": [
+      "tier2-faiss-lsh-20261104T230439-643adfce"
+    ],
+    "selected": "tier2-faiss-lsh-20261104T230439-643adfce",
+    "test": "tier2-faiss-lsh-test-20261104T230440-67ff2075",
+    "recall": 0.342,
+    "target_met": false
+  },
+  {
+    "family": "filter-adaptive",
+    "target": 0.9,
+    "development": [
+      "tier2-filter-adaptive-20261104T230442-692e1fee"
+    ],
+    "selected": "tier2-filter-adaptive-20261104T230442-692e1fee",
+    "test": "tier2-filter-adaptive-test-20261104T230443-605df548",
+    "recall": 0.545,
+    "target_met": false
+  },
+  {
+    "family": "filter-post",
+    "target": 0.9,
+    "development": [
+      "tier2-filter-post-20261104T230445-d9e62171"
+    ],
+    "selected": "tier2-filter-post-20261104T230445-d9e62171",
+    "test": "tier2-filter-post-test-20261104T230446-742c331d",
+    "recall": 0.17,
+    "target_met": false
+  },
+  {
+    "family": "hnsw",
+    "target": 0.9,
+    "development": [
+      "tier2-hnsw-000-20261104T230448-4232b644",
+      "tier2-hnsw-001-20261104T230450-e03bf1b7",
+      "tier2-hnsw-002-20261104T230452-ebdaa063",
+      "tier2-hnsw-003-20261104T230453-d7cd51a5",
+      "tier2-hnsw-004-20261104T230455-77a2efa9",
+      "tier2-hnsw-005-20261104T230457-189286ed",
+      "tier2-hnsw-006-20261104T230459-a6203139",
+      "tier2-hnsw-007-20261104T230502-d5368158"
+    ],
+    "selected": "tier2-hnsw-006-20261104T230459-a6203139",
+    "test": "tier2-hnsw-test-20261104T230504-24331217",
+    "recall": 0.368,
+    "target_met": false,
+    "fixture": "tier2-hnsw-fixture-test-20261104T230505-747688f0",
+    "fixture_recall": 0.414,
+    "fixture_target_met": false
+  },
+  {
+    "family": "hnswlib",
+    "target": 0.9,
+    "development": [
+      "tier2-hnswlib-20261104T230507-a18664ed"
+    ],
+    "selected": "tier2-hnswlib-20261104T230507-a18664ed",
+    "test": "tier2-hnswlib-test-20261104T230509-fa08d558",
+    "recall": 0.996,
+    "target_met": true
+  },
+  {
+    "family": "hybrid-rrf",
+    "target": 0.9,
+    "development": [
+      "tier2-hybrid-rrf-20261104T230512-f6a8431b"
+    ],
+    "selected": "tier2-hybrid-rrf-20261104T230512-f6a8431b",
+    "test": "tier2-hybrid-rrf-test-20261104T230514-e3402125",
+    "recall": 0.8749999999999999,
+    "target_met": false
+  },
+  {
+    "family": "ivf",
+    "target": 0.85,
+    "development": [
+      "tier2-ivf-000-20261104T230516-67580182",
+      "tier2-ivf-001-20261104T230518-61d30929",
+      "tier2-ivf-002-20261104T230520-8bdb391e",
+      "tier2-ivf-003-20261104T230523-0532d4e2"
+    ],
+    "selected": "tier2-ivf-001-20261104T230518-61d30929",
+    "test": "tier2-ivf-test-20261104T230525-e4db22a4",
+    "recall": 0.864,
+    "target_met": true,
+    "fixture": "tier2-ivf-fixture-test-20261104T230526-89498899",
+    "fixture_recall": 0.996,
+    "fixture_target_met": true
+  },
+  {
+    "family": "lsh",
+    "target": 0.6,
+    "development": [
+      "tier2-lsh-000-20261104T230528-67b2a1fb",
+      "tier2-lsh-001-20261104T230530-a0805a85",
+      "tier2-lsh-002-20261104T230533-9000c2a1"
+    ],
+    "selected": "tier2-lsh-001-20261104T230530-a0805a85",
+    "test": "tier2-lsh-test-20261104T230535-7213bf80",
+    "recall": 0.544,
+    "target_met": false,
+    "fixture": "tier2-lsh-fixture-test-20261104T230536-f597ec12",
+    "fixture_recall": 0.638,
+    "fixture_target_met": true
+  },
+  {
+    "family": "pq",
+    "target": 0.8,
+    "development": [
+      "tier2-pq-000-20261104T230538-6fb37b66",
+      "tier2-pq-001-20261104T230540-a0b93eaa",
+      "tier2-pq-002-20261104T230542-50548ab7"
+    ],
+    "selected": "tier2-pq-001-20261104T230540-a0b93eaa",
+    "test": "tier2-pq-test-20261104T230545-3a0ad289",
+    "recall": 0.924,
+    "target_met": true,
+    "fixture": "tier2-pq-fixture-test-20261104T230546-5cb4941a",
+    "fixture_recall": 0.886,
+    "fixture_target_met": true
+  },
+  {
+    "family": "scalar",
+    "target": 0.9,
+    "development": [
+      "tier2-scalar-20261104T230548-39d538b7"
+    ],
+    "selected": "tier2-scalar-20261104T230548-39d538b7",
+    "test": "tier2-scalar-test-20261104T230550-870d1e8a",
+    "recall": 0.988,
+    "target_met": true
+  },
+  {
+    "family": "usearch",
+    "target": 0.9,
+    "development": [
+      "tier2-usearch-20261104T230553-2024cdde"
+    ],
+    "selected": "tier2-usearch-20261104T230553-2024cdde",
+    "test": "tier2-usearch-test-20261104T230555-52fedf88",
+    "recall": 0.996,
+    "target_met": true
+  }
+]

@@ -1,0 +1,5 @@
+feature: typos_multilingual
+lesson: 17_product_search
+example: examples/05_multilingual.py
+native: examples/02_production.py
+scope: Application diagnostic; compare quality and stage timings in the Tier 4 checkpoint.

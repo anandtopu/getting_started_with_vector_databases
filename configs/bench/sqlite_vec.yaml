@@ -1,0 +1,5 @@
+feature: sqlite_vec
+lesson: 11_embedded
+example: examples/01_from_scratch.py
+native: examples/05_sqlite_vec.py
+retrieval_config: tier3/sqlite-vec.yaml

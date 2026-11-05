@@ -1,0 +1,119 @@
+{
+  "restore_verified_in_new_process": true,
+  "semantic_hits": [
+    "p0000360",
+    "p0000280",
+    "p0000840",
+    "p0000520",
+    "p0000200"
+  ],
+  "benchmark_run": "benchmark-method-20261104T224314-f1bea343",
+  "playground_observation": {
+    "method": "Streamlit interaction runner; no browser screenshot",
+    "engine": "tinyvec",
+    "products": 1000,
+    "query": "q000",
+    "k": 5,
+    "before": [
+      {
+        "product": "Teal ceramic mug warmer",
+        "score": 0.596120297908783,
+        "price": 26.83,
+        "region": "north",
+        "id": "p0000360"
+      },
+      {
+        "product": "Teal ceramic mug warmer",
+        "score": 0.5861411690711975,
+        "price": 30.33,
+        "region": "west",
+        "id": "p0000280"
+      },
+      {
+        "product": "Teal ceramic mug warmer",
+        "score": 0.5860393643379211,
+        "price": 19.82,
+        "region": "west",
+        "id": "p0000840"
+      },
+      {
+        "product": "Teal ceramic mug warmer",
+        "score": 0.5851907730102539,
+        "price": 23.83,
+        "region": "south",
+        "id": "p0000520"
+      },
+      {
+        "product": "Teal ceramic mug warmer",
+        "score": 0.5823498368263245,
+        "price": 32.97,
+        "region": "west",
+        "id": "p0000200"
+      }
+    ],
+    "filter": {
+      "region": "north",
+      "maximum_price": 30
+    },
+    "after": [
+      {
+        "product": "Teal ceramic mug warmer",
+        "score": 0.596120297908783,
+        "price": 26.83,
+        "region": "north",
+        "id": "p0000360"
+      },
+      {
+        "product": "Teal ceramic mug warmer",
+        "score": 0.5812220573425293,
+        "price": 24.89,
+        "region": "north",
+        "id": "p0000980"
+      },
+      {
+        "product": "Teal ceramic mug warmer",
+        "score": 0.5695931911468506,
+        "price": 24.58,
+        "region": "north",
+        "id": "p0000940"
+      },
+      {
+        "product": "Navy ceramic mug warmer",
+        "score": 0.5603227615356445,
+        "price": 27.84,
+        "region": "north",
+        "id": "p0000320"
+      },
+      {
+        "product": "Navy ceramic mug warmer",
+        "score": 0.5596592426300049,
+        "price": 20.73,
+        "region": "north",
+        "id": "p0000180"
+      }
+    ]
+  },
+  "summary": {
+    "p50_ms": 0.6348,
+    "p95_ms": 1.5711199999999996,
+    "p99_ms": 2.638398999999999,
+    "samples": 500,
+    "recall_at_k": 1.0,
+    "strict_id_recall_at_k": 1.0,
+    "precision_at_k": 0.654,
+    "mrr": 0.68,
+    "ndcg_at_k": 0.8401787234811061,
+    "qps": 1187.9887735106697,
+    "qps_std": 140.46631652067776,
+    "insertion_seconds": 0.00928970001405105,
+    "index_build_seconds": 0.0006083000043872744,
+    "persisted_bytes": 2193916,
+    "errors": 0,
+    "error_rate": 0.0
+  },
+  "learner_tasks_remaining": [
+    "Record a Playground search and filter",
+    "Explain relevance versus recall",
+    "Complete exercise acceptance checks"
+  ]
+}

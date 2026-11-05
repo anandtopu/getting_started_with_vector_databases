@@ -1,0 +1,11 @@
+name: tier2-filter-adaptive
+backend: ann
+dataset: catalog
+limit: 1000
+split: development
+queries: 100
+warmup: 20
+repetitions: 5
+query_types: [filtered, keyword]
+retrieval: vector
+parameters: {"kind":"hnsw","filter_policy":"adaptive"}

@@ -1,0 +1,4 @@
+feature: weaviate_generation
+lesson: 14_weaviate
+example: examples/04_tenants_generation.py
+native: examples/06_local_generation.py

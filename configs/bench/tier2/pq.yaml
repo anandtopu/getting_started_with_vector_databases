@@ -1,0 +1,11 @@
+name: tier2-pq
+backend: ann
+dataset: catalog
+limit: 1000
+split: development
+queries: 100
+warmup: 20
+repetitions: 5
+query_types: [semantic, keyword, multilingual, misspelled, filtered]
+retrieval: vector
+parameters: {"kind":"pq","parts":8,"centroids":16,"oversample":8}

@@ -1,0 +1,4 @@
+feature: pgvectorscale
+lesson: 12_pgvector
+example: examples/02_production.py
+native: examples/05_pgvectorscale.py

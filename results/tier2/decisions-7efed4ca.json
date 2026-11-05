@@ -1,0 +1,135 @@
+[
+  {
+    "family": "filter-adaptive",
+    "target": 0.9,
+    "development": [
+      "tier2-filter-adaptive-20261104T230808-d7ec2046"
+    ],
+    "selected": "tier2-filter-adaptive-20261104T230808-d7ec2046",
+    "test": "tier2-filter-adaptive-test-20261104T230812-282e4508",
+    "recall": 0.7850000000000001,
+    "target_met": false
+  },
+  {
+    "family": "filter-post",
+    "target": 0.9,
+    "development": [
+      "tier2-filter-post-20261104T230815-bbce048b"
+    ],
+    "selected": "tier2-filter-post-20261104T230815-bbce048b",
+    "test": "tier2-filter-post-test-20261104T230819-16d1a10c",
+    "recall": 0.6299999999999999,
+    "target_met": false
+  },
+  {
+    "family": "filter-traverse",
+    "target": 0.9,
+    "development": [
+      "tier2-filter-traverse-20261104T230823-a30e424b"
+    ],
+    "selected": "tier2-filter-traverse-20261104T230823-a30e424b",
+    "test": "tier2-filter-traverse-test-20261104T230826-03db3831",
+    "recall": 0.7850000000000001,
+    "target_met": false
+  },
+  {
+    "family": "hnsw",
+    "target": 0.9,
+    "development": [
+      "tier2-hnsw-000-20261104T230829-2f279c5f",
+      "tier2-hnsw-001-20261104T230832-1662891d",
+      "tier2-hnsw-002-20261104T230835-b4f4dd92",
+      "tier2-hnsw-003-20261104T230838-7e832261",
+      "tier2-hnsw-004-20261104T230841-60eb4c2e",
+      "tier2-hnsw-005-20261104T230844-6fc333aa",
+      "tier2-hnsw-006-20261104T230848-9c8d0fb1",
+      "tier2-hnsw-007-20261104T230852-47d4d15e"
+    ],
+    "selected": "tier2-hnsw-005-20261104T230844-6fc333aa",
+    "test": "tier2-hnsw-test-20261104T230855-d964b6b3",
+    "recall": 0.874,
+    "target_met": false,
+    "fixture_development": [
+      "tier2-hnsw-000-fixture-dev-20261104T230857-7674d68e",
+      "tier2-hnsw-001-fixture-dev-20261104T230858-ccc3ac84",
+      "tier2-hnsw-002-fixture-dev-20261104T230900-e4575185",
+      "tier2-hnsw-003-fixture-dev-20261104T230902-695dbb89",
+      "tier2-hnsw-004-fixture-dev-20261104T230904-e72e8a27",
+      "tier2-hnsw-005-fixture-dev-20261104T230906-dce68403",
+      "tier2-hnsw-006-fixture-dev-20261104T230908-4591ec71",
+      "tier2-hnsw-007-fixture-dev-20261104T230910-8fc51f9c"
+    ],
+    "fixture_selection": "tier2-hnsw-006-fixture-dev-20261104T230908-4591ec71",
+    "fixture": "tier2-hnsw-fixture-test-20261104T230912-cbce568b",
+    "fixture_recall": 0.896,
+    "fixture_target_met": false
+  },
+  {
+    "family": "ivf",
+    "target": 0.85,
+    "development": [
+      "tier2-ivf-000-20261104T230914-8faf6599",
+      "tier2-ivf-001-20261104T230916-45bf8842",
+      "tier2-ivf-002-20261104T230919-726fb209",
+      "tier2-ivf-003-20261104T230921-1a53cb7b"
+    ],
+    "selected": "tier2-ivf-001-20261104T230916-45bf8842",
+    "test": "tier2-ivf-test-20261104T230923-db27c361",
+    "recall": 0.864,
+    "target_met": true,
+    "fixture_development": [
+      "tier2-ivf-000-fixture-dev-20261104T230924-e2bda125",
+      "tier2-ivf-001-fixture-dev-20261104T230926-b75cf560",
+      "tier2-ivf-002-fixture-dev-20261104T230927-b795e370",
+      "tier2-ivf-003-fixture-dev-20261104T230928-45e8d21b"
+    ],
+    "fixture_selection": "tier2-ivf-001-fixture-dev-20261104T230926-b75cf560",
+    "fixture": "tier2-ivf-fixture-test-20261104T230929-75d60c27",
+    "fixture_recall": 0.996,
+    "fixture_target_met": true
+  },
+  {
+    "family": "lsh",
+    "target": 0.6,
+    "development": [
+      "tier2-lsh-000-20261104T230931-a71c3d1e",
+      "tier2-lsh-001-20261104T230933-81ac7442",
+      "tier2-lsh-002-20261104T230936-109bfe81"
+    ],
+    "selected": "tier2-lsh-001-20261104T230933-81ac7442",
+    "test": "tier2-lsh-test-20261104T230938-8cb5fa48",
+    "recall": 0.544,
+    "target_met": false,
+    "fixture_development": [
+      "tier2-lsh-000-fixture-dev-20261104T230939-c5a9e22d",
+      "tier2-lsh-001-fixture-dev-20261104T230940-08e99210",
+      "tier2-lsh-002-fixture-dev-20261104T230941-761a43e5"
+    ],
+    "fixture_selection": "tier2-lsh-001-fixture-dev-20261104T230940-08e99210",
+    "fixture": "tier2-lsh-fixture-test-20261104T230942-fcfdfc38",
+    "fixture_recall": 0.638,
+    "fixture_target_met": true
+  },
+  {
+    "family": "pq",
+    "target": 0.8,
+    "development": [
+      "tier2-pq-000-20261104T230945-1f697f79",
+      "tier2-pq-001-20261104T230947-829d8c0d",
+      "tier2-pq-002-20261104T230949-b817b1f8"
+    ],
+    "selected": "tier2-pq-001-20261104T230947-829d8c0d",
+    "test": "tier2-pq-test-20261104T230952-2d0af5fe",
+    "recall": 0.924,
+    "target_met": true,
+    "fixture_development": [
+      "tier2-pq-000-fixture-dev-20261104T230953-3c8f0c27",
+      "tier2-pq-001-fixture-dev-20261104T230954-8ae49acd",
+      "tier2-pq-002-fixture-dev-20261104T230955-6152afc5"
+    ],
+    "fixture_selection": "tier2-pq-001-fixture-dev-20261104T230954-8ae49acd",
+    "fixture": "tier2-pq-fixture-test-20261104T230956-6db2d402",
+    "fixture_recall": 0.886,
+    "fixture_target_met": true
+  }
+]

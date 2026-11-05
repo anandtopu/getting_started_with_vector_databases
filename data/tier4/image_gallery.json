@@ -1,0 +1,19 @@
+{
+  "format": 1,
+  "model": {
+    "model": "google/siglip2-base-patch16-224",
+    "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+    "dimensions": 768,
+    "normalized": true,
+    "modality": "image-text",
+    "query_prefix": "",
+    "document_prefix": "",
+    "max_length": 64,
+    "dtype": "float32"
+  },
+  "space": "google/siglip2-base-patch16-224@75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2:82c04187c154ddd7",
+  "role": "image",
+  "rows": 200,
+  "content_hash": "14a05b79de769d74ca448e24c5e792ee47a791f5d53098c9a62e5db3a9019dcd",
+  "sha256": "013b8d2e89aa4eb33c00b4d7fb89e52b86adf80c23215a2f0de42de68c34beac"
+}

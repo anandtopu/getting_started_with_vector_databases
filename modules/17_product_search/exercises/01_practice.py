@@ -1,0 +1,20 @@
+"""Practice: preserve strict price boundaries.
+
+Return eligible IDs in input order. Under is strict, at most is inclusive. Missing prices are excluded.
+Run: uv run python modules/17_product_search/exercises/01_practice.py
+Expected: a runnable baseline or reference result. CPU: under one second.
+Needs: base Python course environment. No models or services.
+"""
+
+
+def solve(rows, price, inclusive=False):
+    # YOUR CODE HERE: improve the baseline to meet every criterion.
+    return [r["id"] for r in rows if r.get("price", float("inf")) <= price]
+
+
+def main() -> None:
+    print(solve(*[[{"id": "a", "price": 10}, {"id": "b", "price": 11}], 10, False]))
+
+
+if __name__ == "__main__":
+    main()

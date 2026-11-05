@@ -1,0 +1,11 @@
+Resolved 276 packages in 3ms
+   Building getting-started-with-vector-databases @ file:///D:/Learning_Projects/getting_started_with_vector_databases
+      Built getting-started-with-vector-databases @ file:///D:/Learning_Projects/getting_started_with_vector_databases
+Prepared 1 package in 1.56s
+Uninstalled 1 package in 449ms
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 1 package in 12ms
+ - getting-started-with-vector-databases==0.3.0 (from file:///D:/Learning_Projects/getting_started_with_vector_databases)
+ + getting-started-with-vector-databases==1.0.0 (from file:///D:/Learning_Projects/getting_started_with_vector_databases)

@@ -1,0 +1,5 @@
+feature: qdrant_hybrid
+lesson: 13_qdrant
+example: examples/01_from_scratch.py
+native: examples/04_hybrid_multivector.py
+retrieval_config: tier3/qdrant.yaml

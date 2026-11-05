@@ -1,0 +1,6 @@
+feature: replication_sharding
+lesson: 22_performance
+example: examples/01_from_scratch.py
+native: examples/04_cluster.py
+seed: 42
+scope: operational diagnostic, not a comparable database leaderboard

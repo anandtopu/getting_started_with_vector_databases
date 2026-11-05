@@ -1,0 +1,14 @@
+name: Bug report
+description: A command or behavior does not work as documented
+body:
+  - type: textarea
+    id: reproduction
+    attributes: {label: Command and complete error, description: Remove credentials before posting.}
+    validations: {required: true}
+  - type: textarea
+    id: environment
+    attributes: {label: Operating system, Python, package versions and course revision}
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes: {label: Expected and actual behavior}

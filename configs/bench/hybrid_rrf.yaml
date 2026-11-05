@@ -1,0 +1,5 @@
+feature: hybrid_rrf
+lesson: 10_filtering_hybrid
+example: examples/01_from_scratch.py
+native: examples/04_lance_hybrid.py
+retrieval_config: tier2/hybrid-rrf.yaml

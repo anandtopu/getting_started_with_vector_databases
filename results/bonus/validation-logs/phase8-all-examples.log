@@ -1,0 +1,639 @@
+RUN examples\01_quickstart.py
+Query: something to keep my coffee hot on my desk
+Literal phrase matches: 0
+                    Marlowe Search - 26.59 ms                    
+┌──────────┬────────┬─────────────────────────┬────────┬────────┐
+│ ID       │ Score  │ Product                 │ Price  │ Region │
+├──────────┼────────┼─────────────────────────┼────────┼────────┤
+│ p0009240 │ 0.5965 │ Teal ceramic mug warmer │ $29.12 │ north  │
+│ p0001860 │ 0.5964 │ Teal ceramic mug warmer │ $27.82 │ north  │
+│ p0000360 │ 0.5961 │ Teal ceramic mug warmer │ $26.83 │ north  │
+│ p0009820 │ 0.5930 │ Teal ceramic mug warmer │ $19.61 │ north  │
+│ p0002640 │ 0.5916 │ Teal ceramic mug warmer │ $20.56 │ south  │
+└──────────┴────────┴─────────────────────────┴────────┴────────┘
+RUN examples\02_filtered_search.py
+waterproof hiking boots for rainy trails under $100, in stock, in the north region
+                  Filtered Marlowe Search - 14.93 ms                  
+┌──────────┬────────┬──────────────────────────────┬────────┬────────┐
+│ ID       │ Score  │ Product                      │ Price  │ Region │
+├──────────┼────────┼──────────────────────────────┼────────┼────────┤
+│ p0007882 │ 0.7192 │ Gold waterproof hiking boots │ $80.80 │ north  │
+│ p0004722 │ 0.7187 │ Teal waterproof hiking boots │ $58.46 │ north  │
+│ p0000162 │ 0.7173 │ Gold waterproof hiking boots │ $96.13 │ north  │
+│ p0004862 │ 0.7171 │ Navy waterproof hiking boots │ $81.66 │ north  │
+│ p0006582 │ 0.7169 │ Gold waterproof hiking boots │ $69.34 │ north  │
+└──────────┴────────┴──────────────────────────────┴────────┴────────┘
+RUN examples\03_persistence.py
+Snapshot round trip preserved 5 neighbors.
+RUN modules\00_setup\examples\01_from_scratch.py
+      id                        title  price region
+p0000000     Coral ceramic mug warmer  21.83  north
+p0000001  Coral compact reading chair  91.27   east
+p0000002 Teal waterproof hiking boots  88.67  north
+p0000003    Gold adjustable desk lamp  29.46   east
+p0000004    Navy insulated lunch tote  21.62  north
+Rows: 1,000; phrase matches: 0
+The input is a need. A phrase matcher cannot infer a heated coaster.
+RUN modules\00_setup\examples\02_production.py
+            Chroma explicit-vector search - 17.19 ms             
+┌──────────┬────────┬─────────────────────────┬────────┬────────┐
+│ ID       │ Score  │ Product                 │ Price  │ Region │
+├──────────┼────────┼─────────────────────────┼────────┼────────┤
+│ p0000360 │ 0.5961 │ Teal ceramic mug warmer │ $26.83 │ north  │
+│ p0000280 │ 0.5861 │ Teal ceramic mug warmer │ $30.33 │ west   │
+│ p0000840 │ 0.5860 │ Teal ceramic mug warmer │ $19.82 │ west   │
+│ p0000520 │ 0.5852 │ Teal ceramic mug warmer │ $23.83 │ south  │
+│ p0000200 │ 0.5823 │ Teal ceramic mug warmer │ $32.97 │ west   │
+└──────────┴────────┴─────────────────────────┴────────┴────────┘
+RUN modules\00_setup\examples\03_measure.py
+                  First useful search - 1.47 ms                  
+┌──────────┬────────┬─────────────────────────┬────────┬────────┐
+│ ID       │ Score  │ Product                 │ Price  │ Region │
+├──────────┼────────┼─────────────────────────┼────────┼────────┤
+│ p0000360 │ 0.5961 │ Teal ceramic mug warmer │ $26.83 │ north  │
+│ p0000280 │ 0.5861 │ Teal ceramic mug warmer │ $30.33 │ west   │
+│ p0000840 │ 0.5860 │ Teal ceramic mug warmer │ $19.82 │ west   │
+│ p0000520 │ 0.5852 │ Teal ceramic mug warmer │ $23.83 │ south  │
+│ p0000200 │ 0.5823 │ Teal ceramic mug warmer │ $32.97 │ west   │
+└──────────┴────────┴─────────────────────────┴────────┴────────┘
+Evidence: .cache\marlowe\tier1\measurements\orientation-4e08ee0c.json
+RUN modules\00_setup\use_case\marlowe_search.py
+      something to keep my coffee hot on my desk - 1.62 ms       
+┌──────────┬────────┬─────────────────────────┬────────┬────────┐
+│ ID       │ Score  │ Product                 │ Price  │ Region │
+├──────────┼────────┼─────────────────────────┼────────┼────────┤
+│ p0000360 │ 0.5961 │ Teal ceramic mug warmer │ $26.83 │ north  │
+│ p0000280 │ 0.5861 │ Teal ceramic mug warmer │ $30.33 │ west   │
+│ p0000840 │ 0.5860 │ Teal ceramic mug warmer │ $19.82 │ west   │
+│ p0000520 │ 0.5852 │ Teal ceramic mug warmer │ $23.83 │ south  │
+│ p0000200 │ 0.5823 │ Teal ceramic mug warmer │ $32.97 │ west   │
+└──────────┴────────┴─────────────────────────┴────────┴────────┘
+Product decision: offer semantic search for needs; retain precise SKU lookup.
+RUN modules\01_vectors_similarity\examples\01_from_scratch.py
+Rows x coordinates: (4, 2); dtype: float32
+Coordinates: warmth, portability; these are designed features, not learned meanings.
+dot [('mug-warmer', 1.0199999809265137), ('travel-flask', 0.9000000357627869), ('reading-chair', 0.10000000149011612), ('desk-lamp', 0.020000001415610313)]
+cosine [('mug-warmer', 0.9952284693717957), ('reading-chair', 0.9950371980667114), ('travel-flask', 0.6992941498756409), ('desk-lamp', 0.09950372576713562)]
+l2 [('mug-warmer', -0.10000000149011612), ('reading-chair', -0.9055384993553162), ('travel-flask', -0.9219544529914856), ('desk-lamp', -1.0049875974655151)]
+After multiplying the flask vector by 3: [('travel-flask', 2.700000047683716)]
+Unit-vector lengths: [1.0, 1.0, 1.0, 1.0]
+RUN modules\01_vectors_similarity\examples\02_production.py
+Agreement: ['mug-warmer', 'reading-chair', 'travel-flask', 'desk-lamp']
+FAISS squared distances: [0.009999999776482582, 0.8199999928474426, 0.8500000238418579, 1.0099999904632568]
+RUN modules\01_vectors_similarity\examples\03_measure.py
+2 0.4859 {'brute': 0.261, 'kd_tree': 0.364}
+8 0.2082 {'brute': 0.231, 'kd_tree': 0.58}
+32 0.1085 {'brute': 0.236, 'kd_tree': 0.77}
+128 0.0553 {'brute': 0.477, 'kd_tree': 1.942}
+512 0.0291 {'brute': 1.885, 'kd_tree': 7.453}
+Evidence: .cache\marlowe\tier1\measurements\dimensions-0d865193.json
+RUN modules\01_vectors_similarity\examples\04_geometry.py
+D:\Learning_Projects\getting_started_with_vector_databases\.cache\marlowe\tier1\geometry.png
+RUN modules\01_vectors_similarity\use_case\marlowe_search.py
+Cosine alternatives: [('reading-chair', 0.9805806875228882), ('travel-flask', 0.765704870223999), ('desk-lamp', 0.1961161494255066)]
+Surprise: chair direction looks close because portability is zero. These features omit heating technology.
+Product decision: redesign features or learn embeddings before shipping recommendations.
+RUN modules\02_embeddings\examples\01_from_scratch.py
+Evidence: .cache\marlowe\tier1\measurements\catalog_map-33a93904.json
+(500, 2) variance retained: 0.1784
+D:\Learning_Projects\getting_started_with_vector_databases\.cache\marlowe\tier1\catalog_map.png
+Open the Playground Catalog map tab; search still uses all 384 coordinates.
+RUN modules\02_embeddings\examples\02_production.py
+                   Reuse embeddings - 2.36 ms                    
+┌──────────┬────────┬─────────────────────────┬────────┬────────┐
+│ ID       │ Score  │ Product                 │ Price  │ Region │
+├──────────┼────────┼─────────────────────────┼────────┼────────┤
+│ p0000100 │ 0.5686 │ Gold ceramic mug warmer │ $30.93 │ south  │
+│ p0000120 │ 0.5635 │ Teal ceramic mug warmer │ $18.52 │ south  │
+│ p0000080 │ 0.5617 │ Navy ceramic mug warmer │ $30.89 │ east   │
+│ p0000180 │ 0.5597 │ Navy ceramic mug warmer │ $20.73 │ north  │
+│ p0000140 │ 0.5567 │ Navy ceramic mug warmer │ $22.79 │ west   │
+└──────────┴────────┴─────────────────────────┴────────┴────────┘
+Provider calls: 1
+RUN modules\02_embeddings\examples\03_measure.py
+hash mechanics only; no semantic-quality claim batch seconds: {'1': [0.0021918999846093357, 0.0021376000076998025, 0.0021388999884948134, 0.0021465000172611326, 0.0021016999962739646], '16': [0.0018674999882932752, 0.0018489999929443002, 0.001849400025093928, 0.0021428999898489565, 0.002076500008115545], '32': [0.001950199977727607, 0.0018985000206157565, 0.0018549999804235995, 0.0018720999942161143, 0.0018589000101201236]} miss/hit seconds: [0.0820160000002943, 0.011973199987551197, 0.011349300009896979, 0.010557200002949685, 0.01062759998603724, 0.01146169999265112]
+Evidence: .cache\marlowe\tier1\measurements\embedding_cache-ee9bdcea.json
+RUN modules\02_embeddings\use_case\marlowe_search.py
+               Marlowe Search v1: NumPy - 12.05 ms               
+┌──────────┬────────┬─────────────────────────┬────────┬────────┐
+│ ID       │ Score  │ Product                 │ Price  │ Region │
+├──────────┼────────┼─────────────────────────┼────────┼────────┤
+│ p0000360 │ 0.5961 │ Teal ceramic mug warmer │ $26.83 │ north  │
+│ p0000280 │ 0.5861 │ Teal ceramic mug warmer │ $30.33 │ west   │
+│ p0000840 │ 0.5860 │ Teal ceramic mug warmer │ $19.82 │ west   │
+│ p0000520 │ 0.5852 │ Teal ceramic mug warmer │ $23.83 │ south  │
+│ p0000200 │ 0.5823 │ Teal ceramic mug warmer │ $32.97 │ west   │
+└──────────┴────────┴─────────────────────────┴────────┴────────┘
+Product decision: 1k items need no server; arbitrary text needs a matching cached model.
+RUN modules\03_tinyvec\examples\01_from_scratch.py
+                Updated product - 0.17 ms                 
+┌────────┬────────┬────────────────────┬────────┬────────┐
+│ ID     │ Score  │ Product            │ Price  │ Region │
+├────────┼────────┼────────────────────┼────────┼────────┤
+│ warmer │ 0.9950 │ Ceramic mug warmer │ $25.00 │ north  │
+└────────┴────────┴────────────────────┴────────┴────────┘
+Deleted ID absent; empty search is valid.
+RUN modules\03_tinyvec\examples\02_production.py
+Reopened count: 1; persistent files: D:\Learning_Projects\getting_started_with_vector_databases\.cache\marlowe\tier1\chroma-47fdecf308b14fbc9ded0b41a17b880a
+This is same-process reopen; a fresh-process restore check is part of the checkpoint.
+RUN modules\03_tinyvec\examples\03_measure.py
+Evidence: .cache\marlowe\tier1\measurements\filter_order-27408e76.json
+postfilter returns 0; prefilter returns 1
+RUN modules\03_tinyvec\use_case\marlowe_search.py
+           Available products after restore - 2.33 ms            
+┌──────────┬────────┬─────────────────────────┬────────┬────────┐
+│ ID       │ Score  │ Product                 │ Price  │ Region │
+├──────────┼────────┼─────────────────────────┼────────┼────────┤
+│ p0000360 │ 0.5961 │ Teal ceramic mug warmer │ $26.83 │ north  │
+│ p0000840 │ 0.5860 │ Teal ceramic mug warmer │ $19.82 │ west   │
+│ p0000740 │ 0.5813 │ Teal ceramic mug warmer │ $23.70 │ west   │
+│ p0000980 │ 0.5812 │ Teal ceramic mug warmer │ $24.89 │ north  │
+│ p0000780 │ 0.5766 │ Teal ceramic mug warmer │ $20.44 │ west   │
+└──────────┴────────┴─────────────────────────┴────────┴────────┘
+Product decision: snapshot local experiments; do not promise transactional multiwriter service guarantees.
+RUN modules\04_benchmarking\examples\01_from_scratch.py
+recall: 0.5
+precision: 0.5
+MRR: 0.5
+nDCG: 0.5788
+latency: {'p50_ms': 3.0, 'p95_ms': 80.79999999999998, 'p99_ms': 96.16, 'samples': 5}
+Open common/bench/metrics.py: each implementation directly follows its definition.
+RUN modules\04_benchmarking\examples\02_production.py
+                 LanceDB judged query - 48.96 ms                 
+┌──────────┬────────┬─────────────────────────┬────────┬────────┐
+│ ID       │ Score  │ Product                 │ Price  │ Region │
+├──────────┼────────┼─────────────────────────┼────────┼────────┤
+│ p0000360 │ 0.5961 │ Teal ceramic mug warmer │ $26.83 │ north  │
+│ p0000280 │ 0.5861 │ Teal ceramic mug warmer │ $30.33 │ west   │
+│ p0000840 │ 0.5860 │ Teal ceramic mug warmer │ $19.82 │ west   │
+│ p0000520 │ 0.5852 │ Teal ceramic mug warmer │ $23.83 │ south  │
+│ p0000200 │ 0.5823 │ Teal ceramic mug warmer │ $32.97 │ west   │
+│ p0000740 │ 0.5813 │ Teal ceramic mug warmer │ $23.70 │ west   │
+│ p0000980 │ 0.5812 │ Teal ceramic mug warmer │ $24.89 │ north  │
+│ p0000800 │ 0.5811 │ Teal ceramic mug warmer │ $20.96 │ south  │
+│ p0000920 │ 0.5774 │ Teal ceramic mug warmer │ $32.59 │ south  │
+│ p0000780 │ 0.5766 │ Teal ceramic mug warmer │ $20.44 │ west   │
+└──────────┴────────┴─────────────────────────┴────────┴────────┘
+{'recall': 1.0, 'precision': 1.0, 'mrr': 1.0, 'ndcg': 1.0, 'retrieval_ms': 48.96300000837073}
+Evidence: .cache\marlowe\tier1\measurements\lancedb_quality-cdbbab1b.json
+RUN modules\04_benchmarking\examples\03_measure.py
+benchmark-method-20261105T203850-099904f6 {'p50_ms': 0.51615, 'p95_ms': 1.1551449999999999, 'p99_ms': 1.2875549999999996, 'samples': 500, 'recall_at_k': 1.0, 'strict_id_recall_at_k': 1.0, 'precision_at_k': 0.654, 'mrr': 0.68, 'ndcg_at_k': 0.8401787234811061, 'qps': 1504.0388077240336, 'qps_std': 50.41030899193759, 'insertion_seconds': 0.009860599995590746, 'index_build_seconds': 0.0007210999901872128, 'persisted_bytes': 2193933, 'index_payload_bytes': None, 'errors': 0, 'error_rate': 0.0}
+RUN modules\04_benchmarking\use_case\marlowe_search.py
+Evidence: .cache\marlowe\tier1\measurements\quality_tradeoff-4a2f9a48.json
+{'exact': 1.0, 'first_five': 0.2} Product decision: reject the faster policy because it ignores the request.
+RUN modules\05_ann_lsh\examples\01_from_scratch.py
+rows inspected 13 of 240 true neighbors retained 2
+['Coral ceramic mug warmer', 'Coral quiet wall clock', 'Coral ceramic mug warmer', 'Teal adjustable desk lamp', 'Gold ceramic mug warmer']
+RUN modules\05_ann_lsh\examples\02_production.py
+Hamming distances [15. 16. 18. 19. 19. 19. 19. 20. 20. 20.] candidate products ['p0000249', 'p0000549', 'p0000200', 'p0000049', 'p0000349', 'p0000360', 'p0000520', 'p0000054', 'p0000120', 'p0000280']
+RUN modules\05_ann_lsh\examples\03_measure.py
+[{'kind': 'lsh', 'parameters': {'tables': 1, 'bits': 6}, 'products': 400, 'query': 'q000', 'ids': ['p0000352', 'p0000019', 'p0000219'], 'recall': 0.0, 'index_payload_bytes': 10849, 'timings': {'repetitions': 5, 'milliseconds': [0.042100000428035855, 0.031200004741549492, 0.02780000795610249, 0.025299988919869065, 0.022599997464567423], 'median_ms': 0.02780000795610249}}, {'kind': 'lsh', 'parameters': {'tables': 4, 'bits': 6}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000280', 'p0000200', 'p0000100', 'p0000300', 'p0000380', 'p0000060', 'p0000240', 'p0000149', 'p0000349'], 'recall': 0.5, 'index_payload_bytes': 43402, 'timings': {'repetitions': 5, 'milliseconds': [0.06690001464448869, 0.0625999819021672, 0.062000006437301636, 0.058999983593821526, 0.058200006606057286], 'median_ms': 0.062000006437301636}}, {'kind': 'lsh', 'parameters': {'tables': 12, 'bits': 6}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000280', 'p0000200', 'p0000100', 'p0000300', 'p0000380', 'p0000060', 'p0000240', 'p0000149', 'p0000349'], 'recall': 0.5, 'index_payload_bytes': 130195, 'timings': {'repetitions': 5, 'milliseconds': [0.1351000100839883, 0.1364000199828297, 0.1269000058528036, 0.12179999612271786, 0.11910000466741621], 'median_ms': 0.1269000058528036}}]
+Evidence: .cache\marlowe\tier2\measurements\lesson-05_ann_lsh-485a6a38.json
+RUN modules\05_ann_lsh\use_case\duplicate_candidates.py
+anchor Coral ceramic mug warmer review ['Coral ceramic mug warmer', 'Coral ceramic mug warmer', 'Coral ceramic mug warmer'] candidate count 73
+RUN modules\06_ivf\examples\01_from_scratch.py
+nearest centroid 5 list sizes [36, 37, 32, 29, 54, 40, 60, 32]
+RUN modules\06_ivf\examples\02_production.py
+occupancies [128, 84, 108, 32, 64, 70, 64, 90]
+candidate products ['p0000360', 'p0000280', 'p0000520', 'p0000200', 'p0000540', 'p0000100', 'p0000120', 'p0000080', 'p0000320', 'p0000180'] cosine scores [0.59612024 0.5861411  0.58519083 0.5823499  0.57518256 0.5686061
+ 0.5635301  0.5616754  0.5603227  0.55965924]
+RUN modules\06_ivf\examples\03_measure.py
+[{'kind': 'ivf', 'parameters': {'nlist': 12, 'nprobe': 1}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000280', 'p0000200', 'p0000100', 'p0000120', 'p0000080', 'p0000320', 'p0000180', 'p0000340', 'p0000300'], 'recall': 1.0, 'index_payload_bytes': 20032, 'timings': {'repetitions': 5, 'milliseconds': [0.07690000347793102, 0.06560000474564731, 0.06310001481324434, 0.06089999806135893, 0.0591999851167202], 'median_ms': 0.06310001481324434}}, {'kind': 'ivf', 'parameters': {'nlist': 12, 'nprobe': 4}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000280', 'p0000200', 'p0000100', 'p0000120', 'p0000080', 'p0000320', 'p0000180', 'p0000340', 'p0000300'], 'recall': 1.0, 'index_payload_bytes': 20032, 'timings': {'repetitions': 5, 'milliseconds': [0.0957000011112541, 0.089599983766675, 0.08900000830180943, 0.08850000449456275, 0.08519997936673462], 'median_ms': 0.08900000830180943}}, {'kind': 'ivf', 'parameters': {'nlist': 12, 'nprobe': 12}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000280', 'p0000200', 'p0000100', 'p0000120', 'p0000080', 'p0000320', 'p0000180', 'p0000340', 'p0000300'], 'recall': 1.0, 'index_payload_bytes': 20032, 'timings': {'repetitions': 5, 'milliseconds': [0.20400001085363328, 0.19190000602975488, 0.18890001229010522, 0.1799000019673258, 0.17330000991933048], 'median_ms': 0.18890001229010522}}]
+Evidence: .cache\marlowe\tier2\measurements\lesson-06_ivf-a70b64e5.json
+RUN modules\06_ivf\use_case\choose_probes.py
+smallest probe count meeting the single-query target {'kind': 'ivf', 'parameters': {'nlist': 12, 'nprobe': 1}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000280', 'p0000200', 'p0000100', 'p0000120', 'p0000080', 'p0000320', 'p0000180', 'p0000340', 'p0000300'], 'recall': 1.0, 'index_payload_bytes': 20032, 'timings': {'repetitions': 5, 'milliseconds': [0.06680001388303936, 0.0604000233579427, 0.05750000127591193, 0.06540000322274864, 0.05600001895800233], 'median_ms': 0.0604000233579427}}
+RUN modules\07_hnsw\examples\01_from_scratch.py
+layer populations [220, 41, 5] entry 51
+entry product Coral stretch exercise mat found ['Teal ceramic mug warmer', 'Gold ceramic mug warmer', 'Teal ceramic mug warmer']
+RUN modules\07_hnsw\examples\02_production.py
+FAISS ['p0000360', 'p0000280', 'p0000520', 'p0000200', 'p0000540', 'p0000100', 'p0000120', 'p0000080', 'p0000320', 'p0000180'] USearch ['p0000360', 'p0000280', 'p0000520', 'p0000200', 'p0000540', 'p0000100', 'p0000120', 'p0000080', 'p0000320', 'p0000180']
+RUN modules\07_hnsw\examples\03_measure.py
+[{'kind': 'hnsw', 'parameters': {'M': 6, 'efConstruction': 32, 'efSearch': 10, 'oversample': 1}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000280', 'p0000200', 'p0000100', 'p0000120', 'p0000080', 'p0000320', 'p0000180', 'p0000340', 'p0000300'], 'recall': 1.0, 'index_payload_bytes': 13580, 'timings': {'repetitions': 5, 'milliseconds': [0.10800000745803118, 0.10420000762678683, 0.10080001084133983, 0.10000000474974513, 0.0990999978967011], 'median_ms': 0.10080001084133983}}, {'kind': 'hnsw', 'parameters': {'M': 6, 'efConstruction': 32, 'efSearch': 24, 'oversample': 1}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000280', 'p0000200', 'p0000100', 'p0000120', 'p0000080', 'p0000320', 'p0000180', 'p0000340', 'p0000300'], 'recall': 1.0, 'index_payload_bytes': 13580, 'timings': {'repetitions': 5, 'milliseconds': [0.15159999020397663, 0.14669998199678957, 0.14420002116821706, 0.14329998521134257, 0.14099999680183828], 'median_ms': 0.14420002116821706}}, {'kind': 'hnsw', 'parameters': {'M': 6, 'efConstruction': 32, 'efSearch': 64, 'oversample': 1}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000280', 'p0000200', 'p0000100', 'p0000120', 'p0000080', 'p0000320', 'p0000180', 'p0000340', 'p0000300'], 'recall': 1.0, 'index_payload_bytes': 13580, 'timings': {'repetitions': 5, 'milliseconds': [0.47050000284798443, 0.4555000050459057, 0.4531000158749521, 0.4409999819472432, 0.4422999918460846], 'median_ms': 0.4531000158749521}}]
+Evidence: .cache\marlowe\tier2\measurements\lesson-07_hnsw-79c94af0.json
+RUN modules\07_hnsw\examples\04_hnswlib.py
+{'kind': 'hnswlib', 'parameters': {'M': 8, 'efConstruction': 40, 'efSearch': 32}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000280', 'p0000200', 'p0000100', 'p0000120', 'p0000080', 'p0000320', 'p0000180', 'p0000340', 'p0000300'], 'recall': 1.0, 'index_payload_bytes': 648440, 'timings': {'repetitions': 5, 'milliseconds': [0.07049998384900391, 0.06399999256245792, 0.06030002259649336, 0.059699988923966885, 0.05830000736750662], 'median_ms': 0.06030002259649336}}
+tombstoned row 0; surviving neighbors [ 20  49 140  80 100  40  60 120 149  18]
+RUN modules\07_hnsw\examples\05_deletions.py
+survivors [20, 49, 80, 40, 60, 18, 78, 38, 98, 63]
+RUN modules\07_hnsw\use_case\retire_product.py
+retired p0000200 new results ['p0000100', 'p0000120', 'p0000080', 'p0000180', 'p0000140'] rebuilt graph bytes 7380
+RUN modules\08_quantization\examples\01_from_scratch.py
+first code [ 5 15  2  1  1  7  9  9] reconstruction error 0.48342046 payload bytes 27136
+nearest by asymmetric lookup [ 0 20 40 49 60]
+RUN modules\08_quantization\examples\02_production.py
+compressed leaders ['p0000540', 'p0000520', 'p0000360', 'p0000280', 'p0000249', 'p0000200', 'p0000120', 'p0000480', 'p0000340', 'p0000320'] after rescoring ['p0000360', 'p0000280', 'p0000520', 'p0000200', 'p0000540', 'p0000100', 'p0000120', 'p0000080', 'p0000320', 'p0000180']
+packed residual bytes per row 3
+RUN modules\08_quantization\examples\03_measure.py
+{'compression': [{'kind': 'scalar', 'parameters': {'oversample': 1}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000280', 'p0000200', 'p0000100', 'p0000120', 'p0000080', 'p0000320', 'p0000180', 'p0000340', 'p0000300'], 'recall': 1.0, 'index_payload_bytes': 155136, 'timings': {'repetitions': 5, 'milliseconds': [0.12730000889860094, 0.11240001185797155, 0.11319998884573579, 0.1094000181183219, 0.10619999375194311], 'median_ms': 0.11240001185797155}}, {'kind': 'scalar', 'parameters': {'oversample': 8}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000280', 'p0000200', 'p0000100', 'p0000120', 'p0000080', 'p0000320', 'p0000180', 'p0000340', 'p0000300'], 'recall': 1.0, 'index_payload_bytes': 155136, 'timings': {'repetitions': 5, 'milliseconds': [0.12119999155402184, 0.11600001016631722, 0.1145999995060265, 0.11189997894689441, 0.11170000652782619], 'median_ms': 0.1145999995060265}}, {'kind': 'binary', 'parameters': {'oversample': 1}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000280', 'p0000200', 'p0000100', 'p0000120', 'p0000300', 'p0000060', 'p0000249', 'p0000149', 'p0000349'], 'recall': 0.6, 'index_payload_bytes': 19200, 'timings': {'repetitions': 5, 'milliseconds': [0.13119998038746417, 0.12159999459981918, 0.11779999476857483, 0.12650000280700624, 0.1173000200651586], 'median_ms': 0.12159999459981918}}, {'kind': 'binary', 'parameters': {'oversample': 8}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000280', 'p0000200', 'p0000100', 'p0000120', 'p0000080', 'p0000320', 'p0000180', 'p0000340', 'p0000300'], 'recall': 1.0, 'index_payload_bytes': 19200, 'timings': {'repetitions': 5, 'milliseconds': [0.1472999865654856, 0.14250000822357833, 0.1373999984934926, 0.1328999933321029, 0.1281999866478145], 'median_ms': 0.1373999984934926}}, {'kind': 'pq', 'parameters': {'oversample': 1}, 'products': 400, 'query': 'q000', 'ids': ['p0000280', 'p0000200', 'p0000120', 'p0000080', 'p0000320', 'p0000180', 'p0000340', 'p0000140', 'p0000040', 'p0000249'], 'recall': 0.7, 'index_payload_bytes': 27776, 'timings': {'repetitions': 5, 'milliseconds': [0.13010000111535192, 0.11739999172277749, 0.1134999911300838, 0.11079999967478216, 0.1112000027205795], 'median_ms': 0.1134999911300838}}, {'kind': 'pq', 'parameters': {'oversample': 8}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000280', 'p0000200', 'p0000100', 'p0000120', 'p0000080', 'p0000320', 'p0000180', 'p0000340', 'p0000300'], 'recall': 1.0, 'index_payload_bytes': 27776, 'timings': {'repetitions': 5, 'milliseconds': [0.15459998394362628, 0.1362999901175499, 0.1328999933321029, 0.13290002243593335, 0.1280000142287463], 'median_ms': 0.13290002243593335}}], 'qwen_prefixes': {'1024': {'top10': ['p0000100', 'p0000120', 'p0000060', 'p0000080', 'p0000020', 'p0000040', 'p0000000', 'p0000049', 'p0000123', 'p0000103'], 'vector_bytes': 524288}, '512': {'top10': ['p0000100', 'p0000120', 'p0000060', 'p0000020', 'p0000080', 'p0000040', 'p0000000', 'p0000049', 'p0000098', 'p0000123'], 'vector_bytes': 262144}, '256': {'top10': ['p0000080', 'p0000120', 'p0000040', 'p0000100', 'p0000020', 'p0000060', 'p0000000', 'p0000049', 'p0000083', 'p0000123'], 'vector_bytes': 131072}, '64': {'top10': ['p0000120', 'p0000080', 'p0000040', 'p0000100', 'p0000060', 'p0000020', 'p0000000', 'p0000049', 'p0000054', 'p0000094'], 'vector_bytes': 32768}, '32': {'top10': ['p0000120', 'p0000080', 'p0000040', 'p0000100', 'p0000060', 'p0000020', 'p0000000', 'p0000049', 'p0000094', 'p0000054'], 'vector_bytes': 16384}}}
+Evidence: .cache\marlowe\tier2\measurements\lesson-08_quantization-59598a50.json
+RUN modules\08_quantization\examples\04_native_codes.py
+IndexScalarQuantizer bytes per code 384 first rows [360 280 520 200 540 100 120  80 320 180]
+IndexPQ bytes per code 3 first rows [149 140 120 100  80  60  49  40  20   0]
+RUN modules\08_quantization\examples\05_sqlite_binary.py
+different sign bits 137.0
+RUN modules\08_quantization\examples\06_lance_prefix.py
+Qwen 64-dimensional prefix [('p0000120', 0.22960692644119263), ('p0000080', 0.2424502968788147), ('p0000040', 0.25656503438949585), ('p0000100', 0.2665467858314514), ('p0000060', 0.2769257426261902), ('p0000020', 0.28216856718063354), ('p0000000', 0.2941058278083801), ('p0000049', 0.2981228232383728), ('p0000054', 0.3961383104324341), ('p0000094', 0.3964300751686096)]
+RUN modules\08_quantization\use_case\memory_budget.py
+eligible code indexes [('binary', 30720), ('pq', 29696)] best q000 recall 1.0
+full rescoring vectors add 983040 bytes; metadata and interpreter are separate
+RUN modules\09_disk_scale\examples\01_from_scratch.py
+code bytes 262176 recall [1.0, 0.9, 1.0, 1.0, 1.0]
+RUN modules\09_disk_scale\examples\02_production.py
+restored IDs [280, 200, 100, 120, 80] file bytes 538868
+RUN modules\09_disk_scale\examples\03_measure.py
+{'rows': 1000000, 'dimensions': 32, 'seed': 42, 'block': 8192, 'queries': 5, 'dtype': 'int8', 'file_bytes': 32000128, 'build_and_float_truth_seconds': 0.8226755000068806, 'query_seconds': [0.09637799998745322, 0.08958079997682944, 0.08697870001196861, 0.08670729998266324, 0.0856863999797497], 'recall_at_10': [1.0, 1.0, 0.9, 1.0, 1.0], 'memory': {'process_baseline_rss_bytes': 99344384, 'process_peak_rss_bytes': 133763072, 'process_peak_delta_bytes': 34418688, 'rss_sampling_interval_seconds': 0.01, 'server_memory_bytes': None, 'server_memory_reason': 'in-process backend; no separate server', 'limitations': 'Sampled RSS may miss peaks shorter than the sampling interval; includes interpreter and imported libraries.'}, 'bytes_per_scan': 32000000, 'page_cache': 'OS managed; no cold-cache eviction attempted'}
+Evidence: .cache\marlowe\tier2\measurements\disk-scale-38db4103.json
+RUN modules\09_disk_scale\examples\04_page_reads.py
+{'products': 240, 'read_budget': 40, 'actual_reads': 40, 'fixed_record_bytes': 24, 'recall_at_10': 1.0, 'final_ids': ['p0000200', 'p0000100', 'p0000120', 'p0000080', 'p0000180', 'p0000140', 'p0000060', 'p0000040', 'p0000149', 'p0000160'], 'object_layout_estimates': {'8': {'fragments': 25, 'modeled_bytes': 4800, 'useful_adjacency_bytes': 960}, '64': {'fragments': 4, 'modeled_bytes': 5760, 'useful_adjacency_bytes': 960}}}
+Evidence: .cache\marlowe\tier2\measurements\page-reads-136e2e66.json
+RUN modules\09_disk_scale\use_case\shard_budget.py
+bytes for one balanced region shard 4000000 bytes for all 32000000
+read amplification for a single 32-byte record in a 4096-byte page 128
+RUN modules\10_filtering_hybrid\examples\01_from_scratch.py
+lexical [0] dense [1, 0, 2] fused [(0, 0.03252247488101534), (1, 0.01639344262295082), (2, 0.015873015873015872)]
+RUN modules\10_filtering_hybrid\examples\02_production.py
+[('Teal waterproof hiking boots', 4.683761119842529), ('Gold waterproof hiking boots', 4.683761119842529), ('Teal waterproof hiking boots', 4.683761119842529), ('Gold waterproof hiking boots', 4.683761119842529), ('Teal waterproof hiking boots', 4.683761119842529)]
+RUN modules\10_filtering_hybrid\examples\03_measure.py
+{'filter': [{'kind': 'hnsw', 'parameters': {'filter_policy': 'post', 'oversample': 1}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000320', 'p0000180', 'p0000340', 'p0000040', 'p0000240', 'p0000000', 'p0000049', 'p0000163', 'p0000023'], 'recall': 1.0, 'index_payload_bytes': 16272, 'timings': {'repetitions': 5, 'milliseconds': [0.1990000018849969, 0.20539999241009355, 0.19079999765381217, 0.18919998547062278, 0.19000002066604793], 'median_ms': 0.19079999765381217}}, {'kind': 'hnsw', 'parameters': {'filter_policy': 'traverse', 'oversample': 1}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000320', 'p0000180', 'p0000340', 'p0000040', 'p0000240', 'p0000000', 'p0000049', 'p0000163', 'p0000023'], 'recall': 1.0, 'index_payload_bytes': 16272, 'timings': {'repetitions': 5, 'milliseconds': [0.40120002813637257, 0.39530001231469214, 0.39229998947121203, 0.38770001265220344, 0.3863000019919127], 'median_ms': 0.39229998947121203}}, {'kind': 'hnsw', 'parameters': {'filter_policy': 'adaptive', 'oversample': 1}, 'products': 400, 'query': 'q000', 'ids': ['p0000360', 'p0000320', 'p0000180', 'p0000340', 'p0000040', 'p0000240', 'p0000000', 'p0000049', 'p0000163', 'p0000023'], 'recall': 1.0, 'index_payload_bytes': 16272, 'timings': {'repetitions': 5, 'milliseconds': [0.2038000093307346, 0.19439999596215785, 0.19069999689236283, 0.19339998834766448, 0.19120000069960952], 'median_ms': 0.19339998834766448}}], 'cross_encoder': [{'id': 'p0000120', 'score': 6.651162147521973}, {'id': 'p0000100', 'score': 6.532857894897461}, {'id': 'p0000060', 'score': 6.363205909729004}, {'id': 'p0000020', 'score': 6.2634663581848145}, {'id': 'p0000000', 'score': 6.18975830078125}, {'id': 'p0000040', 'score': 6.123805999755859}, {'id': 'p0000080', 'score': 6.113173484802246}, {'id': 'p0000049', 'score': 5.8971381187438965}, {'id': 'p0000083', 'score': -8.270774841308594}, {'id': 'p0000023', 'score': -8.293943405151367}, {'id': 'p0000123', 'score': -8.30417251586914}, {'id': 'p0000003', 'score': -8.995198249816895}], 'before': ['p0000100', 'p0000120', 'p0000080', 'p0000060', 'p0000040', 'p0000020', 'p0000000', 'p0000049', 'p0000123', 'p0000023', 'p0000083', 'p0000003'], 'ndcg_before': 0.8701249883466594, 'ndcg_after': 0.8701249883466594}
+Evidence: .cache\marlowe\tier2\measurements\lesson-10_filtering_hybrid-75f04e7c.json
+RUN modules\10_filtering_hybrid\examples\04_lance_hybrid.py
+native hybrid ['p0000100', 'p0000120', 'p0000060', 'p0000080', 'p0000020', 'p0000140', 'p0000040', 'p0000149'] late interaction ['p0000100', 'p0000120', 'p0000060', 'p0000080', 'p0000020', 'p0000140', 'p0000040', 'p0000149']
+RUN modules\10_filtering_hybrid\use_case\boots_under_budget.py
+waterproof hiking boots for rainy trails under $100, in stock, in the north region [('p0000162', 'Gold waterproof hiking boots', 96.13), ('p0000082', 'Navy waterproof hiking boots', 90.21), ('p0000002', 'Teal waterproof hiking boots', 88.67), ('p0000222', 'Teal waterproof hiking boots', 85.5), ('p0000202', 'Coral waterproof hiking boots', 90.24)]
+RUN modules\11_embedded\examples\01_from_scratch.py
+restored IDs ['p0000060', 'p0000040', 'p0000020']
+RUN modules\11_embedded\examples\02_production.py
+[['p0000000']] ['Coral ceramic mug warmer']
+RUN modules\11_embedded\examples\03_measure.py
+lesson-chroma-20261105T204031-b961e2aa {'p50_ms': 0.7004999999999999, 'p95_ms': 1.073575, 'p99_ms': 1.5364049999999991, 'samples': 36, 'recall_at_k': 1.0, 'strict_id_recall_at_k': 1.0, 'precision_at_k': 0.23333333333333328, 'mrr': 0.3333333333333333, 'ndcg_at_k': 0.6666666666666666, 'qps': 1305.3800744615319, 'qps_std': 80.55216731599772, 'insertion_seconds': 1.626676599989878, 'index_build_seconds': 1.9999861251562834e-06, 'persisted_bytes': 439202, 'index_payload_bytes': None, 'errors': 0, 'error_rate': 0.0}
+chroma 1.073575
+lesson-lancedb-20261105T204034-f2f01720 {'p50_ms': 4.83265, 'p95_ms': 6.900675, 'p99_ms': 11.52089499999999, 'samples': 36, 'recall_at_k': 1.0, 'strict_id_recall_at_k': 1.0, 'precision_at_k': 0.23333333333333328, 'mrr': 0.3333333333333333, 'ndcg_at_k': 0.6666666666666666, 'qps': 194.3181067234472, 'qps_std': 20.22610589313352, 'insertion_seconds': 0.07662659999914467, 'index_build_seconds': 1.7999846022576094e-06, 'persisted_bytes': 439202, 'index_payload_bytes': None, 'errors': 0, 'error_rate': 0.0}
+lancedb 6.900675
+RUN modules\11_embedded\examples\04_lancedb.py
+[2026-11-05T20:40:38Z WARN  lance::index::vector] Build Vector Index: training 2 of the 4 requested IVF partitions; column 'v' holds 640 vectors
+versions [{'version': 1, 'timestamp': datetime.datetime(2026, 11, 5, 14, 40, 38, 567981), 'metadata': {'total_data_file_rows': '640', 'total_data_files': '1', 'total_deletion_file_rows': '0', 'total_deletion_files': '0', 'total_files_size': '994392', 'total_fragments': '1', 'total_rows': '640'}}, {'version': 2, 'timestamp': datetime.datetime(2026, 11, 5, 14, 40, 38, 661146), 'metadata': {'total_data_file_rows': '640', 'total_data_files': '1', 'total_deletion_file_rows': '177', 'total_deletion_files': '1', 'total_files_size': '994392', 'total_fragments': '1', 'total_rows': '463'}}, {'version': 3, 'timestamp': datetime.datetime(2026, 11, 5, 14, 40, 38, 771583), 'metadata': {'total_data_file_rows': '640', 'total_data_files': '1', 'total_deletion_file_rows': '0', 'total_deletion_files': '0', 'total_files_size': '994392', 'total_fragments': '1', 'total_rows': '640'}}, {'version': 4, 'timestamp': datetime.datetime(2026, 11, 5, 14, 40, 38, 786647), 'metadata': {'total_data_file_rows': '640', 'total_data_files': '1', 'total_deletion_file_rows': '0', 'total_deletion_files': '0', 'total_files_size': '994392', 'total_fragments': '1', 'total_rows': '640'}}, {'version': 5, 'timestamp': datetime.datetime(2026, 11, 5, 14, 40, 39, 247482), 'metadata': {'total_data_file_rows': '640', 'total_data_files': '1', 'total_deletion_file_rows': '0', 'total_deletion_files': '0', 'total_files_size': '994392', 'total_fragments': '1', 'total_rows': '640'}}] hybrid hits ['p0000000', 'p0000240', 'p0000180', 'p0000040', 'p0000049']
+RUN modules\11_embedded\examples\05_sqlite_vec.py
+[('p0000040', 0.4469676613807678), ('p0000000', 0.46796944737434387), ('p0000049', 0.4948965311050415), ('p0000023', 0.5960228443145752), ('p0000064', 0.6772685050964355)]
+RUN modules\11_embedded\examples\06_duckdb.py
+SQL exact [('p0000100',), ('p0000120',), ('p0000080',), ('p0000140',), ('p0000060',)]
+╭─ Projection ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Projections: #0                                                                                                                                                                                                                                                                                                                                                                                              │
+│ ~5 rows                                                                                                                                                                                                                                                                                                                                                                                                      │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Projection ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Projections:                                                                                                                                                                                                                                                                                                                                                                                                 │
+│ __internal_decompress_string(#0), #1                                                                                                                                                                                                                                                                                                                                                                         │
+│ ~160 rows                                                                                                                                                                                                                                                                                                                                                                                                    │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Order By ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Order By: #1 ASC                                                                                                                                                                                                                                                                                                                                                                                             │
+│ ~160 rows                                                                                                                                                                                                                                                                                                                                                                                                    │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Projection ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Projections:                                                                                                                                                                                                                                                                                                                                                                                                 │
+│ __internal_compress_string_uhugeint(#0), #1                                                                                                                                                                                                                                                                                                                                                                  │
+│ ~160 rows                                                                                                                                                                                                                                                                                                                                                                                                    │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Projection ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Projections:                                                                                                                                                                                                                                                                                                                                                                                                 │
+│ id,                                                                                                                                                                                                                                                                                                                                                                                                          │
+│ array_cosine_distance(v, [-0.10015869, 0.04083252, 0.021575928, 0.1060791, 0.051574707, 0.014663696, 0.10180664, -0.03274536, 0.026626587, 0.029968262, -0.049224854, -0.024291992, 0.02809143, 0.022201538, 0.0033740997, -0.046447754, 0.06384277, 0.04815674, 0.015991211, -0.0341796875, -0.040985107, -0.0703125, -0.02015686, 0.044921875, 0.0317688, 0.088134766, 0.026535034, -0.0075683594,         │
+│ -0.09875488, 0.04135132, -0.01096344, -0.075805664, -0.04336548, 0.037506104, -0.04937744, 0.028198242, 0.023010254, -0.004272461, 0.012496948, 0.0075187683, -0.041381836, -0.02330017, 0.122924805, -0.0076408386, 0.053955078, -0.008705139, -0.018600464, -0.050445557, 0.05682373, 0.061920166, 0.008720398, -0.015296936, 0.025131226, 0.011276245, 0.011459351, 0.034576416, 0.01777649,              │
+│ -0.034698486, 0.028625488, 0.07330322, 0.04714966, -0.050201416, -0.0657959, 0.03262329, -0.026321411, -0.061767578, -0.035186768, 0.1003418, 0.0400390625, 0.046783447, -0.006477356, 0.06213379, -0.004512787, -0.013900757, -0.020004272, -0.050994873, 0.014442444, -0.07092285, 0.0335083, 0.06878662, -0.0152282715, 0.0061683655, 0.029586792, 0.078125, -0.02961731, 0.025985718, 0.16516113,        │
+│ -0.07696533, -0.062927246, -0.054840088, -0.0006489754, 0.03466797, 0.0473938, 0.023223877, -0.087890625, -0.06124878, -0.023223877, 0.0302734375, -0.039093018, -0.02027893, -0.029968262, 0.0060577393, -0.028869629, 0.025924683, 0.048919678, -0.02142334, -0.020889282, -0.093811035, 0.11401367, 0.0021839142, -0.048858643, -0.043762207, -0.12182617, 0.01574707, -0.0132369995, 0.008285522,        │
+│ 0.08728027, 1.579523e-05, -0.009239197, 0.0035381317, 0.013885498, -0.027450562, -0.025741577, 0.008674622, -0.009300232, -0.041931152, 0.03869629, '-0.0'::FLOAT, -0.025787354, 0.057250977, -0.03253174, 0.06994629, 0.1361084, -0.027648926, -0.007583618, 0.07647705, -0.037109375, 0.060333252, 0.003189087, 0.09197998, -0.05618286, 0.0647583, 0.058166504, -0.051452637, -0.004207611, 0.08074951,   │
+│ -0.028213501, -0.042633057, -0.0041923523, -0.024765015, 0.06524658, 0.032592773, -0.016113281, 0.012771606, -0.0026340485, -0.06323242, 0.006061554, 0.008796692, -0.024841309, 0.0059318542, -0.004711151, 0.019927979, -0.122802734, -0.036956787, -0.115478516, -0.015106201, 0.12158203, 0.098083496, -0.0725708, -0.0031089783, 0.07281494, -0.03665161, 0.030410767, 0.0012016296, -0.036590576,      │
+│ 0.074645996, -0.016189575, -0.009796143, -0.010292053, -0.035888672, 0.045806885, 0.053894043, -0.010818481, -0.06451416, 0.002910614, 0.015220642, 0.0576171875, -0.010787964, -0.045288086, 0.0015239716, 0.016143799, -0.0385437, -0.009208679, -0.017745972, 0.036956787, -0.009628296, 0.05392456, -0.025863647, 0.016433716, 0.033813477, -0.024871826, 0.0064849854, 0.025741577, 0.006286621,        │
+│ -0.013954163, -0.051513672, -0.10266113, -0.05255127, 0.031097412, -0.13500977, 0.012969971, -0.023651123, -0.00055933, -0.018234253, 0.008766174, 0.030380249, -0.012550354, -0.0014162064, -0.07904053, -0.026138306, -0.008491516, 0.017166138, -0.06793213, 0.0, 0.114746094, -0.14050293, -0.0118637085, 0.04638672, 0.014595032, 0.019470215, 0.03439331, -0.0524292, -0.074157715, 0.04547119,        │
+│ 0.040618896, -0.050079346, 0.01737976, 0.03111267, 0.025741577, 0.040618896, -0.0361328125, 0.013702393, -0.08404541, 0.031463623, -0.064208984, 0.025970459, -0.0748291, 0.096191406, -0.011474609, -0.00756073, -0.05178833, -0.1340332, -0.04525757, 0.09063721, -0.12768555, -0.026733398, -0.04660034, -0.019760132, 0.0635376, 0.00091934204, 0.050048828, 0.0037117004, 0.034576416, 0.057159424,     │
+│ 0.03149414, 0.0361328125, 0.08129883, 0.07244873, 0.00737381, 0.0076675415, -0.11883545, 0.05618286, -0.037963867, 0.09631348, 0.034484863, -0.09222412, -0.04864502, 0.012298584, -0.0637207, -0.008522034, -0.0439453125, -0.012840271, -0.0023441315, 0.011169434, -0.03869629, -0.035858154, 0.01008606, 0.0263671875, 0.0017442703, 0.0836792, -0.034332275, 0.025665283, 0.04421997, -0.05166626,      │
+│ 0.16955566, 0.010864258, 0.035186768, 0.0047416687, 0.001253128, -0.008674622, 0.076171875, -0.0034694672, -0.04019165, 0.028152466, -0.009399414, 0.03253174, 0.006011963, -0.03250122, 0.029403687, -0.06561279, 0.015594482, 0.0011548996, -0.022094727, -0.007980347, -0.01071167, 0.035827637, -0.041900635, 0.028900146, 0.028182983, '-0.0'::FLOAT, -0.07574463, -0.02609253, 0.010986328,            │
+│ 0.049438477, -0.06738281, -0.06390381, -0.01083374, -0.07293701, 0.019088745, -0.027618408, 0.006160736, 0.027420044, 0.048706055, 0.07354736, -0.022125244, -0.059448242, 0.046722412, 0.0380859375, 0.0020332336, 0.013999939, 0.0032730103, -0.025314331, 0.11444092, 0.0028305054, 0.019989014, 0.014671326, 0.052337646, 0.069885254, 0.10913086, 0.01361084, -0.058044434, -0.025405884, -0.07775879,  │
+│ 0.014709473, 0.04486084, 0.015022278, -0.010894775, -0.013771057, -0.031433105, -0.050872803, -0.036712646, -0.101623535, -0.070251465, 0.016143799, -0.06842041, -0.105285645, 0.01171875, 0.0013751984, -0.0055274963, 0.12182617, 0.032318115, 0.0058670044, 0.09375, 0.021743774, -0.087524414, 0.001953125, 0.011024475, 0.08416748, -0.009292603, -0.040985107, 0.045715332, 0.061187744,              │
+│ -0.084472656, -0.0026493073])                                                                                                                                                                                                                                                                                                                                                                                │
+│ ~160 rows                                                                                                                                                                                                                                                                                                                                                                                                    │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Hash Join ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Join Type: SEMI                                                                                                                                                                                                                                                                                                                                                                                              │
+│ Conditions: rowid = rowid                                                                                                                                                                                                                                                                                                                                                                                    │
+│ ~160 rows                                                                                                                                                                                                                                                                                                                                                                                                    │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+                                                                                                                                                                                                        ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+╭─ Seq Scan ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮  ╭─ Projection ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Table: memory.main.p                                                                                                                                                                                                                                                                                                                                                                                         │  │ Projections:                                                                                                                                                                                                                                                                                                                                                                                                 │
+│ Type: Sequential Scan                                                                                                                                                                                                                                                                                                                                                                                        │  │ array_cosine_distance(v, [-0.10015869, 0.04083252, 0.021575928, 0.1060791, 0.051574707, 0.014663696, 0.10180664, -0.03274536, 0.026626587, 0.029968262, -0.049224854, -0.024291992, 0.02809143, 0.022201538, 0.0033740997, -0.046447754, 0.06384277, 0.04815674, 0.015991211, -0.0341796875, -0.040985107, -0.0703125, -0.02015686, 0.044921875, 0.0317688, 0.088134766, 0.026535034, -0.0075683594,         │
+│ Projections: id, v                                                                                                                                                                                                                                                                                                                                                                                           │  │ -0.09875488, 0.04135132, -0.01096344, -0.075805664, -0.04336548, 0.037506104, -0.04937744, 0.028198242, 0.023010254, -0.004272461, 0.012496948, 0.0075187683, -0.041381836, -0.02330017, 0.122924805, -0.0076408386, 0.053955078, -0.008705139, -0.018600464, -0.050445557, 0.05682373, 0.061920166, 0.008720398, -0.015296936, 0.025131226, 0.011276245, 0.011459351, 0.034576416, 0.01777649,              │
+│ ~160 rows                                                                                                                                                                                                                                                                                                                                                                                                    │  │ -0.034698486, 0.028625488, 0.07330322, 0.04714966, -0.050201416, -0.0657959, 0.03262329, -0.026321411, -0.061767578, -0.035186768, 0.1003418, 0.0400390625, 0.046783447, -0.006477356, 0.06213379, -0.004512787, -0.013900757, -0.020004272, -0.050994873, 0.014442444, -0.07092285, 0.0335083, 0.06878662, -0.0152282715, 0.0061683655, 0.029586792, 0.078125, -0.02961731, 0.025985718, 0.16516113,        │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯  │ -0.07696533, -0.062927246, -0.054840088, -0.0006489754, 0.03466797, 0.0473938, 0.023223877, -0.087890625, -0.06124878, -0.023223877, 0.0302734375, -0.039093018, -0.02027893, -0.029968262, 0.0060577393, -0.028869629, 0.025924683, 0.048919678, -0.02142334, -0.020889282, -0.093811035, 0.11401367, 0.0021839142, -0.048858643, -0.043762207, -0.12182617, 0.01574707, -0.0132369995, 0.008285522,        │
+                                                                                                                                                                                                                                                                                                                                                                                                                  │ 0.08728027, 1.579523e-05, -0.009239197, 0.0035381317, 0.013885498, -0.027450562, -0.025741577, 0.008674622, -0.009300232, -0.041931152, 0.03869629, '-0.0'::FLOAT, -0.025787354, 0.057250977, -0.03253174, 0.06994629, 0.1361084, -0.027648926, -0.007583618, 0.07647705, -0.037109375, 0.060333252, 0.003189087, 0.09197998, -0.05618286, 0.0647583, 0.058166504, -0.051452637, -0.004207611, 0.08074951,   │
+                                                                                                                                                                                                                                                                                                                                                                                                                  │ -0.028213501, -0.042633057, -0.0041923523, -0.024765015, 0.06524658, 0.032592773, -0.016113281, 0.012771606, -0.0026340485, -0.06323242, 0.006061554, 0.008796692, -0.024841309, 0.0059318542, -0.004711151, 0.019927979, -0.122802734, -0.036956787, -0.115478516, -0.015106201, 0.12158203, 0.098083496, -0.0725708, -0.0031089783, 0.07281494, -0.03665161, 0.030410767, 0.0012016296, -0.036590576,      │
+                                                                                                                                                                                                                                                                                                                                                                                                                  │ 0.074645996, -0.016189575, -0.009796143, -0.010292053, -0.035888672, 0.045806885, 0.053894043, -0.010818481, -0.06451416, 0.002910614, 0.015220642, 0.0576171875, -0.010787964, -0.045288086, 0.0015239716, 0.016143799, -0.0385437, -0.009208679, -0.017745972, 0.036956787, -0.009628296, 0.05392456, -0.025863647, 0.016433716, 0.033813477, -0.024871826, 0.0064849854, 0.025741577, 0.006286621,        │
+                                                                                                                                                                                                                                                                                                                                                                                                                  │ -0.013954163, -0.051513672, -0.10266113, -0.05255127, 0.031097412, -0.13500977, 0.012969971, -0.023651123, -0.00055933, -0.018234253, 0.008766174, 0.030380249, -0.012550354, -0.0014162064, -0.07904053, -0.026138306, -0.008491516, 0.017166138, -0.06793213, 0.0, 0.114746094, -0.14050293, -0.0118637085, 0.04638672, 0.014595032, 0.019470215, 0.03439331, -0.0524292, -0.074157715, 0.04547119,        │
+                                                                                                                                                                                                                                                                                                                                                                                                                  │ 0.040618896, -0.050079346, 0.01737976, 0.03111267, 0.025741577, 0.040618896, -0.0361328125, 0.013702393, -0.08404541, 0.031463623, -0.064208984, 0.025970459, -0.0748291, 0.096191406, -0.011474609, -0.00756073, -0.05178833, -0.1340332, -0.04525757, 0.09063721, -0.12768555, -0.026733398, -0.04660034, -0.019760132, 0.0635376, 0.00091934204, 0.050048828, 0.0037117004, 0.034576416, 0.057159424,     │
+                                                                                                                                                                                                                                                                                                                                                                                                                  │ 0.03149414, 0.0361328125, 0.08129883, 0.07244873, 0.00737381, 0.0076675415, -0.11883545, 0.05618286, -0.037963867, 0.09631348, 0.034484863, -0.09222412, -0.04864502, 0.012298584, -0.0637207, -0.008522034, -0.0439453125, -0.012840271, -0.0023441315, 0.011169434, -0.03869629, -0.035858154, 0.01008606, 0.0263671875, 0.0017442703, 0.0836792, -0.034332275, 0.025665283, 0.04421997, -0.05166626,      │
+                                                                                                                                                                                                                                                                                                                                                                                                                  │ 0.16955566, 0.010864258, 0.035186768, 0.0047416687, 0.001253128, -0.008674622, 0.076171875, -0.0034694672, -0.04019165, 0.028152466, -0.009399414, 0.03253174, 0.006011963, -0.03250122, 0.029403687, -0.06561279, 0.015594482, 0.0011548996, -0.022094727, -0.007980347, -0.01071167, 0.035827637, -0.041900635, 0.028900146, 0.028182983, '-0.0'::FLOAT, -0.07574463, -0.02609253, 0.010986328,            │
+                                                                                                                                                                                                                                                                                                                                                                                                                  │ 0.049438477, -0.06738281, -0.06390381, -0.01083374, -0.07293701, 0.019088745, -0.027618408, 0.006160736, 0.027420044, 0.048706055, 0.07354736, -0.022125244, -0.059448242, 0.046722412, 0.0380859375, 0.0020332336, 0.013999939, 0.0032730103, -0.025314331, 0.11444092, 0.0028305054, 0.019989014, 0.014671326, 0.052337646, 0.069885254, 0.10913086, 0.01361084, -0.058044434, -0.025405884, -0.07775879,  │
+                                                                                                                                                                                                                                                                                                                                                                                                                  │ 0.014709473, 0.04486084, 0.015022278, -0.010894775, -0.013771057, -0.031433105, -0.050872803, -0.036712646, -0.101623535, -0.070251465, 0.016143799, -0.06842041, -0.105285645, 0.01171875, 0.0013751984, -0.0055274963, 0.12182617, 0.032318115, 0.0058670044, 0.09375, 0.021743774, -0.087524414, 0.001953125, 0.011024475, 0.08416748, -0.009292603, -0.040985107, 0.045715332, 0.061187744,              │
+                                                                                                                                                                                                                                                                                                                                                                                                                  │ -0.084472656, -0.0026493073]), rowid                                                                                                                                                                                                                                                                                                                                                                         │
+                                                                                                                                                                                                                                                                                                                                                                                                                  │ ~160 rows                                                                                                                                                                                                                                                                                                                                                                                                    │
+                                                                                                                                                                                                                                                                                                                                                                                                                  ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+                                                                                                                                                                                                                                                                                                                                                                                                                  ╭─ Hnsw Index Scan ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+                                                                                                                                                                                                                                                                                                                                                                                                                  │ Table: p                                                                                                                                                                                                                                                                                                                                                                                                     │
+                                                                                                                                                                                                                                                                                                                                                                                                                  │ HNSW Index: vectors                                                                                                                                                                                                                                                                                                                                                                                          │
+                                                                                                                                                                                                                                                                                                                                                                                                                  │ Projections: v                                                                                                                                                                                                                                                                                                                                                                                               │
+                                                                                                                                                                                                                                                                                                                                                                                                                  │ ~160 rows                                                                                                                                                                                                                                                                                                                                                                                                    │
+                                                                                                                                                                                                                                                                                                                                                                                                                  ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+ [('p0000100',), ('p0000120',), ('p0000080',), ('p0000140',), ('p0000060',)]
+RUN modules\11_embedded\use_case\catalog_recovery.py
+[{'backend': 'chroma', 'deleted': 'p0000100', 'restored': ['p0000100', 'p0000120', 'p0000080', 'p0000140', 'p0000060'], 'snapshot': 'logical reimport into a newly created collection'}, {'backend': 'lancedb', 'deleted': 'p0000100', 'restored': ['p0000100', 'p0000120', 'p0000080', 'p0000140', 'p0000060'], 'snapshot': 'logical reimport into a newly created collection'}, {'backend': 'duckdb', 'deleted': 'p0000100', 'restored': ['p0000100', 'p0000120', 'p0000080', 'p0000140', 'p0000060'], 'snapshot': 'logical reimport into a newly created collection'}]
+Evidence: .cache\marlowe\tier3\measurements\embedded-restore-355f84a8.json
+RUN modules\12_pgvector\examples\01_from_scratch.py
+{'id': 'p0000040', 'seller_id': 'seller-040', 'price': 34.18}
+SKIP Docker example: modules\12_pgvector\examples\02_production.py
+SKIP Docker example: modules\12_pgvector\examples\03_measure.py
+SKIP Docker example: modules\12_pgvector\examples\04_hybrid_sql.py
+SKIP Docker example: modules\12_pgvector\examples\05_pgvectorscale.py
+SKIP Docker example: modules\12_pgvector\use_case\regional_inventory.py
+RUN modules\13_qdrant\examples\01_from_scratch.py
+eligible IDs ['p0000000', 'p0000004', 'p0000007', 'p0000009', 'p0000013', 'p0000019', 'p0000023', 'p0000030', 'p0000031', 'p0000037', 'p0000040', 'p0000049', 'p0000058', 'p0000064', 'p0000068', 'p0000069', 'p0000092', 'p0000093', 'p0000098', 'p0000108', 'p0000109', 'p0000111', 'p0000112', 'p0000118', 'p0000119', 'p0000129', 'p0000130', 'p0000132', 'p0000133', 'p0000150', 'p0000157', 'p0000158']
+SKIP Docker example: modules\13_qdrant\examples\02_production.py
+SKIP Docker example: modules\13_qdrant\examples\03_measure.py
+SKIP Docker example: modules\13_qdrant\examples\04_hybrid_multivector.py
+SKIP Docker example: modules\13_qdrant\examples\05_snapshots_tenants.py
+SKIP Docker example: modules\13_qdrant\use_case\seller_isolation.py
+RUN modules\14_weaviate\examples\01_from_scratch.py
+0 SKU exact match [1.0, 0.25, 0.0]
+0.5 SKU exact match [0.6470588235294117, 0.625, 0.0]
+1 semantic alternative [0.2941176470588235, 1.0, 0.0]
+SKIP Docker example: modules\14_weaviate\examples\02_production.py
+SKIP Docker example: modules\14_weaviate\examples\03_measure.py
+SKIP Docker example: modules\14_weaviate\examples\04_tenants_generation.py
+SKIP Docker example: modules\14_weaviate\examples\05_backup.py
+SKIP Docker example: modules\14_weaviate\examples\06_local_generation.py
+SKIP Docker example: modules\14_weaviate\use_case\sku_or_meaning.py
+RUN modules\15_milvus\examples\01_from_scratch.py
+reader applied through version 1 {'boot': 'in stock'} version 2 {'boot': 'retired'}
+SKIP Docker example: modules\15_milvus\examples\02_production.py
+SKIP Docker example: modules\15_milvus\examples\03_measure.py
+SKIP Docker example: modules\15_milvus\examples\04_hybrid_bm25.py
+SKIP Docker example: modules\15_milvus\examples\05_partitions_consistency.py
+SKIP Docker example: modules\15_milvus\examples\06_disk_index.py
+SKIP Docker example: modules\15_milvus\use_case\retired_listing.py
+RUN modules\16_landscape\examples\01_from_scratch.py
+incompatible fields ['concurrency', 'recall_target']
+RUN modules\16_landscape\examples\02_production.py
+HTTP contract restored [{'id': 'p0000040', 'score': 0.5530322194099426, 'metadata': {'region': 'north'}}, {'id': 'p0000000', 'score': 0.532030463218689, 'metadata': {'region': 'north'}}, {'id': 'p0000049', 'score': 0.5051038265228271, 'metadata': {'region': 'north'}}, {'id': 'p0000023', 'score': 0.4039773941040039, 'metadata': {'region': 'north'}}, {'id': 'p0000064', 'score': 0.32273173332214355, 'metadata': {'region': 'north'}}]
+RUN modules\16_landscape\examples\03_measure.py
+lesson-duckdb-20261105T204113-443b61ed {'p50_ms': 1.2917999999999998, 'p95_ms': 2.514, 'p99_ms': 2.80792, 'samples': 36, 'recall_at_k': 1.0, 'strict_id_recall_at_k': 1.0, 'precision_at_k': 0.23333333333333328, 'mrr': 0.3333333333333333, 'ndcg_at_k': 0.6666666666666666, 'qps': 689.8880952286951, 'qps_std': 65.31099886438601, 'insertion_seconds': 0.854413699998986, 'index_build_seconds': 1.500011421740055e-06, 'persisted_bytes': 439202, 'index_payload_bytes': None, 'errors': 0, 'error_rate': 0.0}
+duckdb 689.8880952286951 41e4078d7fac
+lesson-sqlite-vec-20261105T204115-b3dbe963 {'p50_ms': 0.2126, 'p95_ms': 0.3639, 'p99_ms': 0.43031499999999995, 'samples': 36, 'recall_at_k': 1.0, 'strict_id_recall_at_k': 1.0, 'precision_at_k': 0.23333333333333328, 'mrr': 0.3333333333333333, 'ndcg_at_k': 0.6666666666666666, 'qps': 4391.670310264148, 'qps_std': 150.48301548336437, 'insertion_seconds': 0.1811007999931462, 'index_build_seconds': 3.9000005926936865e-06, 'persisted_bytes': 425984, 'index_payload_bytes': None, 'errors': 0, 'error_rate': 0.0}
+sqlite-vec 4391.670310264148 41e4078d7fac
+SKIP Docker example: modules\16_landscape\examples\04_elasticsearch.py
+SKIP Docker example: modules\16_landscape\examples\05_redis.py
+SKIP Docker example: modules\16_landscape\examples\06_mongodb.py
+SKIP Docker example: modules\16_landscape\examples\07_vespa.py
+RUN modules\16_landscape\examples\08_faiss_service.py
+[{'id': 'p0000100', 'score': 0.5686061978340149, 'metadata': {}}, {'id': 'p0000120', 'score': 0.5635302066802979, 'metadata': {}}, {'id': 'p0000080', 'score': 0.5616756081581116, 'metadata': {}}, {'id': 'p0000140', 'score': 0.5567185878753662, 'metadata': {}}, {'id': 'p0000060', 'score': 0.5554159879684448, 'metadata': {}}] {'repetitions': 5, 'milliseconds': [1.0011999984271824, 1.2375999940559268, 1.168300019344315, 1.1167999764438719, 1.0964999964926392], 'median_ms': 1.1167999764438719}
+Evidence: .cache\marlowe\tier3\measurements\faiss-http-8e7827ff.json
+RUN modules\16_landscape\examples\09_managed_cost.py
+Illustrative dollars, not vendor quotes: 5 15.0
+RUN modules\16_landscape\use_case\select_a_database.py
+engines meeting recall 0.95 and 20ms p95 ['chroma', 'duckdb', 'lancedb', 'milvus', 'mongodb', 'redis', 'sqlite-vec']
+A user's transactions, search features and operational capacity determine the final choice.
+RUN modules\17_product_search\examples\01_from_scratch.py
+{'text': 'mug warmer', 'filter': {'op': 'and', 'clauses': [{'op': 'lt', 'field': 'price', 'value': 100.0}, {'op': 'gt', 'field': 'stock', 'value': 0}, {'op': 'eq', 'field': 'region', 'value': 'north'}]}, 'warnings': ()}
+('Ambiguous constraint: use the explicit filter controls.',)
+RUN modules\17_product_search\examples\02_production.py
+              Application BM25 + dense RRF - 4.11 ms              
+┌──────────┬────────┬──────────────────────────┬────────┬────────┐
+│ ID       │ Score  │ Product                  │ Price  │ Region │
+├──────────┼────────┼──────────────────────────┼────────┼────────┤
+│ p0000040 │ 0.0318 │ Navy ceramic mug warmer  │ $34.18 │ north  │
+│ p0000320 │ 0.0318 │ Navy ceramic mug warmer  │ $27.84 │ north  │
+│ p0000000 │ 0.0315 │ Coral ceramic mug warmer │ $21.83 │ north  │
+│ p0000360 │ 0.0315 │ Teal ceramic mug warmer  │ $26.83 │ north  │
+│ p0000240 │ 0.0313 │ Gold ceramic mug warmer  │ $30.14 │ north  │
+└──────────┴────────┴──────────────────────────┴────────┴────────┘
+    Native Qdrant sparse-count + dense RRF (untimed) - 0.00 ms    
+┌──────────┬────────┬──────────────────────────┬────────┬────────┐
+│ ID       │ Score  │ Product                  │ Price  │ Region │
+├──────────┼────────┼──────────────────────────┼────────┼────────┤
+│ p0000360 │ 1.0000 │ Teal ceramic mug warmer  │ $26.83 │ north  │
+│ p0000320 │ 0.6667 │ Navy ceramic mug warmer  │ $27.84 │ north  │
+│ p0000340 │ 0.5000 │ Navy ceramic mug warmer  │ $33.53 │ north  │
+│ p0000000 │ 0.3429 │ Coral ceramic mug warmer │ $21.83 │ north  │
+│ p0000240 │ 0.3333 │ Gold ceramic mug warmer  │ $30.14 │ north  │
+└──────────┴────────┴──────────────────────────┴────────┴────────┘
+RUN modules\17_product_search\examples\03_measure.py
+{'dense': {'ids': ['p0000329', 'p0000769', 'p0000429', 'p0000229', 'p0000709', 'p0000189', 'p0000069', 'p0000809', 'p0000929', 'p0000889'], 'ndcg10': 0.0, 'timings_ms': {'retrieval': 1.9366000196896493, 'reranking': 0.006699992809444666}}, 'hybrid': {'ids': ['p0000031', 'p0000329', 'p0000769', 'p0000429', 'p0000229', 'p0000709', 'p0000189', 'p0000069', 'p0000809', 'p0000929'], 'ndcg10': 1.0, 'timings_ms': {'retrieval': 1.4190000074449927, 'reranking': 0.05709999823011458}}, 'lexical': {'ids': ['p0000031'], 'ndcg10': 1.0, 'timings_ms': {'retrieval': 0.07499998901039362, 'reranking': 0.04700000863522291}}}
+Evidence: .cache\marlowe\tier4\measurements\product-ranking-bf7ce715.json
+RUN modules\17_product_search\examples\04_reranking.py
+The Transformer `cache_dir` argument is deprecated. Please pass `cache_dir` via `model_kwargs`, `processor_kwargs`, and/or `config_kwargs` instead.
+
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]
+Loading weights:   9%|▊         | 9/105 [00:00<00:01, 74.62it/s]
+Loading weights:  28%|██▊       | 29/105 [00:00<00:00, 136.56it/s]
+Loading weights: 100%|██████████| 105/105 [00:00<00:00, 375.39it/s]
+              Reranking with identifier policy - 35569.45 ms              
+┌──────────┬──────────┬────────────────────────────────┬────────┬────────┐
+│ ID       │ Score    │ Product                        │ Price  │ Region │
+├──────────┼──────────┼────────────────────────────────┼────────┼────────┤
+│ p0000031 │ -11.4087 │ Gold stretch exercise mat      │ $27.91 │ north  │
+│ p0000038 │ -11.0528 │ Coral rechargeable hand warmer │ $23.43 │ east   │
+│ p0000018 │ -11.0557 │ Coral rechargeable hand warmer │ $16.67 │ south  │
+│ p0000043 │ -11.1034 │ Navy adjustable desk lamp      │ $24.08 │ west   │
+│ p0000020 │ -11.2235 │ Coral ceramic mug warmer       │ $32.74 │ west   │
+└──────────┴──────────┴────────────────────────────────┴────────┴────────┘
+RUN modules\17_product_search\examples\05_multilingual.py
+{'MiniLM': 0.0, 'Qwen': 1.0}
+Evidence: .cache\marlowe\tier4\measurements\multilingual-6ab2fe23.json
+RUN modules\17_product_search\use_case\marlowe.py
+                       Marlowe v2 - 3.59 ms                       
+┌──────────┬────────┬──────────────────────────┬────────┬────────┐
+│ ID       │ Score  │ Product                  │ Price  │ Region │
+├──────────┼────────┼──────────────────────────┼────────┼────────┤
+│ p0000360 │ 0.0315 │ Teal ceramic mug warmer  │ $26.83 │ north  │
+│ p0000040 │ 0.0313 │ Navy ceramic mug warmer  │ $34.18 │ north  │
+│ p0000320 │ 0.0312 │ Navy ceramic mug warmer  │ $27.84 │ north  │
+│ p0000000 │ 0.0309 │ Coral ceramic mug warmer │ $21.83 │ north  │
+│ p0000240 │ 0.0308 │ Gold ceramic mug warmer  │ $30.14 │ north  │
+└──────────┴────────┴──────────────────────────┴────────┴────────┘
+{'filters': {'op': 'and', 'clauses': [{'op': 'lt', 'field': 'price', 'value': 100.0}, {'op': 'gt', 'field': 'stock', 'value': 0}, {'op': 'eq', 'field': 'region', 'value': 'north'}]}, 'warnings': ()}
+RUN modules\18_rag\examples\01_from_scratch.py
+help-000#procedure:0 help-000#procedure Returns for a buyer in the north region
+Open Orders, choose the item, and select Request return within 30 days of delivery. This procedure applies to the buyer
+help-000#procedure:15 help-000#procedure Returns for a buyer in the north region
+procedure applies to the buyer account in the north region. Keep the order or listing ID when contacting support. Never
+help-000#procedure:30 help-000#procedure Returns for a buyer in the north region
+ID when contacting support. Never include payment credentials.
+RUN modules\18_rag\examples\02_production.py
+                      Retrieved policy evidence - 1.03 ms                      
+┌──────────────────────┬────────┬────────────────────────────┬───────┬────────┐
+│ ID                   │ Score  │ Product                    │ Price │ Region │
+├──────────────────────┼────────┼────────────────────────────┼───────┼────────┤
+│ help-000#procedure:0 │ 0.7190 │ Returns for a buyer in the │ —     │ north  │
+│                      │        │ north region               │       │        │
+│ help-001#procedure:0 │ 0.6501 │ Refunds for a buyer in the │ —     │ north  │
+│                      │        │ north region               │       │        │
+│ help-009#procedure:0 │ 0.6118 │ Payment for a buyer in the │ —     │ north  │
+│                      │        │ north region               │       │        │
+│ help-005#procedure:0 │ 0.5909 │ Cancellation for a buyer   │ —     │ north  │
+│                      │        │ in the north region        │       │        │
+└──────────────────────┴────────┴────────────────────────────┴───────┴────────┘
+['help-000#procedure', 'help-001#procedure', 'help-009#procedure', 'help-005#procedure']
+RUN modules\18_rag\examples\03_measure.py
+{'exact_passage_recall4': 1.0, 'ann_passage_recall4': 1.0, 'lsh_passage_recall4': 0.0375, 'lsh_config': {'bits': 10, 'tables': 1, 'filter_policy': 'post'}, 'ann_config': {'kind': 'ivf', 'nlist': 8, 'nprobe': 1, 'filter_policy': 'post', 'oversample': 1}, 'scope': '80 answerable synthetic questions. Generation on six stratified questions per index. Small diagnostic, not a population faithfulness estimate.', 'empty_evidence': {'answer': 'I do not have enough evidence in the help center.', 'citations': [], 'citation_validity': None, 'abstained': True, 'generation_ms': 0.0}}
+Evidence: .cache\marlowe\tier4\measurements\rag-index-quality-e4bc2033.json
+SKIP Docker example: modules\18_rag\examples\04_generation.py
+RUN modules\18_rag\examples\05_abstention.py
+{'answer': 'I do not have enough evidence in the help center.', 'citations': [], 'citation_validity': None, 'abstained': True, 'generation_ms': 0.0}
+RUN modules\18_rag\use_case\marlowe.py
+help-000#procedure Returns for a buyer in the north region
+Open Orders, choose the item, and select Request return within 30 days of delivery. This procedure applies to the buyer account in the north region. Keep the order or listing ID when contacting support. Never include payment credentials.
+help-001#procedure Refunds for a buyer in the north region
+A refund is issued to the original payment method within 5 business days after inspection. This procedure applies to the buyer account in the north region. Keep the order or listing ID when contacting support. Never include payment credentials.
+help-009#procedure Payment for a buyer in the north region
+Check the payment details and available funds, then retry once. Do not send card numbers in a support message. This procedure applies to the buyer account in the north region. Keep the order or listing ID when contacting support. Never include payment credentials.
+help-005#procedure Cancellation for a buyer in the north region
+Use Cancel order before the seller marks it dispatched. After dispatch, use the return process. This procedure applies to the buyer account in the north region. Keep the order or listing ID when contacting support. Never include payment credentials.
+RUN modules\19_recommendations\examples\01_from_scratch.py
+1.0 ['red-mug', 'red-mug-copy']
+0.7 ['red-mug', 'red-mug-copy']
+0.2 ['red-mug', 'blue-travel-cup']
+RUN modules\19_recommendations\examples\02_production.py
+{'seen': ['p0000000'], 'recommendations': ['p0000620', 'p0000720', 'p0000660', 'p0000160', 'p0000500', 'p0000960', 'p0000460', 'p0000760', 'p0000580', 'p0000020']}
+RUN modules\19_recommendations\examples\03_measure.py
+{'development': {'threshold': 0.9348549246788025, 'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'tp': 160, 'fp': 0, 'fn': 0, 'pairs': 320}, 'test': {'threshold': 0.9348549246788025, 'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'tp': 40, 'fp': 0, 'fn': 0, 'pairs': 80}}
+Evidence: .cache\marlowe\tier4\measurements\duplicates-b62ec632.json
+RUN modules\19_recommendations\examples\04_review_themes.py
+{'cluster': 0, 'count': 139, 'words': ['useful', 'cable', 'organizer', 'travel', 'table'], 'exemplar': 105, 'text': 'The folding balcony table was useful. Both country town term hair while sort technology pay stand how.'}
+{'cluster': 1, 'count': 40, 'words': ['pet', 'comfortable', 'expected', 'washable', 'bed'], 'exemplar': 348, 'text': 'The reusable pet hair brush was less comfortable than expected. East dinner road someone agreement special discussion.'}
+{'cluster': 2, 'count': 64, 'words': ['warmer', 'comfortable', 'expected', 'hand', 'ceramic'], 'exemplar': 60, 'text': 'The ceramic mug warmer was less comfortable than expected. New quite small town suffer thought light interview.'}
+{'cluster': 3, 'count': 36, 'words': ['jars', 'pantry', 'stackable', 'basket', 'storage'], 'exemplar': 92, 'text': 'The stackable pantry jars was less comfortable than expected. Answer recognize whatever day response.'}
+{'cluster': 4, 'count': 40, 'words': ['cape', 'lightweight', 'rain', 'boots', 'hiking'], 'exemplar': 282, 'text': 'The waterproof hiking boots was useful. Despite lay nature same perhaps mind beautiful trial paper.'}
+{'cluster': 5, 'count': 81, 'words': ['useful', 'garden', 'kneeling', 'pad', 'exercise'], 'exemplar': 233, 'text': 'The garden kneeling pad was useful. Involve how situation old style.'}
+[{'id': 'review-0000089', 'text': 'The quiet wall clock was useful. Race site thing and expect he brother truth no apply.'}, {'id': 'review-0000297', 'text': 'The pocket sketchbook was useful. College sometimes government be understand treatment test risk.'}, {'id': 'review-0000177', 'text': 'The pocket sketchbook was useful. Spring girl just appear fear attorney listen.'}, {'id': 'review-0000389', 'text': 'The quiet wall clock was useful. Determine born dream process account sister police color fill edge well.'}, {'id': 'review-0000030', 'text': 'The travel cable organizer was useful. Start performance however claim cause national pay you even physical.'}, {'id': 'review-0000017', 'text': 'The pocket sketchbook was useful. Choose possible unit well treatment commercial should key product.'}, {'id': 'review-0000147', 'text': 'The soft woven throw was useful. Just democratic democratic never technology build growth society policy.'}, {'id': 'review-0000317', 'text': 'The pocket sketchbook was useful. Property finish consumer able property sister.'}, {'id': 'review-0000169', 'text': 'The quiet wall clock was useful. Agent safe recently bar commercial matter PM appear happy particular.'}, {'id': 'review-0000069', 'text': 'The quiet wall clock was useful. Expert difference hundred clearly claim even teacher stop.'}]
+Evidence: .cache\marlowe\tier4\measurements\review-themes-9ad2a3cc.json
+RUN modules\19_recommendations\use_case\marlowe.py
+[{'id': 'p0000620', 'category': 'kitchen', 'kind': 0, 'price': 34.59, 'stock': 8, 'seller_id': 'seller-020', 'region': 'south', 'sku': 'MM-00-0000620', 'color': 'coral', 'tags': ['kitchen', 'coral', 'synthetic'], 'title': 'Coral ceramic mug warmer'}, {'id': 'p0000720', 'category': 'kitchen', 'kind': 0, 'price': 26.88, 'stock': 3, 'seller_id': 'seller-120', 'region': 'east', 'sku': 'MM-00-0000720', 'color': 'coral', 'tags': ['kitchen', 'coral', 'synthetic'], 'title': 'Coral ceramic mug warmer'}, {'id': 'p0000660', 'category': 'kitchen', 'kind': 0, 'price': 23.47, 'stock': 3, 'seller_id': 'seller-060', 'region': 'west', 'sku': 'MM-00-0000660', 'color': 'coral', 'tags': ['kitchen', 'coral', 'synthetic'], 'title': 'Coral ceramic mug warmer'}, {'id': 'p0000160', 'category': 'kitchen', 'kind': 0, 'price': 29.39, 'stock': 0, 'seller_id': 'seller-160', 'region': 'south', 'sku': 'MM-00-0000160', 'color': 'coral', 'tags': ['kitchen', 'coral', 'synthetic'], 'title': 'Coral ceramic mug warmer'}, {'id': 'p0000500', 'category': 'kitchen', 'kind': 0, 'price': 32.21, 'stock': 15, 'seller_id': 'seller-200', 'region': 'west', 'sku': 'MM-00-0000500', 'color': 'coral', 'tags': ['kitchen', 'coral', 'synthetic'], 'title': 'Coral ceramic mug warmer'}]
+{'score': 0.9434516429901123, 'threshold': 0.95, 'review_candidate': False, 'action': 'Review both listings before merging'}
+RUN modules\20_multimodal\examples\01_from_scratch.py
+[('p0000000', 0.10293560475111008), ('p0000018', 0.10293560475111008), ('p0000020', 0.10293560475111008), ('p0000038', 0.10293560475111008), ('p0000049', 0.10293560475111008)]
+RUN modules\20_multimodal\examples\02_production.py
+                           Text to image - 2.86 ms                           
+┌──────────┬────────┬─────────────────────────────────────┬────────┬────────┐
+│ ID       │ Score  │ Product                             │ Price  │ Region │
+├──────────┼────────┼─────────────────────────────────────┼────────┼────────┤
+│ p0000160 │ 0.0164 │ Coral ceramic mug warmer            │ $29.39 │ south  │
+│ p0000049 │ 0.0161 │ Coral ceramic mug warmer - relisted │ $21.83 │ north  │
+│ p0000020 │ 0.0159 │ Coral ceramic mug warmer            │ $32.74 │ west   │
+│ p0000018 │ 0.0156 │ Coral rechargeable hand warmer      │ $16.67 │ south  │
+│ p0000038 │ 0.0154 │ Coral rechargeable hand warmer      │ $23.43 │ east   │
+│ p0000078 │ 0.0152 │ Coral rechargeable hand warmer      │ $28.20 │ east   │
+│ p0000098 │ 0.0149 │ Coral rechargeable hand warmer      │ $29.02 │ north  │
+│ p0000088 │ 0.0147 │ Coral reusable pet hair brush       │ $12.10 │ south  │
+│ p0000012 │ 0.0145 │ Coral stackable pantry jars         │ $20.74 │ east   │
+│ p0000008 │ 0.0143 │ Coral reusable pet hair brush       │ $19.88 │ west   │
+└──────────┴────────┴─────────────────────────────────────┴────────┴────────┘
+RUN modules\20_multimodal\examples\03_measure.py
+{'text_to_image': 0.5222943560566855, 'photo': 0.5790738223746781, 'fused': 0.7121074571047047}
+200 synthetic Pillow illustrations. Exact query image ID excluded. Repeated drawing templates still make this easier than photographs. No real-photo generalization claim.
+Evidence: .cache\marlowe\tier4\measurements\photo-search-08f3865b.json
+RUN modules\20_multimodal\examples\04_fusion.py
+0.0 [('blue-mug', 0.01639344262295082), ('red-mug', 0.016129032258064516)]
+0.5 [('blue-mug', 0.01626123744050767), ('red-mug', 0.01626123744050767)]
+1.0 [('red-mug', 0.01639344262295082), ('blue-mug', 0.016129032258064516)]
+RUN modules\20_multimodal\use_case\marlowe.py
+               Marlowe v5 photo discovery (untimed) - 0.00 ms                
+┌──────────┬────────┬─────────────────────────────────────┬────────┬────────┐
+│ ID       │ Score  │ Product                             │ Price  │ Region │
+├──────────┼────────┼─────────────────────────────────────┼────────┼────────┤
+│ p0000020 │ 0.0161 │ Coral ceramic mug warmer            │ $32.74 │ west   │
+│ p0000049 │ 0.0159 │ Coral ceramic mug warmer - relisted │ $21.83 │ north  │
+│ p0000018 │ 0.0156 │ Coral rechargeable hand warmer      │ $16.67 │ south  │
+│ p0000038 │ 0.0153 │ Coral rechargeable hand warmer      │ $23.43 │ east   │
+│ p0000160 │ 0.0152 │ Coral ceramic mug warmer            │ $29.39 │ south  │
+└──────────┴────────┴─────────────────────────────────────┴────────┴────────┘
+RUN modules\21_operations\examples\01_from_scratch.py
+{'acknowledged_rows': 100, 'batches': 7, 'max_pending_batches': 2, 'seconds': 0.0020272000110708177} {'physical_rows_before': 200, 'physical_rows_after': 90, 'reclaimed_versions': 110}
+Replay preserves identity; deletion hides rows before reclamation.
+SKIP Docker example: modules\21_operations\examples\02_production.py
+RUN modules\21_operations\examples\03_measure.py
+{'ingestion': {'acknowledged_rows': 1000, 'batches': 16, 'max_pending_batches': 2, 'seconds': 0.001047800004016608}, 'compaction': {'physical_rows_before': 2000, 'physical_rows_after': 900, 'reclaimed_versions': 1100}, 'migration_crash_exit': 17, 'rollback': 'blue', 'quality_scores': 'fixture gate inputs, not measured relevance'}
+{'before_bytes': 8220672, 'after_delete_bytes': 8220672, 'after_vacuum_bytes': 2056192, 'free_pages_before': 1503, 'vacuum_seconds': 0.018264499987708405, 'scope': 'Native SQLite pages; not a vector-index rebuild benchmark'}
+{'restore_seconds_including_process_start': 0.5666960000235122, 'backup_watermark': 100, 'last_acknowledged_watermark': 105, 'lost_acknowledged_writes': 5, 'resurrected_deletions': 0, 'restored_rows': 99, 'rpo_scope': 'Five writes; no wall-clock RPO inferred', 'ledger': 'Survives separately from the data backup'}
+RUN modules\21_operations\use_case\marlowe.py
+Restored inventory after deletion replay: ['listing-2']
+Purged snapshots: ['snapshot-a644dc8b94fc43b2a0fa3985ef0a1f9a']
+RUN modules\22_performance\examples\01_from_scratch.py
+4 {'vector_bytes': 30720000000, 'graph_estimate_bytes': 2560000000, 'metadata_estimate_bytes': 2560000000, 'replicas': 2, 'provisioned_bytes': 102400000000, 'scope': 'Planning estimate. Excludes allocator, sparse index, WAL, compaction and temporary build overhead.'}
+2 {'vector_bytes': 15360000000, 'graph_estimate_bytes': 2560000000, 'metadata_estimate_bytes': 2560000000, 'replicas': 2, 'provisioned_bytes': 58514285715, 'scope': 'Planning estimate. Excludes allocator, sparse index, WAL, compaction and temporary build overhead.'}
+1 {'vector_bytes': 7680000000, 'graph_estimate_bytes': 2560000000, 'metadata_estimate_bytes': 2560000000, 'replicas': 2, 'provisioned_bytes': 36571428572, 'scope': 'Planning estimate. Excludes allocator, sparse index, WAL, compaction and temporary build overhead.'}
+Quorum unavailable: simulator, not a measured server outage
+Shard routing: [3, 3, 0, 2, 3, 3, 3, 1, 0, 1, 2, 3]
+Hypothetical USD, not vendor prices: {'compute': 365.0, 'storage': 10.0, 'requests': 0, 'egress': 0, 'operations': 600} total 975.0
+Hypothetical USD, not vendor prices: {'compute': 876.0, 'storage': 10.0, 'requests': 0, 'egress': 0, 'operations': 150} total 1036.0
+RUN modules\22_performance\examples\02_production.py
+{'seed': 42, 'build_seconds': 0.1579900000069756, 'target': {'recall_at_10': 0.9, 'p95_ms': 50}, 'development': {1: {'recall_at_10': 0.6700000000000002, 'p95_ms': 0.12331999460002388, 'samples': 30, 'latencies_ms': [2.055699995253235, 0.15499998698942363, 0.08460000390186906, 0.059699988923966885, 0.050700007705017924, 0.047699984861537814, 0.06990000838413835, 0.06629998097196221, 0.05590001819655299, 0.045199994929134846, 0.05080000846646726, 0.0585000088904053, 0.04469999112188816, 0.04159999662078917, 0.04060001811012626, 0.040399987483397126, 0.05020000389777124, 0.05250002141110599, 0.04119999357499182, 0.04019998596049845, 0.04220000118948519, 0.04500002251006663, 0.04169999738223851, 0.04020001506432891, 0.04029998672194779, 0.05540001438930631, 0.05229999078437686, 0.04800001624971628, 0.04159999662078917, 0.04029998672194779]}, 4: {'recall_at_10': 0.94, 'p95_ms': 0.170460001390893, 'samples': 30, 'latencies_ms': [0.19880000036209822, 0.1571999746374786, 0.12820001575164497, 0.062499981140717864, 0.11940000695176423, 0.12050001532770693, 0.17189999925903976, 0.16870000399649143, 0.10050000855699182, 0.09539999882690609, 0.08800000068731606, 0.11690001701936126, 0.08060000254772604, 0.06019999273121357, 0.07530002039857209, 0.0659999786876142, 0.08519997936673462, 0.10420000762678683, 0.07110001752153039, 0.07229999755509198, 0.06289998418651521, 0.0881000014487654, 0.06819999543949962, 0.05509998300112784, 0.06540000322274864, 0.05829997826367617, 0.06880000000819564, 0.09180000051856041, 0.0667999847792089, 0.06640001083724201]}, 8: {'recall_at_10': 1.0, 'p95_ms': 0.3201400017132979, 'samples': 30, 'latencies_ms': [0.18939998699352145, 0.37990001146681607, 0.17450001905672252, 0.1503000094089657, 0.09610000415705144, 0.13010000111535192, 0.43289997847750783, 0.24709998979233205, 0.12909999350085855, 0.12430001515895128, 0.11970000923611224, 0.11399999493733048, 0.0934000127017498, 0.10050000855699182, 0.0754999928176403, 0.06639998173341155, 0.10380000458098948, 0.10000000474974513, 0.09580000187270343, 0.09710001177154481, 0.08319999324157834, 0.10269999620504677, 0.08090000483207405, 0.07360000745393336, 0.06660001236014068, 0.07380000897683203, 0.11100000119768083, 0.09730001329444349, 0.09499999578110874, 0.09280000813305378]}, 16: {'recall_at_10': 1.0, 'p95_ms': 1.0555400062003173, 'samples': 30, 'latencies_ms': [0.47400000039488077, 0.7268000044859946, 0.6914999976288527, 0.7372999971266836, 0.7247999892570078, 1.0375000128988177, 1.070300000719726, 1.1295000149402767, 0.8837000059429556, 0.9906000050250441, 0.7271000067703426, 1.0153999901376665, 0.6685999978799373, 0.6060000159777701, 0.6133000133559108, 0.5348999984562397, 0.5877999938093126, 0.7252000214066356, 0.6700999801978469, 1.0236000234726816, 0.4822999762836844, 0.6136999872978777, 0.516200001584366, 0.6043000030331314, 0.5601999873761088, 0.5705000075977296, 0.6884000031277537, 0.6249000143725425, 0.6564999930560589, 0.9256999765057117]}, 32: {'recall_at_10': 1.0, 'p95_ms': 1.992345009057317, 'samples': 30, 'latencies_ms': [1.5238999912980944, 1.2712999887298793, 1.2132000119891018, 1.3341000012587756, 1.216199976624921, 1.3313000090420246, 1.0356999991927296, 1.0722999868448824, 1.1642999888863415, 1.0119999933522195, 1.0974000033456832, 1.1209000076632947, 2.0076000073459, 2.787500008707866, 1.9737000111490488, 1.2104999914299697, 1.128499978221953, 1.1984000157099217, 1.0933000012300909, 1.2222000223118812, 0.9558000019751489, 1.0467999964021146, 1.0221000120509416, 1.2790000182576478, 1.6426999936811626, 1.094399980502203, 1.140100008342415, 1.0099999781232327, 0.9966999932657927, 0.9568000095896423]}}, 'chosen_nprobe': 4, 'heldout': {'recall_at_10': 1.0, 'p95_ms': 0.15476000262424341, 'samples': 30, 'latencies_ms': [0.16880000475794077, 0.12000001152046025, 0.18510001245886087, 0.13760000001639128, 0.132200017105788, 0.10820000898092985, 0.12079998850822449, 0.12350000906735659, 0.1109000004362315, 0.12139999307692051, 0.11510000331327319, 0.10340000153519213, 0.13309999485500157, 0.0971999834291637, 0.09539999882690609, 0.09350001346319914, 0.10439998004585505, 0.11480000102892518, 0.1044000091496855, 0.10160001693293452, 0.10720000136643648, 0.09220000356435776, 0.11420002556405962, 0.09220000356435776, 0.09350001346319914, 0.09049999061971903, 0.09839999256655574, 0.11560000712051988, 0.09839999256655574, 0.09670000872574747]}, 'split': 'q000–q009 development; q010–q019 test; only 10 distinct queries per split', 'scope': 'Local IVF routing over exact candidates; ANN recall, not semantic relevance'}
+A held-out miss must be reported; never retune on the test split.
+RUN modules\22_performance\examples\03_measure.py
+{'samples': 50, 'cold_p50_ms': 0.03465000190772116, 'warm_p50_ms': 0.002100015990436077, 'cold_p95_ms': 0.04899999184999613, 'warm_p95_ms': 0.0030400071409530916, 'scope': 'Exact kernel versus in-process cached ranking; not HTTP throughput'}
+Tenant, model, data generation and complete request change the key.
+SKIP Docker example: modules\22_performance\examples\04_cluster.py
+SKIP Docker example: modules\22_performance\examples\05_load.py
+SKIP Docker example: modules\22_performance\examples\06_monitoring.py
+RUN modules\22_performance\use_case\marlowe.py
+Bytes per value 4 replicas 1 provisioned GiB 47.68
+Bytes per value 1 replicas 1 provisioned GiB 17.03
+Bytes per value 4 replicas 2 provisioned GiB 95.37
+Bytes per value 1 replicas 2 provisioned GiB 34.06
+self-hosted {'compute': 365.0, 'storage': 10.0, 'requests': 0, 'egress': 0, 'operations': 600} 975.0
+managed {'compute': 876.0, 'storage': 10.0, 'requests': 0, 'egress': 0, 'operations': 150} 1036.0
+Illustrative prices only. A small immutable catalog may use exact local search with no server.
+RUN modules\23_security_reliability\examples\01_from_scratch.py
+{'op': 'and', 'clauses': [{'op': 'eq', 'field': 'seller_id', 'value': 'seller-a'}, {'op': 'or', 'conditions': [{'op': 'eq', 'field': 'seller_id', 'value': 'seller-b'}]}]}
+{'time': '2026-11-05T20:42:45.244104+00:00', 'subject': 'reader-a', 'tenant': 'seller-a', 'action': '/search', 'outcome': '200', 'request_id': 'demo'}
+Audit records identity and outcome, never request bodies or embeddings.
+SKIP Docker example: modules\23_security_reliability\examples\02_production.py
+RUN modules\23_security_reliability\examples\03_measure.py
+No cross-tenant rows, unauthorized request rejected, deletion survives restart.
+RUN modules\23_security_reliability\use_case\marlowe.py
+{'deleted': 'p0000000', 'generation': 1, 'purged_snapshots': ['snapshot-c4bcfca2581e4e04833302cef8ab9b24'], 'scope': 'Tenant derived text/image indexes, application cache and owned snapshots. Immutable public course fixtures remain unchanged.'}
+RUN modules\bonus\B1_other_languages\examples\01_from_scratch.py
+{'seller': 'seller-000', 'ids': ['p0000000'], 'dimensions': 384}
+SKIP Docker example: modules\bonus\B1_other_languages\examples\02_production.py
+SKIP Docker example: modules\bonus\B1_other_languages\examples\03_weaviate.py
+SKIP Docker example: modules\bonus\B1_other_languages\examples\04_measure.py
+SKIP Docker example: modules\bonus\B1_other_languages\use_case\marlowe.py
+RUN modules\bonus\B2_tinyvec_service\examples\01_from_scratch.py
+acknowledged 1
+recovered sequence 1
+RUN modules\bonus\B2_tinyvec_service\examples\02_production.py
+SQLite committed row survived abrupt process exit; no power-loss claim
+RUN modules\bonus\B2_tinyvec_service\examples\03_measure.py
+D:\Learning_Projects\getting_started_with_vector_databases\results\bonus\durable-service-2438bebf.json
+RUN modules\bonus\B2_tinyvec_service\use_case\marlowe.py
+Withdrawn listings stay withdrawn after checkpoint plus WAL replay.
+RUN modules\bonus\B3_research_benchmarks\examples\01_from_scratch.py
+{'truth': [1, 0], 'candidate': [1, 3], 'recall': np.float64(0.5)}
+No category labels are needed for ANN recall; relevance needs independent judgments.
+SKIP Docker example: modules\bonus\B3_research_benchmarks\examples\02_production.py
+RUN modules\bonus\B3_research_benchmarks\examples\03_measure.py
+{'illustrative_recall': np.float64(0.9000000000000001), 'query_bootstrap_interval': [np.float64(0.8399999999999999), np.float64(0.96)], 'distinct_queries': 10}
+These illustrative scores are not public-dataset measurements. Bootstrap queries, not repeated timestamps.
+RUN modules\bonus\B3_research_benchmarks\use_case\marlowe.py
+{'vector_bytes': 9408000, 'graph_estimate_bytes': 576000, 'metadata_estimate_bytes': 768000, 'replicas': 1, 'provisioned_bytes': 15360001, 'scope': 'Planning estimate. Excludes allocator, sparse index, WAL, compaction and temporary build overhead.'}
+Pixel-space ANN recall is not product-photo relevance. Use SigLIP evaluation separately.
+RUN modules\bonus\B4_whats_new\examples\01_from_scratch.py
+{'first_candidates': [0, 15, 284, 221, 131], 'code_and_rotation_bytes': 26640, 'self_distance': -5.826541112696759e-06}
+Dense unpacking teaches the estimator; it is not a SIMD implementation.
+RUN modules\bonus\B4_whats_new\examples\02_production.py
+[{'factory': 'Flat', 'recall10': 1.0, 'build_seconds': 0.0006193000008352101, 'batch_seconds': 0.0011589000059757382, 'queries': 40, 'serialized_bytes': 1536045}, {'factory': 'RR384,RaBitQ', 'recall10': 0.49000000000000005, 'build_seconds': 0.06836489998386241, 'batch_seconds': 0.0012512000103015453, 'queries': 40, 'serialized_bytes': 647505}, {'factory': 'RR384,RaBitQ4', 'recall10': 0.8375, 'build_seconds': 0.061255999986315146, 'batch_seconds': 0.0034050999965984374, 'queries': 40, 'serialized_bytes': 803513}]
+D:\Learning_Projects\getting_started_with_vector_databases\results\bonus\rabitq-native-ea6e11a3.json
+RUN modules\bonus\B4_whats_new\examples\03_measure.py
+[{'seed': 41, 'build_seconds': 0.018378400010988116, 'payload_bytes': 651360, 'retained_float_bytes': 1536000, 'recall10': 0.465, 'rescored_recall10': 0.9774999999999998, 'mean_absolute_squared_distance_error': 0.05100974929243405, 'p95_ms': 2.77178498217836, 'queries': 40}, {'seed': 42, 'build_seconds': 0.016327000019373372, 'payload_bytes': 651360, 'retained_float_bytes': 1536000, 'recall10': 0.5, 'rescored_recall10': 0.9875, 'mean_absolute_squared_distance_error': 0.05316965177258297, 'p95_ms': 2.70554499438731, 'queries': 40}, {'seed': 43, 'build_seconds': 0.015488100005313754, 'payload_bytes': 651360, 'retained_float_bytes': 1536000, 'recall10': 0.45, 'rescored_recall10': 0.9824999999999999, 'mean_absolute_squared_distance_error': 0.05378284038791609, 'p95_ms': 2.6155999847105686, 'queries': 40}]
+D:\Learning_Projects\getting_started_with_vector_databases\results\bonus\rabitq-scratch-fb0b2f49.json
+RUN modules\bonus\B4_whats_new\use_case\marlowe.py
+[{'id': 'p0000360', 'title': 'Teal ceramic mug warmer'}, {'id': 'p0000280', 'title': 'Teal ceramic mug warmer'}, {'id': 'p0000200', 'title': 'Teal ceramic mug warmer'}, {'id': 'p0000100', 'title': 'Gold ceramic mug warmer'}, {'id': 'p0000120', 'title': 'Teal ceramic mug warmer'}]
+Full vectors remain for rescoring; packed codes are not total memory.
+115 passed; 37 skipped; 0 failed.

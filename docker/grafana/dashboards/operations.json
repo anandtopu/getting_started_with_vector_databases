@@ -1,0 +1,10 @@
+{
+  "uid": "marlowe-operations", "title": "Marlowe operations", "schemaVersion": 39, "version": 1,
+  "time": {"from": "now-15m", "to": "now"}, "refresh": "5s",
+  "panels": [
+    {"id": 1, "type": "stat", "title": "Database scrape available", "gridPos": {"x":0,"y":0,"w":8,"h":6}, "datasource": {"type":"prometheus","uid":"marlowe"}, "targets": [{"refId":"A","expr":"up{job=\"qdrant-secure\"}"}]},
+    {"id": 2, "type": "timeseries", "title": "API completed requests per second", "gridPos": {"x":8,"y":0,"w":16,"h":6}, "datasource": {"type":"prometheus","uid":"marlowe"}, "targets": [{"refId":"A","expr":"sum(rate(marlowe_requests_total[1m]))"}]},
+    {"id": 3, "type": "timeseries", "title": "API p95 seconds", "gridPos": {"x":0,"y":6,"w":12,"h":6}, "datasource": {"type":"prometheus","uid":"marlowe"}, "targets": [{"refId":"A","expr":"histogram_quantile(0.95, sum by (le) (rate(marlowe_request_seconds_bucket[1m])))"}]},
+    {"id": 4, "type": "timeseries", "title": "API overload rejections per second", "gridPos": {"x":12,"y":6,"w":12,"h":6}, "datasource": {"type":"prometheus","uid":"marlowe"}, "targets": [{"refId":"A","expr":"rate(marlowe_rejected_total[1m])"}]}
+  ]
+}

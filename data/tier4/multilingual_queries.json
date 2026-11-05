@@ -1,0 +1,19 @@
+{
+  "format": 1,
+  "model": {
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "dimensions": 1024,
+    "normalized": true,
+    "modality": "text",
+    "query_prefix": "Instruct: Given a product search query, retrieve relevant product listings\nQuery: ",
+    "document_prefix": "",
+    "max_length": 256,
+    "dtype": "float32"
+  },
+  "space": "Qwen/Qwen3-Embedding-0.6B@97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3:10ec043a0fe2f68b",
+  "role": "query",
+  "rows": 50,
+  "content_hash": "cf039adbc91f532324e2fd1cdb82640b2fa7a8e67392f7162825a7af609c2ac9",
+  "sha256": "fa23947881e7a2d64bdefc92ab1aa679e14f83061efaac3aecb26ae8e503e7df"
+}

@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-11-05T16:42:35.423688+00:00",
+  "name": "marlowe-p6-ollama",
+  "image": "docker.io/ollama/ollama@sha256:ebaef4f4c5d93660e1f25f8ad085a112f51ccfb0e8458073e71793959dba91c9",
+  "image_id": "9911eb130fbdc27d0ae4e97e5d7ecb13a33003aa121b48469cb3476fe8dd9ba6",
+  "labels": {
+    "org.marlowe.course": "phase6",
+    "org.opencontainers.image.version": "24.04"
+  },
+  "models": "NAME          ID              SIZE      MODIFIED       \nqwen3:0.6b    7df6b6e09427    522 MB    51 minutes ago    \n",
+  "runtime": "rootless Podman podman-machine-default",
+  "scope": "Only the dedicated course Phase 6 generation container is removed. Shared model caches and image caches are retained.",
+  "cleanup": "Removed; no Phase 6 labeled containers remain"
+}

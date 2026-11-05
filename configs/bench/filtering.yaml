@@ -1,0 +1,5 @@
+feature: filtering
+lesson: 10_filtering_hybrid
+example: examples/03_measure.py
+native: examples/04_lance_hybrid.py
+retrieval_config: tier2/filter-adaptive.yaml

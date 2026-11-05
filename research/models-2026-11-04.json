@@ -1,0 +1,502 @@
+[
+  {
+    "name": "Qwen/Qwen3-Embedding-0.6B",
+    "sha": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B?blobs=true",
+    "checked": "2026-11-04",
+    "cardData": {
+      "license": "apache-2.0",
+      "base_model": [
+        "Qwen/Qwen3-0.6B-Base"
+      ],
+      "tags": [
+        "transformers",
+        "sentence-transformers",
+        "sentence-similarity",
+        "feature-extraction",
+        "text-embeddings-inference"
+      ]
+    },
+    "safetensors": {
+      "parameters": {
+        "BF16": 595776512
+      },
+      "total": 595776512
+    },
+    "files": [
+      {
+        "rfilename": ".gitattributes",
+        "size": 1570
+      },
+      {
+        "rfilename": "1_Pooling/config.json",
+        "size": 313
+      },
+      {
+        "rfilename": "README.md",
+        "size": 17237
+      },
+      {
+        "rfilename": "config.json",
+        "size": 727
+      },
+      {
+        "rfilename": "config_sentence_transformers.json",
+        "size": 215
+      },
+      {
+        "rfilename": "generation_config.json",
+        "size": 117
+      },
+      {
+        "rfilename": "merges.txt",
+        "size": 1671853
+      },
+      {
+        "rfilename": "model.safetensors",
+        "size": 1191586416
+      },
+      {
+        "rfilename": "modules.json",
+        "size": 349
+      },
+      {
+        "rfilename": "tokenizer.json",
+        "size": 11423705
+      },
+      {
+        "rfilename": "tokenizer_config.json",
+        "size": 9706
+      },
+      {
+        "rfilename": "vocab.json",
+        "size": 2776833
+      }
+    ]
+  },
+  {
+    "name": "Qwen/Qwen3-0.6B",
+    "sha": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3-0.6B?blobs=true",
+    "checked": "2026-11-04",
+    "cardData": {
+      "library_name": "transformers",
+      "license": "apache-2.0",
+      "license_link": "https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE",
+      "pipeline_tag": "text-generation",
+      "base_model": [
+        "Qwen/Qwen3-0.6B-Base"
+      ]
+    },
+    "safetensors": {
+      "parameters": {
+        "BF16": 751632384
+      },
+      "total": 751632384
+    },
+    "files": [
+      {
+        "rfilename": ".gitattributes",
+        "size": 1570
+      },
+      {
+        "rfilename": "LICENSE",
+        "size": 11343
+      },
+      {
+        "rfilename": "README.md",
+        "size": 13965
+      },
+      {
+        "rfilename": "config.json",
+        "size": 726
+      },
+      {
+        "rfilename": "generation_config.json",
+        "size": 239
+      },
+      {
+        "rfilename": "merges.txt",
+        "size": 1671853
+      },
+      {
+        "rfilename": "model.safetensors",
+        "size": 1503300328
+      },
+      {
+        "rfilename": "tokenizer.json",
+        "size": 11422654
+      },
+      {
+        "rfilename": "tokenizer_config.json",
+        "size": 9732
+      },
+      {
+        "rfilename": "vocab.json",
+        "size": 2776833
+      }
+    ]
+  },
+  {
+    "name": "google/siglip2-base-patch16-224",
+    "sha": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+    "source": "https://huggingface.co/api/models/google/siglip2-base-patch16-224?blobs=true",
+    "checked": "2026-11-04",
+    "cardData": {
+      "license": "apache-2.0",
+      "tags": [
+        "vision"
+      ],
+      "widget": [
+        {
+          "src": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/bee.jpg",
+          "candidate_labels": "bee in the sky, bee on the flower",
+          "example_title": "Bee"
+        }
+      ],
+      "library_name": "transformers",
+      "pipeline_tag": "zero-shot-image-classification"
+    },
+    "safetensors": {
+      "parameters": {
+        "F32": 375187970
+      },
+      "total": 375187970
+    },
+    "files": [
+      {
+        "rfilename": ".gitattributes",
+        "size": 1570
+      },
+      {
+        "rfilename": "README.md",
+        "size": 3375
+      },
+      {
+        "rfilename": "config.json",
+        "size": 253
+      },
+      {
+        "rfilename": "model.safetensors",
+        "size": 1500800904
+      },
+      {
+        "rfilename": "preprocessor_config.json",
+        "size": 394
+      },
+      {
+        "rfilename": "special_tokens_map.json",
+        "size": 636
+      },
+      {
+        "rfilename": "tokenizer.json",
+        "size": 34363039
+      },
+      {
+        "rfilename": "tokenizer.model",
+        "size": 4241003
+      },
+      {
+        "rfilename": "tokenizer_config.json",
+        "size": 47164
+      }
+    ]
+  },
+  {
+    "name": "sentence-transformers/all-MiniLM-L6-v2",
+    "sha": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "source": "https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2?blobs=true",
+    "checked": "2026-11-04",
+    "cardData": {
+      "base_model": [
+        "nreimers/MiniLM-L6-H384-uncased"
+      ],
+      "language": "en",
+      "license": "apache-2.0",
+      "library_name": "sentence-transformers",
+      "tags": [
+        "sentence-transformers",
+        "feature-extraction",
+        "sentence-similarity",
+        "transformers"
+      ],
+      "datasets": [
+        "s2orc",
+        "flax-sentence-embeddings/stackexchange_xml",
+        "ms_marco",
+        "gooaq",
+        "yahoo_answers_topics",
+        "code_search_net",
+        "search_qa",
+        "eli5",
+        "snli",
+        "multi_nli",
+        "wikihow",
+        "natural_questions",
+        "trivia_qa",
+        "embedding-data/sentence-compression",
+        "embedding-data/flickr30k-captions",
+        "embedding-data/altlex",
+        "embedding-data/simple-wiki",
+        "embedding-data/QQP",
+        "embedding-data/SPECTER",
+        "embedding-data/PAQ_pairs",
+        "embedding-data/WikiAnswers"
+      ],
+      "pipeline_tag": "sentence-similarity"
+    },
+    "safetensors": {
+      "parameters": {
+        "I64": 512,
+        "F32": 22713216
+      },
+      "total": 22713728
+    },
+    "files": [
+      {
+        "rfilename": ".gitattributes",
+        "size": 1229
+      },
+      {
+        "rfilename": "1_Pooling/config.json",
+        "size": 190
+      },
+      {
+        "rfilename": "README.md",
+        "size": 10502
+      },
+      {
+        "rfilename": "config.json",
+        "size": 612
+      },
+      {
+        "rfilename": "config_sentence_transformers.json",
+        "size": 116
+      },
+      {
+        "rfilename": "data_config.json",
+        "size": 39265
+      },
+      {
+        "rfilename": "model.safetensors",
+        "size": 90868376
+      },
+      {
+        "rfilename": "modules.json",
+        "size": 349
+      },
+      {
+        "rfilename": "onnx/model.onnx",
+        "size": 90405214
+      },
+      {
+        "rfilename": "onnx/model_O1.onnx",
+        "size": 90360328
+      },
+      {
+        "rfilename": "onnx/model_O2.onnx",
+        "size": 90326566
+      },
+      {
+        "rfilename": "onnx/model_O3.onnx",
+        "size": 90326497
+      },
+      {
+        "rfilename": "onnx/model_O4.onnx",
+        "size": 45212349
+      },
+      {
+        "rfilename": "onnx/model_qint8_arm64.onnx",
+        "size": 23026053
+      },
+      {
+        "rfilename": "onnx/model_qint8_avx512.onnx",
+        "size": 23026053
+      },
+      {
+        "rfilename": "onnx/model_qint8_avx512_vnni.onnx",
+        "size": 23026053
+      },
+      {
+        "rfilename": "onnx/model_quint8_avx2.onnx",
+        "size": 23046789
+      },
+      {
+        "rfilename": "openvino/openvino_model.bin",
+        "size": 90265744
+      },
+      {
+        "rfilename": "openvino/openvino_model.xml",
+        "size": 211315
+      },
+      {
+        "rfilename": "openvino/openvino_model_qint8_quantized.bin",
+        "size": 22933664
+      },
+      {
+        "rfilename": "openvino/openvino_model_qint8_quantized.xml",
+        "size": 368006
+      },
+      {
+        "rfilename": "pytorch_model.bin",
+        "size": 90888945
+      },
+      {
+        "rfilename": "rust_model.ot",
+        "size": 90887379
+      },
+      {
+        "rfilename": "sentence_bert_config.json",
+        "size": 53
+      },
+      {
+        "rfilename": "special_tokens_map.json",
+        "size": 112
+      },
+      {
+        "rfilename": "tf_model.h5",
+        "size": 91005696
+      },
+      {
+        "rfilename": "tokenizer.json",
+        "size": 466247
+      },
+      {
+        "rfilename": "tokenizer_config.json",
+        "size": 350
+      },
+      {
+        "rfilename": "train_script.py",
+        "size": 13156
+      },
+      {
+        "rfilename": "vocab.txt",
+        "size": 231508
+      }
+    ]
+  },
+  {
+    "name": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "sha": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "source": "https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2?blobs=true",
+    "checked": "2026-11-04",
+    "cardData": {
+      "license": "apache-2.0",
+      "datasets": [
+        "sentence-transformers/msmarco"
+      ],
+      "language": [
+        "en"
+      ],
+      "base_model": [
+        "cross-encoder/ms-marco-MiniLM-L12-v2"
+      ],
+      "pipeline_tag": "text-ranking",
+      "library_name": "sentence-transformers",
+      "tags": [
+        "transformers"
+      ]
+    },
+    "safetensors": {
+      "parameters": {
+        "I64": 512,
+        "F32": 22713601
+      },
+      "total": 22714113
+    },
+    "files": [
+      {
+        "rfilename": ".gitattributes",
+        "size": 790
+      },
+      {
+        "rfilename": "README.md",
+        "size": 3673
+      },
+      {
+        "rfilename": "config.json",
+        "size": 794
+      },
+      {
+        "rfilename": "flax_model.msgpack",
+        "size": 90858210
+      },
+      {
+        "rfilename": "model.safetensors",
+        "size": 90870598
+      },
+      {
+        "rfilename": "onnx/model.onnx",
+        "size": 91011230
+      },
+      {
+        "rfilename": "onnx/model_O1.onnx",
+        "size": 90962586
+      },
+      {
+        "rfilename": "onnx/model_O2.onnx",
+        "size": 90877294
+      },
+      {
+        "rfilename": "onnx/model_O3.onnx",
+        "size": 90877225
+      },
+      {
+        "rfilename": "onnx/model_O4.onnx",
+        "size": 45516616
+      },
+      {
+        "rfilename": "onnx/model_qint8_arm64.onnx",
+        "size": 23200716
+      },
+      {
+        "rfilename": "onnx/model_qint8_avx512.onnx",
+        "size": 23200716
+      },
+      {
+        "rfilename": "onnx/model_qint8_avx512_vnni.onnx",
+        "size": 23200716
+      },
+      {
+        "rfilename": "onnx/model_quint8_avx2.onnx",
+        "size": 23200716
+      },
+      {
+        "rfilename": "openvino/openvino_model.bin",
+        "size": 90858656
+      },
+      {
+        "rfilename": "openvino/openvino_model.xml",
+        "size": 205291
+      },
+      {
+        "rfilename": "openvino/openvino_model_qint8_quantized.bin",
+        "size": 23087684
+      },
+      {
+        "rfilename": "openvino/openvino_model_qint8_quantized.xml",
+        "size": 371611
+      },
+      {
+        "rfilename": "pytorch_model.bin",
+        "size": 90903017
+      },
+      {
+        "rfilename": "special_tokens_map.json",
+        "size": 132
+      },
+      {
+        "rfilename": "tokenizer.json",
+        "size": 711396
+      },
+      {
+        "rfilename": "tokenizer_config.json",
+        "size": 1330
+      },
+      {
+        "rfilename": "vocab.txt",
+        "size": 231508
+      }
+    ]
+  }
+]

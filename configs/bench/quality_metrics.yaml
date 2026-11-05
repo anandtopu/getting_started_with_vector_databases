@@ -1,0 +1,14 @@
+name: quality-metrics
+backend: tinyvec
+dataset: catalog
+limit: 1000
+metric: cosine
+k: 10
+warmup: 20
+repetitions: 5
+queries: 100
+seed: 20261104
+threads: 1
+split: all
+query_types: [misspelled, multilingual]
+parameters: {block_size: 256}

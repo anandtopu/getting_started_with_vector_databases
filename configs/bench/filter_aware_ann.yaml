@@ -1,0 +1,5 @@
+feature: filter_aware_ann
+lesson: 10_filtering_hybrid
+example: examples/03_measure.py
+native: examples/04_lance_hybrid.py
+retrieval_config: tier2/filter-traverse.yaml

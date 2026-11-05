@@ -1,0 +1,37 @@
+name: marlowe-tier5
+services:
+  qdrant-secure:
+    image: qdrant/qdrant:v1.20.0@sha256:9bfc89f9914fc14876a88c05270685921a55b8877b254a98bcc1cc2f0a424cd2
+    labels: {org.marlowe.course: phase7}
+    ports: ["127.0.0.1:6333:6333"]
+    environment:
+      QDRANT__SERVICE__ENABLE_TLS: "true"
+      QDRANT__SERVICE__API_KEY: ${MARLOWE_QDRANT_ADMIN:?Run prepare_tier5.py and supply compose.env}
+      QDRANT__SERVICE__READ_ONLY_API_KEY: ${MARLOWE_QDRANT_READ:?Run prepare_tier5.py}
+      QDRANT__TLS__CERT: /qdrant/tls/server.pem
+      QDRANT__TLS__KEY: /qdrant/tls/server-key.pem
+    volumes:
+      - ../.cache/marlowe/tier5/runtime/tls:/qdrant/tls:ro
+      - qdrant_secure_data:/qdrant/storage
+  prometheus:
+    image: prom/prometheus:v3.15.1@sha256:fa3302279710be2f21a8301ec17a8b4f2301fd829bd113839b3b6b02b6f191a2
+    labels: {org.marlowe.course: phase7}
+    ports: ["127.0.0.1:9091:9090"]
+    volumes:
+      - ./prometheus/tier5.yml:/etc/prometheus/prometheus.yml:ro
+      - ../.cache/marlowe/tier5/runtime/tls/ca.pem:/etc/prometheus/ca.pem:ro
+      - ../.cache/marlowe/tier5/runtime/qdrant-metrics-token:/etc/prometheus/qdrant-token:ro
+  grafana:
+    image: grafana/grafana:13.3.0@sha256:488984b716c0862639f91a698adbe2862677a5a07bad42da5f03f3030883b205
+    labels: {org.marlowe.course: phase7}
+    ports: ["127.0.0.1:3001:3000"]
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: ${MARLOWE_GRAFANA_PASSWORD:?Run prepare_tier5.py}
+      GF_ANALYTICS_REPORTING_ENABLED: "false"
+    volumes:
+      - ./grafana/tier5-datasources.yaml:/etc/grafana/provisioning/datasources/marlowe.yaml:ro
+      - ./grafana/tier5-dashboards.yaml:/etc/grafana/provisioning/dashboards/marlowe.yaml:ro
+      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro
+volumes:
+  qdrant_secure_data:
+    labels: {org.marlowe.course: phase7}

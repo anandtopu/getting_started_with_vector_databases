@@ -1,0 +1,5 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+POST,/search,RemoteDisconnected('Remote end closed connection without response'),7,2026-11-05T18:43:48Z,2026-11-05T18:43:48Z
+POST,/search,HTTPError('429 Client Error: Too Many Requests for url: /search'),9,2026-11-05T18:43:45Z,2026-11-05T18:43:55Z
+POST,/search filtered,HTTPError('429 Client Error: Too Many Requests for url: /search filtered'),3,2026-11-05T18:43:54Z,2026-11-05T18:43:55Z
+POST,/search,"ChunkedEncodingError(ProtocolError('Connection broken: IncompleteRead(0 bytes read, 2347 more expected)', IncompleteRead(0 bytes read, 2347 more expected)))",1,2026-11-05T18:43:48Z,2026-11-05T18:43:48Z

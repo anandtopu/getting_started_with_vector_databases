@@ -1,0 +1,5 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+POST,/search,RemoteDisconnected('Remote end closed connection without response'),4,2026-11-05T19:12:59Z,2026-11-05T19:12:59Z
+POST,/search,HTTPError('429 Client Error: Too Many Requests for url: /search'),3,2026-11-05T19:13:04Z,2026-11-05T19:13:04Z
+POST,/search filtered,HTTPError('429 Client Error: Too Many Requests for url: /search filtered'),1,2026-11-05T19:13:04Z,2026-11-05T19:13:04Z
+POST,/search filtered,RemoteDisconnected('Remote end closed connection without response'),4,2026-11-05T19:12:59Z,2026-11-05T19:12:59Z

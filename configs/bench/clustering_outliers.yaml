@@ -1,0 +1,5 @@
+feature: clustering_outliers
+lesson: 19_recommendations
+example: examples/04_review_themes.py
+native: examples/02_production.py
+scope: Application diagnostic; compare quality and stage timings in the Tier 4 checkpoint.

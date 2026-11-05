@@ -1,0 +1,13 @@
+[
+  {
+    "family": "hybrid-rrf",
+    "target": 0.9,
+    "development": [
+      "tier2-hybrid-rrf-20261104T232722-034ad482"
+    ],
+    "selected": "tier2-hybrid-rrf-20261104T232722-034ad482",
+    "test": "tier2-hybrid-rrf-test-20261104T232724-9aafb104",
+    "recall": 0.8699999999999999,
+    "target_met": false
+  }
+]

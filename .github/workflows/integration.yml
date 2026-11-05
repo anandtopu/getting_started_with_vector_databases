@@ -1,0 +1,61 @@
+name: Database integration checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  native-databases:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {profile: pgvector, extra: pgvector}
+          - {profile: qdrant, extra: qdrant}
+          - {profile: weaviate, extra: weaviate}
+          - {profile: milvus, extra: milvus}
+          - {profile: elasticsearch, extra: landscape}
+          - {profile: redis, extra: landscape}
+          - {profile: mongodb, extra: landscape}
+          - {profile: vespa, extra: landscape}
+    env:
+      MARLOWE_TEST_DATABASE: ${{ matrix.profile }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: astral-sh/setup-uv@v10.3.3
+        with: {version: "0.13.7", python-version: "3.12"}
+      - run: uv sync --locked --extra ${{ matrix.extra }}
+      - run: docker compose -f docker/compose.yaml --profile ${{ matrix.profile }} up -d
+      - if: matrix.profile == 'vespa'
+        run: uv run --no-sync python scripts/deploy_vespa_schema.py
+      - run: uv run --no-sync python scripts/check_profile.py ${{ matrix.profile }}
+      - if: matrix.profile == 'qdrant' || matrix.profile == 'weaviate'
+        uses: actions/setup-node@v7.1.0
+        with: {node-version: "24.18.0"}
+      - if: matrix.profile == 'qdrant' || matrix.profile == 'weaviate'
+        run: uv run --no-sync python scripts/prepare_bonus.py
+      - if: matrix.profile == 'qdrant' || matrix.profile == 'weaviate'
+        working-directory: modules/bonus/B1_other_languages
+        run: npm ci --ignore-scripts
+      - if: matrix.profile == 'qdrant' || matrix.profile == 'weaviate'
+        working-directory: modules/bonus/B1_other_languages
+        run: npm run build
+      - if: matrix.profile == 'qdrant' || matrix.profile == 'weaviate'
+        working-directory: modules/bonus/B1_other_languages
+        run: npm test
+      - if: matrix.profile == 'qdrant' || matrix.profile == 'weaviate'
+        working-directory: modules/bonus/B1_other_languages
+        run: npm run ${{ matrix.profile }}
+      - run: uv run --no-sync pytest -m docker --allow-hosts=127.0.0.1,localhost,::1 tests/test_database_stores.py
+      - run: uv run --no-sync python scripts/checkpoint_tier3.py --backends ${{ matrix.profile }} --output .cache/ci-tier3
+      - if: always()
+        run: docker compose -f docker/compose.yaml --profile ${{ matrix.profile }} logs --no-color > native.log
+      - if: always()
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: native-${{ matrix.profile }}
+          path: |
+            .cache/ci-tier3
+            native.log
+          include-hidden-files: true
+      - if: always()
+        run: docker compose -f docker/compose.yaml --profile ${{ matrix.profile }} down --volumes

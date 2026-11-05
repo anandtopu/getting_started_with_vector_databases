@@ -1,0 +1,21 @@
+{
+  "format": 1,
+  "rows": 10000,
+  "model": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "dimensions": 384,
+    "normalized": true,
+    "modality": "text",
+    "query_prefix": "",
+    "document_prefix": "",
+    "max_length": 256,
+    "dtype": "float32"
+  },
+  "space": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41:5b60aec4bb912259",
+  "role": "document",
+  "storage_dtype": "float16",
+  "sha256": "2e92f04324b8903cc99624e73cdbc7b95e4233f2ddd5e06e6fd6ffd3666659be",
+  "created_at": "2026-11-04T20:59:06.865591+00:00",
+  "license": "Derived from synthetic MIT data using Apache-2.0 model; see data/README.md"
+}

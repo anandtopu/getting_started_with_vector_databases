@@ -1,0 +1,209 @@
+name: marlowe-vector-course
+
+x-owned: &owned
+  labels:
+    org.marlowe.course: vector-databases
+  restart: "no"
+
+services:
+  pgvector:
+    <<: *owned
+    profiles: [pgvector]
+    image: pgvector/pgvector:0.8.7-pg18-trixie@sha256:5895949dfcdf308eb0cd31c950c93c14895c77f33fbedfecf1fa511ab1d4bcd2
+    environment:
+      POSTGRES_DB: marlowe
+      POSTGRES_USER: marlowe
+      POSTGRES_PASSWORD: marlowe-local
+    ports: ["127.0.0.1:5432:5432"]
+    volumes:
+      - pgdata:/var/lib/postgresql
+      - ./init/pgvector.sql:/docker-entrypoint-initdb.d/01-vector.sql:ro
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U marlowe -d marlowe"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  qdrant:
+    <<: *owned
+    profiles: [qdrant]
+    image: qdrant/qdrant:v1.20.0@sha256:9bfc89f9914fc14876a88c05270685921a55b8877b254a98bcc1cc2f0a424cd2
+    ports: ["127.0.0.1:6333:6333", "127.0.0.1:6334:6334"]
+    environment:
+      QDRANT__TELEMETRY_DISABLED: "true"
+    volumes: [qdrant_data:/qdrant/storage]
+
+  weaviate:
+    <<: *owned
+    profiles: [weaviate, weaviate-generation]
+    image: semitechnologies/weaviate:1.40.3@sha256:e96e2e04ee6f401a8dcdf89adb80b610516e1491a33769dfed6d1318801e1129
+    ports: ["127.0.0.1:8080:8080", "127.0.0.1:50051:50051"]
+    environment:
+      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: "true"
+      PERSISTENCE_DATA_PATH: /var/lib/weaviate
+      DEFAULT_VECTORIZER_MODULE: none
+      CLUSTER_HOSTNAME: marlowe-weaviate
+      DISABLE_TELEMETRY: "true"
+      ENABLE_MODULES: backup-filesystem,generative-ollama
+      MODULES_CLIENT_TIMEOUT: 150s
+      BACKUP_FILESYSTEM_PATH: /var/lib/marlowe-backups
+    volumes: [weaviate_data:/var/lib/weaviate, weaviate_backups:/var/lib/marlowe-backups]
+
+  ollama:
+    <<: *owned
+    profiles: [weaviate-generation, ollama]
+    image: ollama/ollama:0.40.14@sha256:ebaef4f4c5d93660e1f25f8ad085a112f51ccfb0e8458073e71793959dba91c9
+    ports: ["127.0.0.1:11434:11434"]
+    volumes: [ollama_data:/root/.ollama, ./ollama:/course:ro]
+
+  milvus-volume-init:
+    <<: *owned
+    profiles: [milvus]
+    image: milvusdb/milvus:v3.0.5@sha256:b9b79b4a284b41cd12d60abc418310f84621fa4c977d409b38f501519a7ccf8a
+    user: "0:0"
+    network_mode: none
+    entrypoint: [/bin/sh, -c]
+    command: ["chown -R $$(id -u milvus):$$(id -g milvus) /var/lib/milvus"]
+    volumes: [milvus_data:/var/lib/milvus]
+
+  etcd:
+    <<: *owned
+    profiles: [milvus]
+    image: quay.io/coreos/etcd:v3.5.25@sha256:52f17f7e56e4f7239f0320dbfcbcc24721163d7d78ae710b466af3254ccf6366
+    environment:
+      ETCD_AUTO_COMPACTION_MODE: revision
+      ETCD_AUTO_COMPACTION_RETENTION: "1000"
+      ETCD_QUOTA_BACKEND_BYTES: "4294967296"
+      ETCD_SNAPSHOT_COUNT: "50000"
+    command: [etcd, --advertise-client-urls=http://etcd:2379, --listen-client-urls=http://0.0.0.0:2379, --data-dir=/etcd]
+    volumes: [etcd_data:/etcd]
+    healthcheck:
+      test: [CMD, etcdctl, endpoint, health]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  minio:
+    <<: *owned
+    profiles: [milvus]
+    image: milvusdb/minio:RELEASE.2024-12-18T13-15-44Z@sha256:1dce27c494a16bae114774f1cec295493f3613142713130c2d22dd5696be6ad3
+    environment:
+      MINIO_ROOT_USER: marlowe-minio
+      MINIO_ROOT_PASSWORD: marlowe-minio-local
+    command: [minio, server, /minio_data, --console-address, ":9001"]
+    volumes: [minio_data:/minio_data]
+    healthcheck:
+      test: [CMD, mc, ready, local]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  milvus:
+    <<: *owned
+    profiles: [milvus]
+    image: milvusdb/milvus:v3.0.5@sha256:b9b79b4a284b41cd12d60abc418310f84621fa4c977d409b38f501519a7ccf8a
+    command: [milvus, run, standalone]
+    security_opt: [seccomp:unconfined]
+    environment:
+      ETCD_ENDPOINTS: etcd:2379
+      ETCD_AUTH_ENABLED: "false"
+      MINIO_ADDRESS: minio:9000
+      MINIO_ACCESS_KEY_ID: marlowe-minio
+      MINIO_SECRET_ACCESS_KEY: marlowe-minio-local
+      MINIO_REGION: us-east-1
+    ports: ["127.0.0.1:19530:19530", "127.0.0.1:9091:9091"]
+    volumes: [milvus_data:/var/lib/milvus]
+    depends_on:
+      milvus-volume-init: {condition: service_completed_successfully}
+      etcd: {condition: service_healthy}
+      minio: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, curl, -f, http://localhost:9091/healthz]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 60s
+
+  elasticsearch:
+    <<: *owned
+    profiles: [elasticsearch]
+    image: library/elasticsearch:9.5.5@sha256:764a939891119d97e130b4d5da196c330afb2338382ada9e1b9b7943ce6707df
+    environment:
+      discovery.type: single-node
+      xpack.security.enabled: "false"
+      ES_JAVA_OPTS: -Xms512m -Xmx512m
+    ports: ["127.0.0.1:9200:9200"]
+    volumes: [elastic_data:/usr/share/elasticsearch/data]
+
+  redis:
+    <<: *owned
+    profiles: [redis]
+    image: library/redis:8.10.3@sha256:de1068af6f552240dfab67bcc9bfef99bfc60f776bb4580ef077ea4c8c97e848
+    ports: ["127.0.0.1:6379:6379"]
+    volumes: [redis_data:/data]
+    healthcheck:
+      test: [CMD, redis-cli, ping]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  mongodb:
+    <<: *owned
+    profiles: [mongodb]
+    image: mongodb/mongodb-atlas-local:8.3.11-20261103T091247Z@sha256:8886be3f095a801d22c294ca306e3821d34d39912c0839eea1df73a2ffdc1ed5
+    hostname: mongodb
+    environment:
+      MONGODB_INITDB_ROOT_USERNAME: marlowe
+      MONGODB_INITDB_ROOT_PASSWORD: marlowe-local
+    ports: ["127.0.0.1:27017:27017"]
+    volumes: [mongo_data:/data/db, mongo_config:/data/configdb, mongo_search:/data/mongot]
+
+  vespa:
+    <<: *owned
+    profiles: [vespa]
+    image: vespaengine/vespa:8.781.11@sha256:93268edd995b4e671be33babf7ebac55155fd0f330bb0b02123d1fbf3a9d1df0
+    hostname: vespa
+    ports: ["127.0.0.1:8081:8080", "127.0.0.1:19071:19071"]
+    volumes: [vespa_data:/opt/vespa/var]
+    mem_limit: 4g
+
+  prometheus:
+    <<: *owned
+    profiles: [monitoring]
+    image: prom/prometheus:v3.15.1@sha256:fa3302279710be2f21a8301ec17a8b4f2301fd829bd113839b3b6b02b6f191a2
+    ports: ["127.0.0.1:9090:9090"]
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+
+  grafana:
+    <<: *owned
+    profiles: [monitoring]
+    image: grafana/grafana:13.3.0@sha256:488984b716c0862639f91a698adbe2862677a5a07bad42da5f03f3030883b205
+    ports: ["127.0.0.1:3000:3000"]
+    environment:
+      GF_SECURITY_ADMIN_USER: marlowe
+      GF_SECURITY_ADMIN_PASSWORD: marlowe-local
+      GF_ANALYTICS_REPORTING_ENABLED: "false"
+      GF_ANALYTICS_CHECK_FOR_UPDATES: "false"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/datasources.yaml:/etc/grafana/provisioning/datasources/marlowe.yaml:ro
+
+volumes:
+  pgdata: {labels: {org.marlowe.course: vector-databases}}
+  qdrant_data: {labels: {org.marlowe.course: vector-databases}}
+  weaviate_data: {labels: {org.marlowe.course: vector-databases}}
+  weaviate_backups: {labels: {org.marlowe.course: vector-databases}}
+  ollama_data: {labels: {org.marlowe.course: vector-databases}}
+  milvus_data: {labels: {org.marlowe.course: vector-databases}}
+  etcd_data: {labels: {org.marlowe.course: vector-databases}}
+  minio_data: {labels: {org.marlowe.course: vector-databases}}
+  elastic_data: {labels: {org.marlowe.course: vector-databases}}
+  redis_data: {labels: {org.marlowe.course: vector-databases}}
+  mongo_data: {labels: {org.marlowe.course: vector-databases}}
+  mongo_config: {labels: {org.marlowe.course: vector-databases}}
+  mongo_search: {labels: {org.marlowe.course: vector-databases}}
+  vespa_data: {labels: {org.marlowe.course: vector-databases}}
+  prometheus_data: {labels: {org.marlowe.course: vector-databases}}
+  grafana_data: {labels: {org.marlowe.course: vector-databases}}

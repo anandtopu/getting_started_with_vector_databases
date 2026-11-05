@@ -1,0 +1,10 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0
+rootdir: D:\Learning_Projects\getting_started_with_vector_databases
+configfile: pyproject.toml
+plugins: anyio-4.16.0, Faker-40.44.0, locust-2.47.0, platformdirs-4.14.5, socket-0.8.1
+collected 1 item
+
+tests\test_phase8_native.py .                                            [100%]
+
+============================= 1 passed in 21.25s ==============================

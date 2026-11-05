@@ -1,0 +1,11 @@
+name: dimensions
+backend: tinyvec
+dataset: fixture
+limit: 1000
+metric: l2
+k: 10
+warmup: 20
+repetitions: 5
+queries: 100
+threads: 1
+split: all

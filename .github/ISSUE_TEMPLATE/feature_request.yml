@@ -1,0 +1,11 @@
+name: Database or index request
+description: Propose a reproducible lesson or comparison
+body:
+  - type: textarea
+    id: proposal
+    attributes: {label: Learner problem and proposed example}
+    validations: {required: true}
+  - type: textarea
+    id: evidence
+    attributes: {label: Official API or paper, supported platforms, license, resource budget and measurement plan}
+    validations: {required: true}

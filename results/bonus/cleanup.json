@@ -1,0 +1,11 @@
+{
+  "removed_owned_containers": [
+    "marlowe-p8-secure",
+    "marlowe-p8-plain",
+    "marlowe-p8-weaviate"
+  ],
+  "remaining_phase8_containers": [],
+  "owned_ui_api_port_closed": true,
+  "preserved": "Included fixtures, cached data/models, Python/Node toolchains and unrelated resources",
+  "scope": "Exact phase8 labels and marlowe-p8 names checked before removal; monitoring UUID pod self-removed"
+}

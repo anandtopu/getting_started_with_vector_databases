@@ -1,0 +1,13 @@
+{
+  "unauthenticated_status": 401,
+  "read_status": 200,
+  "read_key_write_status": 403,
+  "untrusted_ca_rejected": true,
+  "scoped_ids": [
+    1
+  ],
+  "omitted_filter_ids": [
+    1,
+    2
+  ]
+}

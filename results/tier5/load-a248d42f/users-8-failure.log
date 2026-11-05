@@ -1,0 +1,30 @@
+[2026-11-05 13:09:39,371] ANANDTOPU-PC/INFO/locust.main: Starting Locust 2.47.0
+[2026-11-05 13:09:39,374] ANANDTOPU-PC/INFO/locust.main: Run time limit set to 20 seconds
+[2026-11-05 13:09:39,375] ANANDTOPU-PC/INFO/locust.runners: Ramping to 8 users at a rate of 8.00 per second
+[2026-11-05 13:09:39,376] ANANDTOPU-PC/INFO/locust.runners: All users spawned: {"Seller": 8} (8 total users)
+[2026-11-05 13:09:59,063] ANANDTOPU-PC/INFO/locust.main: --run-time limit reached, shutting down
+[2026-11-05 13:09:59,465] ANANDTOPU-PC/INFO/locust.main: Shutting down (exit code 0)
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+POST     /search                                                                          127   22(17.32%) |    846      42    5415    220 |    6.56        1.14
+POST     /search filtered                                                                  38     3(7.89%) |    911      12    5538    230 |    1.96        0.15
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                       165   25(15.15%) |    861      12    5538    230 |    8.52        1.29
+
+Response time percentiles (approximated)
+Type     Name                                                                                  50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|--------------------------------------------------------------------------------|--------|------|------|------|------|------|------|------|------|------|------|------
+POST     /search                                                                               220    230    240    900   3200   4600   5100   5400   5400   5400   5400    127
+POST     /search filtered                                                                      230    240    900   1500   3200   5200   5500   5500   5500   5500   5500     38
+--------|--------------------------------------------------------------------------------|--------|------|------|------|------|------|------|------|------|------|------|------
+         Aggregated                                                                            230    230    240   1200   3200   4600   5200   5400   5500   5500   5500    165
+
+Error report
+# occurrences      Error                                                                                               
+------------------|---------------------------------------------------------------------------------------------------------------------------------------------
+15                 POST /search: HTTPError('429 Client Error: Too Many Requests for url: /search')                     
+7                  POST /search: RemoteDisconnected('Remote end closed connection without response')                   
+1                  POST /search filtered: RemoteDisconnected('Remote end closed connection without response')          
+2                  POST /search filtered: HTTPError('429 Client Error: Too Many Requests for url: /search filtered')   
+------------------|---------------------------------------------------------------------------------------------------------------------------------------------
+

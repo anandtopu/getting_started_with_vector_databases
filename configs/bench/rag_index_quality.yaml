@@ -1,0 +1,5 @@
+feature: rag_index_quality
+lesson: 18_rag
+example: examples/03_measure.py
+native: examples/02_production.py
+scope: Application diagnostic; compare quality and stage timings in the Tier 4 checkpoint.

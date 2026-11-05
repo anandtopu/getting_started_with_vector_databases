@@ -1,0 +1,5 @@
+feature: late_interaction
+lesson: 10_filtering_hybrid
+example: examples/01_from_scratch.py
+native: examples/04_lance_hybrid.py
+# This feature measures a lesson diagnostic outside ranked retrieval.

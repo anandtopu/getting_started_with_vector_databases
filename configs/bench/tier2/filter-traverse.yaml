@@ -1,0 +1,9 @@
+name: tier2-filter-traverse
+backend: ann
+dataset: catalog
+limit: 1000
+split: development
+warmup: 20
+repetitions: 5
+query_types: [filtered, keyword]
+parameters: {kind: hnsw, filter_policy: traverse}

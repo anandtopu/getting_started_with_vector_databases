@@ -1,0 +1,5 @@
+feature: mongodb_local
+lesson: 16_landscape
+example: examples/01_from_scratch.py
+native: examples/06_mongodb.py
+retrieval_config: tier3/mongodb.yaml

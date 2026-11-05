@@ -1,0 +1,127 @@
+[
+  {
+    "image": "milvusdb/milvus:v3.0.5",
+    "source": "https://hub.docker.com/v2/repositories/milvusdb/milvus/tags/v3.0.5",
+    "digest": "sha256:b9b79b4a284b41cd12d60abc418310f84621fa4c977d409b38f501519a7ccf8a",
+    "architectures": [
+      "amd64",
+      "arm64"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "image": "milvusdb/minio:RELEASE.2024-12-18T13-15-44Z",
+    "source": "https://hub.docker.com/v2/repositories/milvusdb/minio/tags/RELEASE.2024-12-18T13-15-44Z",
+    "digest": "sha256:1dce27c494a16bae114774f1cec295493f3613142713130c2d22dd5696be6ad3",
+    "architectures": [
+      "amd64",
+      "arm64",
+      "ppc64le",
+      "unknown"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "image": "library/redis:8.10.3",
+    "source": "https://hub.docker.com/v2/repositories/library/redis/tags/8.10.3",
+    "digest": "sha256:de1068af6f552240dfab67bcc9bfef99bfc60f776bb4580ef077ea4c8c97e848",
+    "architectures": [
+      "386",
+      "amd64",
+      "arm",
+      "arm64",
+      "ppc64le",
+      "riscv64",
+      "s390x",
+      "unknown"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "image": "library/elasticsearch:9.5.5",
+    "source": "https://hub.docker.com/v2/repositories/library/elasticsearch/tags/9.5.5",
+    "digest": "sha256:764a939891119d97e130b4d5da196c330afb2338382ada9e1b9b7943ce6707df",
+    "architectures": [
+      "amd64",
+      "arm64",
+      "unknown"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "image": "grafana/grafana:13.3.0",
+    "source": "https://hub.docker.com/v2/repositories/grafana/grafana/tags/13.3.0",
+    "digest": "sha256:488984b716c0862639f91a698adbe2862677a5a07bad42da5f03f3030883b205",
+    "architectures": [
+      "amd64",
+      "arm",
+      "arm64"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "image": "qdrant/qdrant:v1.20.0",
+    "source": "https://hub.docker.com/v2/repositories/qdrant/qdrant/tags/v1.20.0",
+    "digest": "sha256:9bfc89f9914fc14876a88c05270685921a55b8877b254a98bcc1cc2f0a424cd2",
+    "architectures": [
+      "amd64",
+      "arm64"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "image": "prom/prometheus:v3.15.1",
+    "source": "https://hub.docker.com/v2/repositories/prom/prometheus/tags/v3.15.1",
+    "digest": "sha256:fa3302279710be2f21a8301ec17a8b4f2301fd829bd113839b3b6b02b6f191a2",
+    "architectures": [
+      "amd64",
+      "arm",
+      "arm64",
+      "ppc64le",
+      "riscv64",
+      "s390x"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "image": "pgvector/pgvector:0.8.7-pg18-trixie",
+    "source": "https://hub.docker.com/v2/repositories/pgvector/pgvector/tags/0.8.7-pg18-trixie",
+    "digest": "sha256:5895949dfcdf308eb0cd31c950c93c14895c77f33fbedfecf1fa511ab1d4bcd2",
+    "architectures": [
+      "amd64",
+      "arm64",
+      "unknown"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "image": "semitechnologies/weaviate:1.40.3",
+    "source": "https://hub.docker.com/v2/repositories/semitechnologies/weaviate/tags/1.40.3",
+    "digest": "sha256:e96e2e04ee6f401a8dcdf89adb80b610516e1491a33769dfed6d1318801e1129",
+    "architectures": [
+      "amd64",
+      "arm64"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "image": "vespaengine/vespa:8.781.11",
+    "source": "https://hub.docker.com/v2/repositories/vespaengine/vespa/tags/8.781.11",
+    "digest": "sha256:93268edd995b4e671be33babf7ebac55155fd0f330bb0b02123d1fbf3a9d1df0",
+    "architectures": [
+      "amd64",
+      "arm64"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "image": "mongodb/mongodb-atlas-local:8.3.11-20261103T091247Z",
+    "source": "https://hub.docker.com/v2/repositories/mongodb/mongodb-atlas-local/tags/8.3.11-20261103T091247Z",
+    "digest": "sha256:8886be3f095a801d22c294ca306e3821d34d39912c0839eea1df73a2ffdc1ed5",
+    "architectures": [
+      "amd64",
+      "arm64"
+    ],
+    "checked": "2026-11-04"
+  }
+]

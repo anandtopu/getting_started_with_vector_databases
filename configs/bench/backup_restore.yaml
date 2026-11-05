@@ -1,0 +1,6 @@
+feature: backup_restore
+lesson: 21_operations
+example: examples/03_measure.py
+native: examples/02_production.py
+seed: 42
+scope: operational diagnostic, not a comparable database leaderboard

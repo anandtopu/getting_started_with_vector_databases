@@ -1,0 +1,13 @@
+# The artifact inventory hashes exact bytes. Preserve these bytes on every OS.
+data/** -text
+results/** -text
+data/eval/** -text
+data/help_center/** -text
+data/fixtures/** -text
+data/tier2/** -text
+*.npz binary
+data/sellers.json -text
+data/*.manifest.json -text
+data/*.parquet binary
+*.png binary
+*.sh text eol=lf

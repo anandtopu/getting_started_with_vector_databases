@@ -1,0 +1,6 @@
+feature: query_cache
+lesson: 22_performance
+example: examples/03_measure.py
+native: examples/05_load.py
+seed: 42
+scope: operational diagnostic, not a comparable database leaderboard

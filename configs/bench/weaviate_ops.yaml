@@ -1,0 +1,5 @@
+feature: weaviate_ops
+lesson: 14_weaviate
+example: examples/04_tenants_generation.py
+native: examples/05_backup.py
+retrieval_config: tier3/weaviate.yaml

@@ -1,0 +1,59 @@
+# HELP marlowe_requests_total Completed HTTP requests
+# TYPE marlowe_requests_total counter
+marlowe_requests_total{route="/search",status="429"} 10.0
+marlowe_requests_total{route="/search",status="200"} 269.0
+marlowe_requests_total{route="/health",status="200"} 1.0
+# HELP marlowe_requests_created Completed HTTP requests
+# TYPE marlowe_requests_created gauge
+marlowe_requests_created{route="/search",status="429"} 1.7939042329317148e+09
+marlowe_requests_created{route="/search",status="200"} 1.7939042343530216e+09
+marlowe_requests_created{route="/health",status="200"} 1.7939042345282094e+09
+# HELP marlowe_request_seconds End-to-end request time
+# TYPE marlowe_request_seconds histogram
+marlowe_request_seconds_bucket{le="0.005",route="/search"} 54.0
+marlowe_request_seconds_bucket{le="0.01",route="/search"} 59.0
+marlowe_request_seconds_bucket{le="0.025",route="/search"} 59.0
+marlowe_request_seconds_bucket{le="0.05",route="/search"} 119.0
+marlowe_request_seconds_bucket{le="0.075",route="/search"} 162.0
+marlowe_request_seconds_bucket{le="0.1",route="/search"} 195.0
+marlowe_request_seconds_bucket{le="0.25",route="/search"} 271.0
+marlowe_request_seconds_bucket{le="0.5",route="/search"} 272.0
+marlowe_request_seconds_bucket{le="0.75",route="/search"} 272.0
+marlowe_request_seconds_bucket{le="1.0",route="/search"} 273.0
+marlowe_request_seconds_bucket{le="2.5",route="/search"} 279.0
+marlowe_request_seconds_bucket{le="5.0",route="/search"} 279.0
+marlowe_request_seconds_bucket{le="7.5",route="/search"} 279.0
+marlowe_request_seconds_bucket{le="10.0",route="/search"} 279.0
+marlowe_request_seconds_bucket{le="+Inf",route="/search"} 279.0
+marlowe_request_seconds_count{route="/search"} 279.0
+marlowe_request_seconds_sum{route="/search"} 31.93272859993158
+marlowe_request_seconds_bucket{le="0.005",route="/health"} 1.0
+marlowe_request_seconds_bucket{le="0.01",route="/health"} 1.0
+marlowe_request_seconds_bucket{le="0.025",route="/health"} 1.0
+marlowe_request_seconds_bucket{le="0.05",route="/health"} 1.0
+marlowe_request_seconds_bucket{le="0.075",route="/health"} 1.0
+marlowe_request_seconds_bucket{le="0.1",route="/health"} 1.0
+marlowe_request_seconds_bucket{le="0.25",route="/health"} 1.0
+marlowe_request_seconds_bucket{le="0.5",route="/health"} 1.0
+marlowe_request_seconds_bucket{le="0.75",route="/health"} 1.0
+marlowe_request_seconds_bucket{le="1.0",route="/health"} 1.0
+marlowe_request_seconds_bucket{le="2.5",route="/health"} 1.0
+marlowe_request_seconds_bucket{le="5.0",route="/health"} 1.0
+marlowe_request_seconds_bucket{le="7.5",route="/health"} 1.0
+marlowe_request_seconds_bucket{le="10.0",route="/health"} 1.0
+marlowe_request_seconds_bucket{le="+Inf",route="/health"} 1.0
+marlowe_request_seconds_count{route="/health"} 1.0
+marlowe_request_seconds_sum{route="/health"} 0.0015343000122811645
+# HELP marlowe_request_seconds_created End-to-end request time
+# TYPE marlowe_request_seconds_created gauge
+marlowe_request_seconds_created{route="/search"} 1.7939042329317148e+09
+marlowe_request_seconds_created{route="/health"} 1.7939042345282094e+09
+# HELP marlowe_in_flight Admitted application operations
+# TYPE marlowe_in_flight gauge
+marlowe_in_flight 0.0
+# HELP marlowe_rejected_total Admission limit rejections
+# TYPE marlowe_rejected_total counter
+marlowe_rejected_total 10.0
+# HELP marlowe_rejected_created Admission limit rejections
+# TYPE marlowe_rejected_created gauge
+marlowe_rejected_created 1.7939042319679737e+09

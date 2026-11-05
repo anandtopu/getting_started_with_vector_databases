@@ -1,0 +1,3 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+POST,/search,HTTPError('429 Client Error: Too Many Requests for url: /search'),8,2026-11-05T18:56:45Z,2026-11-05T18:56:56Z
+POST,/search filtered,HTTPError('429 Client Error: Too Many Requests for url: /search filtered'),5,2026-11-05T18:56:44Z,2026-11-05T18:56:46Z

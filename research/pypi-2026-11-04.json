@@ -1,0 +1,4619 @@
+[
+  {
+    "name": "bm25s",
+    "version": "0.3.16",
+    "requires_python": ">=3.8",
+    "source": "https://pypi.org/pypi/bm25s/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "bm25s-0.3.16-py3-none-any.whl",
+        "uploaded": "2026-10-28T18:49:04.470518Z",
+        "yanked": false
+      },
+      {
+        "filename": "bm25s-0.3.16.tar.gz",
+        "uploaded": "2026-10-28T18:49:06.050781Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "chromadb",
+    "version": "1.5.9",
+    "requires_python": ">=3.9",
+    "source": "https://pypi.org/pypi/chromadb/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "chromadb-1.5.9-cp39-abi3-macosx_10_12_x86_64.whl",
+        "uploaded": "2026-05-05T05:54:48.906852Z",
+        "yanked": false
+      },
+      {
+        "filename": "chromadb-1.5.9-cp39-abi3-macosx_11_0_arm64.whl",
+        "uploaded": "2026-05-05T05:54:45.078177Z",
+        "yanked": false
+      },
+      {
+        "filename": "chromadb-1.5.9-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "uploaded": "2026-05-05T05:54:36.250931Z",
+        "yanked": false
+      },
+      {
+        "filename": "chromadb-1.5.9-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "uploaded": "2026-05-05T05:54:41.157648Z",
+        "yanked": false
+      },
+      {
+        "filename": "chromadb-1.5.9-cp39-abi3-win_amd64.whl",
+        "uploaded": "2026-05-05T05:54:54.942211Z",
+        "yanked": false
+      },
+      {
+        "filename": "chromadb-1.5.9.tar.gz",
+        "uploaded": "2026-05-05T05:54:51.713927Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "duckdb",
+    "version": "2.0.0",
+    "requires_python": ">=3.11.0",
+    "source": "https://pypi.org/pypi/duckdb/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "duckdb-2.0.0-cp311-cp311-macosx_10_15_universal2.whl",
+        "uploaded": "2026-10-21T12:50:38.611878Z",
+        "yanked": false
+      },
+      {
+        "filename": "duckdb-2.0.0-cp311-cp311-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-21T12:50:41.839172Z",
+        "yanked": false
+      },
+      {
+        "filename": "duckdb-2.0.0-cp311-cp311-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-21T12:50:44.167966Z",
+        "yanked": false
+      },
+      {
+        "filename": "duckdb-2.0.0-cp311-cp311-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-21T12:50:46.444674Z",
+        "yanked": false
+      },
+      {
+        "filename": "duckdb-2.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-21T12:50:48.902652Z",
+        "yanked": false
+      },
+      {
+        "filename": "duckdb-2.0.0-cp311-cp311-win_amd64.whl",
+        "uploaded": "2026-10-21T12:50:51.590941Z",
+        "yanked": false
+      },
+      {
+        "filename": "duckdb-2.0.0-cp311-cp311-win_arm64.whl",
+        "uploaded": "2026-10-21T12:50:53.88946Z",
+        "yanked": false
+      },
+      {
+        "filename": "duckdb-2.0.0-cp312-abi3-macosx_10_15_universal2.whl",
+        "uploaded": "2026-10-21T12:50:56.489773Z",
+        "yanked": false
+      },
+      {
+        "filename": "duckdb-2.0.0-cp312-abi3-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-21T12:50:59.331542Z",
+        "yanked": false
+      },
+      {
+        "filename": "duckdb-2.0.0-cp312-abi3-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-21T12:51:01.818477Z",
+        "yanked": false
+      },
+      {
+        "filename": "duckdb-2.0.0-cp312-abi3-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-21T12:51:04.360238Z",
+        "yanked": false
+      },
+      {
+        "filename": "duckdb-2.0.0-cp312-abi3-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-21T12:51:06.860701Z",
+        "yanked": false
+      },
+      {
+        "filename": "duckdb-2.0.0-cp312-abi3-win_amd64.whl",
+        "uploaded": "2026-10-21T12:51:09.395345Z",
+        "yanked": false
+      },
+      {
+        "filename": "duckdb-2.0.0-cp312-abi3-win_arm64.whl",
+        "uploaded": "2026-10-21T12:51:11.643301Z",
+        "yanked": false
+      },
+      {
+        "filename": "duckdb-2.0.0.tar.gz",
+        "uploaded": "2026-10-21T12:51:13.908572Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "elasticsearch",
+    "version": "9.5.1",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/elasticsearch/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "elasticsearch-9.5.1-py3-none-any.whl",
+        "uploaded": "2026-09-09T20:17:00.180072Z",
+        "yanked": false
+      },
+      {
+        "filename": "elasticsearch-9.5.1.tar.gz",
+        "uploaded": "2026-09-09T20:17:03.842364Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "faiss-cpu",
+    "version": "1.15.1",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/faiss-cpu/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "faiss_cpu-1.15.1-cp310-abi3-macosx_14_0_arm64.whl",
+        "uploaded": "2026-09-16T18:33:29.409421Z",
+        "yanked": false
+      },
+      {
+        "filename": "faiss_cpu-1.15.1-cp310-abi3-macosx_15_0_x86_64.whl",
+        "uploaded": "2026-09-16T18:33:31.404907Z",
+        "yanked": false
+      },
+      {
+        "filename": "faiss_cpu-1.15.1-cp310-abi3-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-09-16T18:33:33.451908Z",
+        "yanked": false
+      },
+      {
+        "filename": "faiss_cpu-1.15.1-cp310-abi3-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-09-16T18:33:36.023277Z",
+        "yanked": false
+      },
+      {
+        "filename": "faiss_cpu-1.15.1-cp310-abi3-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-09-16T18:33:38.883998Z",
+        "yanked": false
+      },
+      {
+        "filename": "faiss_cpu-1.15.1-cp310-abi3-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-09-16T18:33:42.21343Z",
+        "yanked": false
+      },
+      {
+        "filename": "faiss_cpu-1.15.1-cp310-cp310-win_amd64.whl",
+        "uploaded": "2026-09-16T18:33:45.539701Z",
+        "yanked": false
+      },
+      {
+        "filename": "faiss_cpu-1.15.1-cp311-cp311-win_amd64.whl",
+        "uploaded": "2026-09-16T18:33:48.7759Z",
+        "yanked": false
+      },
+      {
+        "filename": "faiss_cpu-1.15.1-cp311-cp311-win_arm64.whl",
+        "uploaded": "2026-09-16T18:33:51.370141Z",
+        "yanked": false
+      },
+      {
+        "filename": "faiss_cpu-1.15.1-cp312-cp312-win_amd64.whl",
+        "uploaded": "2026-09-16T18:33:55.001751Z",
+        "yanked": false
+      },
+      {
+        "filename": "faiss_cpu-1.15.1-cp312-cp312-win_arm64.whl",
+        "uploaded": "2026-09-16T18:33:57.835495Z",
+        "yanked": false
+      },
+      {
+        "filename": "faiss_cpu-1.15.1-cp313-cp313-win_amd64.whl",
+        "uploaded": "2026-09-16T18:34:01.226012Z",
+        "yanked": false
+      },
+      {
+        "filename": "faiss_cpu-1.15.1-cp313-cp313-win_arm64.whl",
+        "uploaded": "2026-09-16T18:34:04.344011Z",
+        "yanked": false
+      },
+      {
+        "filename": "faiss_cpu-1.15.1-cp314-cp314-win_amd64.whl",
+        "uploaded": "2026-09-16T18:34:07.417148Z",
+        "yanked": false
+      },
+      {
+        "filename": "faiss_cpu-1.15.1-cp314-cp314-win_arm64.whl",
+        "uploaded": "2026-09-16T18:34:10.200007Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "faker",
+    "version": "40.44.0",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/faker/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "faker-40.44.0-py3-none-any.whl",
+        "uploaded": "2026-10-28T17:06:39.109089Z",
+        "yanked": false
+      },
+      {
+        "filename": "faker-40.44.0.tar.gz",
+        "uploaded": "2026-10-28T17:06:41.04884Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "fastapi",
+    "version": "0.162.0",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/fastapi/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "fastapi-0.162.0-py3-none-any.whl",
+        "uploaded": "2026-10-23T18:47:31.734776Z",
+        "yanked": false
+      },
+      {
+        "filename": "fastapi-0.162.0.tar.gz",
+        "uploaded": "2026-10-23T18:47:33.264891Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "h5py",
+    "version": "3.16.0",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/h5py/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "h5py-3.16.0-cp310-cp310-macosx_10_9_x86_64.whl",
+        "uploaded": "2026-03-06T13:47:35.242065Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp310-cp310-macosx_11_0_arm64.whl",
+        "uploaded": "2026-03-06T13:47:37.634396Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp310-cp310-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-03-06T13:47:39.811964Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp310-cp310-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-03-06T13:47:41.489777Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp310-cp310-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-03-06T13:47:43.586225Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp310-cp310-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-03-06T13:47:45.315504Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp310-cp310-win_amd64.whl",
+        "uploaded": "2026-03-06T13:47:47.04128Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp311-cp311-macosx_10_9_x86_64.whl",
+        "uploaded": "2026-03-06T13:47:49.599061Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp311-cp311-macosx_11_0_arm64.whl",
+        "uploaded": "2026-03-06T13:47:51.249936Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp311-cp311-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-03-06T13:47:53.085647Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp311-cp311-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-03-06T13:47:55.043653Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp311-cp311-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-03-06T13:47:56.893747Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp311-cp311-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-03-06T13:47:59.010565Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp311-cp311-win_amd64.whl",
+        "uploaded": "2026-03-06T13:48:00.626848Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp311-cp311-win_arm64.whl",
+        "uploaded": "2026-03-06T13:48:02.579477Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp312-cp312-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-03-06T13:48:04.198356Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp312-cp312-macosx_11_0_arm64.whl",
+        "uploaded": "2026-03-06T13:48:05.783436Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp312-cp312-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-03-06T13:48:07.482967Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp312-cp312-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-03-06T13:48:09.628278Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp312-cp312-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-03-06T13:48:11.260861Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp312-cp312-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-03-06T13:48:13.322179Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp312-cp312-win_amd64.whl",
+        "uploaded": "2026-03-06T13:48:15.759618Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp312-cp312-win_arm64.whl",
+        "uploaded": "2026-03-06T13:48:17.279214Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp313-cp313-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-03-06T13:48:19.737796Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp313-cp313-macosx_11_0_arm64.whl",
+        "uploaded": "2026-03-06T13:48:21.854155Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp313-cp313-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-03-06T13:48:24.071606Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp313-cp313-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-03-06T13:48:25.728842Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp313-cp313-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-03-06T13:48:27.436558Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp313-cp313-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-03-06T13:48:29.490332Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp313-cp313-win_amd64.whl",
+        "uploaded": "2026-03-06T13:48:31.131226Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp313-cp313-win_arm64.whl",
+        "uploaded": "2026-03-06T13:48:33.411728Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp314-cp314-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-03-06T13:48:35.183213Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp314-cp314-macosx_11_0_arm64.whl",
+        "uploaded": "2026-03-06T13:48:37.139033Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp314-cp314-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-03-06T13:48:38.879132Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp314-cp314-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-03-06T13:48:41.324244Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp314-cp314-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-03-06T13:48:43.117276Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp314-cp314-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-03-06T13:48:44.838814Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp314-cp314t-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-03-06T13:48:50.45347Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp314-cp314t-macosx_11_0_arm64.whl",
+        "uploaded": "2026-03-06T13:48:52.221415Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp314-cp314t-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-03-06T13:48:54.089727Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp314-cp314t-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-03-06T13:48:56.750965Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp314-cp314t-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-03-06T13:48:59.169054Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp314-cp314t-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-03-06T13:49:02.033949Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp314-cp314t-win_amd64.whl",
+        "uploaded": "2026-03-06T13:49:04.351794Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp314-cp314t-win_arm64.whl",
+        "uploaded": "2026-03-06T13:49:06.347835Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp314-cp314-win_amd64.whl",
+        "uploaded": "2026-03-06T13:48:47.117563Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0-cp314-cp314-win_arm64.whl",
+        "uploaded": "2026-03-06T13:48:48.707727Z",
+        "yanked": false
+      },
+      {
+        "filename": "h5py-3.16.0.tar.gz",
+        "uploaded": "2026-03-06T13:49:08.070518Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "hatchling",
+    "version": "1.33.0",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/hatchling/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "hatchling-1.33.0-py3-none-any.whl",
+        "uploaded": "2026-10-28T02:27:29.033037Z",
+        "yanked": false
+      },
+      {
+        "filename": "hatchling-1.33.0.tar.gz",
+        "uploaded": "2026-10-28T02:27:30.69477Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "hnswlib",
+    "version": "0.8.0",
+    "requires_python": "",
+    "source": "https://pypi.org/pypi/hnswlib/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "hnswlib-0.8.0.tar.gz",
+        "uploaded": "2023-12-03T04:16:17.550931Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "httpx",
+    "version": "0.28.1",
+    "requires_python": ">=3.8",
+    "source": "https://pypi.org/pypi/httpx/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "httpx-0.28.1-py3-none-any.whl",
+        "uploaded": "2024-12-06T15:37:21.509172Z",
+        "yanked": false
+      },
+      {
+        "filename": "httpx-0.28.1.tar.gz",
+        "uploaded": "2024-12-06T15:37:23.222462Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "huggingface-hub",
+    "version": "2.4.0",
+    "requires_python": ">=3.10.0",
+    "source": "https://pypi.org/pypi/huggingface-hub/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "huggingface_hub-2.4.0-py3-none-any.whl",
+        "uploaded": "2026-10-29T15:30:10.421769Z",
+        "yanked": false
+      },
+      {
+        "filename": "huggingface_hub-2.4.0.tar.gz",
+        "uploaded": "2026-10-29T15:30:12.321608Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "jupyter",
+    "version": "1.1.1",
+    "requires_python": null,
+    "source": "https://pypi.org/pypi/jupyter/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "jupyter-1.1.1-py2.py3-none-any.whl",
+        "uploaded": "2024-08-30T07:15:47.045946Z",
+        "yanked": false
+      },
+      {
+        "filename": "jupyter-1.1.1.tar.gz",
+        "uploaded": "2024-08-30T07:15:48.299795Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "lancedb",
+    "version": "0.41.0",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/lancedb/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "lancedb-0.41.0-cp310-abi3-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-29T09:10:26.053259Z",
+        "yanked": false
+      },
+      {
+        "filename": "lancedb-0.41.0-cp310-abi3-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-29T09:10:30.268511Z",
+        "yanked": false
+      },
+      {
+        "filename": "lancedb-0.41.0-cp310-abi3-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-29T09:10:34.344669Z",
+        "yanked": false
+      },
+      {
+        "filename": "lancedb-0.41.0-cp310-abi3-win_amd64.whl",
+        "uploaded": "2026-10-29T09:10:38.53604Z",
+        "yanked": false
+      },
+      {
+        "filename": "lancedb-0.41.0.tar.gz",
+        "uploaded": "2026-10-29T09:10:45.820552Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "locust",
+    "version": "2.47.0",
+    "requires_python": ">=3.11",
+    "source": "https://pypi.org/pypi/locust/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "locust-2.47.0-py3-none-any.whl",
+        "uploaded": "2026-10-21T20:30:45.632197Z",
+        "yanked": false
+      },
+      {
+        "filename": "locust-2.47.0.tar.gz",
+        "uploaded": "2026-10-21T20:30:47.59762Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "matplotlib",
+    "version": "3.11.2",
+    "requires_python": ">=3.11",
+    "source": "https://pypi.org/pypi/matplotlib/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "matplotlib-3.11.2-cp311-cp311-macosx_10_12_x86_64.whl",
+        "uploaded": "2026-09-11T19:02:59.277416Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp311-cp311-macosx_11_0_arm64.whl",
+        "uploaded": "2026-09-11T19:03:02.295208Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "uploaded": "2026-09-11T19:03:04.79672Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp311-cp311-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-09-11T19:03:07.402127Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp311-cp311-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-09-11T19:03:11.357754Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp311-cp311-win_amd64.whl",
+        "uploaded": "2026-09-11T19:03:14.250113Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp311-cp311-win_arm64.whl",
+        "uploaded": "2026-09-11T19:03:16.878117Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp312-cp312-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-09-11T19:03:19.45055Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp312-cp312-macosx_11_0_arm64.whl",
+        "uploaded": "2026-09-11T19:03:22.390382Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "uploaded": "2026-09-11T19:03:25.04942Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-09-11T19:03:28.10857Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp312-cp312-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-09-11T19:03:31.402526Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp312-cp312-win_amd64.whl",
+        "uploaded": "2026-09-11T19:03:34.195556Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp312-cp312-win_arm64.whl",
+        "uploaded": "2026-09-11T19:03:37.032457Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp313-cp313-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-09-11T19:03:40.170698Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp313-cp313-macosx_11_0_arm64.whl",
+        "uploaded": "2026-09-11T19:03:43.103304Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "uploaded": "2026-09-11T19:03:46.044707Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp313-cp313-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-09-11T19:03:48.942254Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp313-cp313-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-09-11T19:03:51.665163Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp313-cp313-win_amd64.whl",
+        "uploaded": "2026-09-11T19:03:54.534772Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp313-cp313-win_arm64.whl",
+        "uploaded": "2026-09-11T19:03:57.261506Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp314-cp314-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-09-11T19:04:00.120706Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp314-cp314-macosx_11_0_arm64.whl",
+        "uploaded": "2026-09-11T19:04:02.976816Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp314-cp314-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-09-11T19:04:06.912487Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-09-11T19:04:09.94807Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp314-cp314-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-09-11T19:04:12.887696Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp314-cp314t-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-09-11T19:04:21.390207Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp314-cp314t-macosx_11_0_arm64.whl",
+        "uploaded": "2026-09-11T19:04:24.107406Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp314-cp314t-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-09-11T19:04:27.201585Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp314-cp314t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-09-11T19:04:30.254326Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp314-cp314t-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-09-11T19:04:32.964885Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp314-cp314t-win_amd64.whl",
+        "uploaded": "2026-09-11T19:04:35.811443Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp314-cp314t-win_arm64.whl",
+        "uploaded": "2026-09-11T19:04:38.972476Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp314-cp314-win_amd64.whl",
+        "uploaded": "2026-09-11T19:04:15.78821Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp314-cp314-win_arm64.whl",
+        "uploaded": "2026-09-11T19:04:18.691744Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp315-cp315-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-09-11T19:04:41.914215Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp315-cp315-macosx_11_0_arm64.whl",
+        "uploaded": "2026-09-11T19:04:44.834913Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp315-cp315-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-09-11T19:04:47.745025Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp315-cp315-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-09-11T19:04:50.71278Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp315-cp315-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-09-11T19:04:53.552357Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp315-cp315t-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-09-11T19:05:02.304664Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp315-cp315t-macosx_11_0_arm64.whl",
+        "uploaded": "2026-09-11T19:05:05.092356Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp315-cp315t-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-09-11T19:05:07.686116Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp315-cp315t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-09-11T19:05:10.943758Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp315-cp315t-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-09-11T19:05:13.900984Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp315-cp315t-win_amd64.whl",
+        "uploaded": "2026-09-11T19:05:16.480938Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp315-cp315t-win_arm64.whl",
+        "uploaded": "2026-09-11T19:05:19.063329Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp315-cp315-win_amd64.whl",
+        "uploaded": "2026-09-11T19:04:56.519776Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-cp315-cp315-win_arm64.whl",
+        "uploaded": "2026-09-11T19:04:59.318323Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-pp311-pypy311_pp73-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-09-11T19:05:22.086902Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-pp311-pypy311_pp73-macosx_11_0_arm64.whl",
+        "uploaded": "2026-09-11T19:05:24.677382Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2-pp311-pypy311_pp73-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "uploaded": "2026-09-11T19:05:27.455295Z",
+        "yanked": false
+      },
+      {
+        "filename": "matplotlib-3.11.2.tar.gz",
+        "uploaded": "2026-09-11T19:05:31.214573Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "milvus-lite",
+    "version": "3.2.2",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/milvus-lite/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "milvus_lite-3.2.2-py3-none-any.whl",
+        "uploaded": "2026-10-13T08:38:30.65742Z",
+        "yanked": false
+      },
+      {
+        "filename": "milvus_lite-3.2.2.tar.gz",
+        "uploaded": "2026-10-13T08:38:34.584816Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "nbstripout",
+    "version": "0.9.1",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/nbstripout/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "nbstripout-0.9.1-py3-none-any.whl",
+        "uploaded": "2026-02-21T16:19:54.868107Z",
+        "yanked": false
+      },
+      {
+        "filename": "nbstripout-0.9.1.tar.gz",
+        "uploaded": "2026-02-21T16:19:55.975588Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "numpy",
+    "version": "2.5.4",
+    "requires_python": ">=3.12",
+    "source": "https://pypi.org/pypi/numpy/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "numpy-2.5.4-cp312-cp312-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-10-10T20:02:40.843976Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp312-cp312-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-10T20:02:43.450403Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp312-cp312-macosx_14_0_arm64.whl",
+        "uploaded": "2026-10-10T20:02:46.169277Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp312-cp312-macosx_14_0_x86_64.whl",
+        "uploaded": "2026-10-10T20:02:48.139629Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-10T20:02:50.115151Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-10T20:02:53.18678Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp312-cp312-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-10T20:02:56.038247Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp312-cp312-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-10T20:02:59.01822Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp312-cp312-win32.whl",
+        "uploaded": "2026-10-10T20:03:01.626097Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp312-cp312-win_amd64.whl",
+        "uploaded": "2026-10-10T20:03:04.34901Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp312-cp312-win_arm64.whl",
+        "uploaded": "2026-10-10T20:03:06.767554Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp313-cp313-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-10-10T20:03:09.291265Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp313-cp313-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-10T20:03:11.946934Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp313-cp313-macosx_14_0_arm64.whl",
+        "uploaded": "2026-10-10T20:03:14.329645Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp313-cp313-macosx_14_0_x86_64.whl",
+        "uploaded": "2026-10-10T20:03:16.602795Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-10T20:03:18.721795Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-10T20:03:21.386135Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp313-cp313-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-10T20:03:24.468736Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp313-cp313-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-10T20:03:27.89511Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp313-cp313-win32.whl",
+        "uploaded": "2026-10-10T20:03:30.511092Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp313-cp313-win_amd64.whl",
+        "uploaded": "2026-10-10T20:03:32.612344Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp313-cp313-win_arm64.whl",
+        "uploaded": "2026-10-10T20:03:35.16311Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-10T20:03:37.96194Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-10T20:03:40.606219Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314-macosx_14_0_arm64.whl",
+        "uploaded": "2026-10-10T20:03:43.138293Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314-macosx_14_0_x86_64.whl",
+        "uploaded": "2026-10-10T20:03:44.874168Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-10T20:03:46.839209Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-10T20:03:49.489443Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-10T20:03:52.250772Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-10T20:03:55.390474Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314t-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-10T20:04:05.012929Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314t-macosx_14_0_arm64.whl",
+        "uploaded": "2026-10-10T20:04:07.316653Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314t-macosx_14_0_x86_64.whl",
+        "uploaded": "2026-10-10T20:04:09.918517Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314t-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-10T20:04:12.278626Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-10T20:04:14.799183Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314t-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-10T20:04:17.580249Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314t-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-10T20:04:20.365693Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314t-win32.whl",
+        "uploaded": "2026-10-10T20:04:22.865886Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314t-win_amd64.whl",
+        "uploaded": "2026-10-10T20:04:24.990593Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314t-win_arm64.whl",
+        "uploaded": "2026-10-10T20:04:27.520497Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314-win32.whl",
+        "uploaded": "2026-10-10T20:03:58.186542Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314-win_amd64.whl",
+        "uploaded": "2026-10-10T20:04:00.280086Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp314-cp314-win_arm64.whl",
+        "uploaded": "2026-10-10T20:04:02.659118Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-10T20:04:30.021782Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-10T20:04:32.519768Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315-macosx_14_0_arm64.whl",
+        "uploaded": "2026-10-10T20:04:34.943636Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315-macosx_14_0_x86_64.whl",
+        "uploaded": "2026-10-10T20:04:37.2581Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-10T20:04:39.616362Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-10T20:04:42.383171Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-10T20:04:44.976647Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-10T20:04:47.863616Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315t-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-10T20:04:58.403052Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315t-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-10T20:05:01.650058Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315t-macosx_14_0_arm64.whl",
+        "uploaded": "2026-10-10T20:05:04.135289Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315t-macosx_14_0_x86_64.whl",
+        "uploaded": "2026-10-10T20:05:06.249699Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315t-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-10T20:05:08.376977Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-10T20:05:11.39327Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315t-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-10T20:05:14.490057Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315t-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-10T20:05:17.330816Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315t-win32.whl",
+        "uploaded": "2026-10-10T20:05:19.921804Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315t-win_amd64.whl",
+        "uploaded": "2026-10-10T20:05:21.875397Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315t-win_arm64.whl",
+        "uploaded": "2026-10-10T20:05:28.547991Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315-win32.whl",
+        "uploaded": "2026-10-10T20:04:50.467545Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315-win_amd64.whl",
+        "uploaded": "2026-10-10T20:04:52.630746Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4-cp315-cp315-win_arm64.whl",
+        "uploaded": "2026-10-10T20:04:55.677155Z",
+        "yanked": false
+      },
+      {
+        "filename": "numpy-2.5.4.tar.gz",
+        "uploaded": "2026-10-10T20:05:31.422199Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "ollama",
+    "version": "0.6.3",
+    "requires_python": ">=3.8",
+    "source": "https://pypi.org/pypi/ollama/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "ollama-0.6.3-py3-none-any.whl",
+        "uploaded": "2026-09-29T01:26:50.451319Z",
+        "yanked": false
+      },
+      {
+        "filename": "ollama-0.6.3.tar.gz",
+        "uploaded": "2026-09-29T01:26:51.906735Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "pandas",
+    "version": "3.1.1",
+    "requires_python": ">=3.11",
+    "source": "https://pypi.org/pypi/pandas/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "pandas-3.1.1-cp311-cp311-macosx_10_9_x86_64.whl",
+        "uploaded": "2026-11-04T15:05:30.116324Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp311-cp311-macosx_11_0_arm64.whl",
+        "uploaded": "2026-11-04T15:05:33.542535Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp311-cp311-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-11-04T15:05:36.219181Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-11-04T15:05:38.583487Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp311-cp311-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-11-04T15:05:41.255017Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp311-cp311-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-11-04T15:05:44.095684Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp311-cp311-win_amd64.whl",
+        "uploaded": "2026-11-04T15:05:46.677537Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp311-cp311-win_arm64.whl",
+        "uploaded": "2026-11-04T15:05:49.00658Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp312-cp312-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-11-04T15:05:51.818703Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp312-cp312-macosx_11_0_arm64.whl",
+        "uploaded": "2026-11-04T15:05:54.207349Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp312-cp312-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-11-04T15:05:57.056511Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-11-04T15:05:59.531073Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp312-cp312-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-11-04T15:06:02.310326Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp312-cp312-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-11-04T15:06:04.653769Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp312-cp312-pyemscripten_2024_0_wasm32.whl",
+        "uploaded": "2026-11-04T15:06:07.051822Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp312-cp312-win_amd64.whl",
+        "uploaded": "2026-11-04T15:06:09.397704Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp312-cp312-win_arm64.whl",
+        "uploaded": "2026-11-04T15:06:11.847487Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp313-cp313-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-11-04T15:06:14.210412Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp313-cp313-macosx_11_0_arm64.whl",
+        "uploaded": "2026-11-04T15:06:17.012135Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp313-cp313-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-11-04T15:06:19.46816Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-11-04T15:06:21.974184Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp313-cp313-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-11-04T15:06:24.5739Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp313-cp313-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-11-04T15:06:27.522124Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp313-cp313-win_amd64.whl",
+        "uploaded": "2026-11-04T15:06:29.957242Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp313-cp313-win_arm64.whl",
+        "uploaded": "2026-11-04T15:06:32.623744Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp314-cp314-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-11-04T15:06:35.089712Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp314-cp314-macosx_11_0_arm64.whl",
+        "uploaded": "2026-11-04T15:06:37.595696Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp314-cp314-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-11-04T15:06:40.763622Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp314-cp314-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-11-04T15:06:43.680481Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp314-cp314-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-11-04T15:06:46.310063Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp314-cp314-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-11-04T15:06:49.08509Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp314-cp314t-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-11-04T15:06:57.897719Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp314-cp314t-macosx_11_0_arm64.whl",
+        "uploaded": "2026-11-04T15:07:00.623885Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp314-cp314t-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-11-04T15:07:03.377637Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp314-cp314t-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-11-04T15:07:05.963836Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp314-cp314t-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-11-04T15:07:08.495991Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp314-cp314t-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-11-04T15:07:11.194505Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp314-cp314t-win_amd64.whl",
+        "uploaded": "2026-11-04T15:07:13.937507Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp314-cp314t-win_arm64.whl",
+        "uploaded": "2026-11-04T15:07:16.571835Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp314-cp314-win_amd64.whl",
+        "uploaded": "2026-11-04T15:06:52.025144Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp314-cp314-win_arm64.whl",
+        "uploaded": "2026-11-04T15:06:54.519849Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp315-cp315-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-11-04T15:07:19.40193Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp315-cp315-macosx_11_0_arm64.whl",
+        "uploaded": "2026-11-04T15:07:22.095495Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp315-cp315-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-11-04T15:07:24.740766Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp315-cp315-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-11-04T15:07:27.541711Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp315-cp315-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-11-04T15:07:30.486035Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp315-cp315-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-11-04T15:07:33.198499Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp315-cp315t-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-11-04T15:07:40.919251Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp315-cp315t-macosx_11_0_arm64.whl",
+        "uploaded": "2026-11-04T15:07:43.715143Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp315-cp315t-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-11-04T15:07:46.479624Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp315-cp315t-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-11-04T15:07:49.15861Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp315-cp315t-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-11-04T15:07:52.13455Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp315-cp315t-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-11-04T15:07:54.651599Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp315-cp315t-win_amd64.whl",
+        "uploaded": "2026-11-04T15:07:57.141807Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp315-cp315t-win_arm64.whl",
+        "uploaded": "2026-11-04T15:07:59.733012Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp315-cp315-win_amd64.whl",
+        "uploaded": "2026-11-04T15:07:36.083902Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1-cp315-cp315-win_arm64.whl",
+        "uploaded": "2026-11-04T15:07:38.417975Z",
+        "yanked": false
+      },
+      {
+        "filename": "pandas-3.1.1.tar.gz",
+        "uploaded": "2026-11-04T15:08:01.994382Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "pgvector",
+    "version": "0.5.1",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/pgvector/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "pgvector-0.5.1-py3-none-any.whl",
+        "uploaded": "2026-10-09T01:50:21.614621Z",
+        "yanked": false
+      },
+      {
+        "filename": "pgvector-0.5.1.tar.gz",
+        "uploaded": "2026-10-09T01:50:22.779284Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "pillow",
+    "version": "13.0.0",
+    "requires_python": ">=3.11",
+    "source": "https://pypi.org/pypi/pillow/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "pillow-13.0.0-cp311-cp311-macosx_10_10_x86_64.whl",
+        "uploaded": "2026-10-16T22:15:24.672561Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp311-cp311-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-16T22:15:27.669663Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-16T22:15:29.430905Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-16T22:15:31.36876Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp311-cp311-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-16T22:15:34.025648Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp311-cp311-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-16T22:15:36.214811Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp311-cp311-win32.whl",
+        "uploaded": "2026-10-16T22:15:38.129917Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp311-cp311-win_amd64.whl",
+        "uploaded": "2026-10-16T22:15:40.286973Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp311-cp311-win_arm64.whl",
+        "uploaded": "2026-10-16T22:15:42.637167Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp312-cp312-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-10-16T22:15:44.47474Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp312-cp312-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-16T22:15:46.284243Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-16T22:15:48.140641Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-16T22:15:50.093577Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp312-cp312-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-16T22:15:52.054506Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp312-cp312-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-16T22:15:54.009168Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp312-cp312-win32.whl",
+        "uploaded": "2026-10-16T22:15:56.250294Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp312-cp312-win_amd64.whl",
+        "uploaded": "2026-10-16T22:15:58.597158Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp312-cp312-win_arm64.whl",
+        "uploaded": "2026-10-16T22:16:00.637475Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp313-cp313-ios_13_0_arm64_iphoneos.whl",
+        "uploaded": "2026-10-16T22:16:02.527688Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp313-cp313-ios_13_0_arm64_iphonesimulator.whl",
+        "uploaded": "2026-10-16T22:16:04.861777Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp313-cp313-ios_13_0_x86_64_iphonesimulator.whl",
+        "uploaded": "2026-10-16T22:16:06.95615Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp313-cp313-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-10-16T22:16:08.664439Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp313-cp313-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-16T22:16:10.693815Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-16T22:16:12.896503Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-16T22:16:14.844872Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp313-cp313-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-16T22:16:16.893612Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp313-cp313-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-16T22:16:19.195821Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp313-cp313-win32.whl",
+        "uploaded": "2026-10-16T22:16:21.389792Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp313-cp313-win_amd64.whl",
+        "uploaded": "2026-10-16T22:16:23.393447Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp313-cp313-win_arm64.whl",
+        "uploaded": "2026-10-16T22:16:25.382865Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314-ios_13_0_arm64_iphoneos.whl",
+        "uploaded": "2026-10-16T22:16:27.524324Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314-ios_13_0_arm64_iphonesimulator.whl",
+        "uploaded": "2026-10-16T22:16:29.562228Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314-ios_13_0_x86_64_iphonesimulator.whl",
+        "uploaded": "2026-10-16T22:16:31.249638Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-16T22:16:33.103051Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-16T22:16:35.102908Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-16T22:16:37.228848Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-16T22:16:39.172695Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-16T22:16:41.117016Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-16T22:16:43.118334Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314t-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-16T22:16:51.291753Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314t-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-16T22:16:53.3992Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314t-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-16T22:16:55.52566Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-16T22:16:57.738411Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314t-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-16T22:16:59.842539Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314t-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-16T22:17:01.686966Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314t-win32.whl",
+        "uploaded": "2026-10-16T22:17:03.722778Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314t-win_amd64.whl",
+        "uploaded": "2026-10-16T22:17:05.543326Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314t-win_arm64.whl",
+        "uploaded": "2026-10-16T22:17:07.674025Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314-win32.whl",
+        "uploaded": "2026-10-16T22:16:45.883895Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314-win_amd64.whl",
+        "uploaded": "2026-10-16T22:16:47.725904Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp314-cp314-win_arm64.whl",
+        "uploaded": "2026-10-16T22:16:49.515898Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315-ios_13_0_arm64_iphoneos.whl",
+        "uploaded": "2026-10-16T22:17:09.449411Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315-ios_13_0_arm64_iphonesimulator.whl",
+        "uploaded": "2026-10-16T22:17:11.196568Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315-ios_13_0_x86_64_iphonesimulator.whl",
+        "uploaded": "2026-10-16T22:17:12.77249Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-16T22:17:14.539421Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-16T22:17:16.521107Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-16T22:17:18.534604Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-16T22:17:20.415985Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-16T22:17:22.361221Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-16T22:17:24.352713Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315t-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-16T22:17:31.642827Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315t-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-16T22:17:33.43032Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315t-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-16T22:17:35.415436Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-16T22:17:37.362425Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315t-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-16T22:17:39.313892Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315t-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-16T22:17:41.02107Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315t-win32.whl",
+        "uploaded": "2026-10-16T22:17:42.88686Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315t-win_amd64.whl",
+        "uploaded": "2026-10-16T22:17:45.56012Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315t-win_arm64.whl",
+        "uploaded": "2026-10-16T22:17:47.55662Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315-win32.whl",
+        "uploaded": "2026-10-16T22:17:26.31427Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315-win_amd64.whl",
+        "uploaded": "2026-10-16T22:17:28.198531Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-cp315-cp315-win_arm64.whl",
+        "uploaded": "2026-10-16T22:17:30.013189Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-pp311-pypy311_pp80-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-16T22:17:50.008892Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-pp311-pypy311_pp80-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-16T22:17:51.932571Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-pp311-pypy311_pp80-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-16T22:17:53.742661Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-pp311-pypy311_pp80-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-16T22:17:55.625025Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-pp311-pypy311_pp80-win_amd64.whl",
+        "uploaded": "2026-10-16T22:17:57.50927Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-pp312-pypy312_pp80-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-16T22:17:59.334634Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-pp312-pypy312_pp80-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-16T22:18:01.188565Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-pp312-pypy312_pp80-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-16T22:18:02.779391Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-pp312-pypy312_pp80-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-16T22:18:04.53865Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0-pp312-pypy312_pp80-win_amd64.whl",
+        "uploaded": "2026-10-16T22:18:06.638022Z",
+        "yanked": false
+      },
+      {
+        "filename": "pillow-13.0.0.tar.gz",
+        "uploaded": "2026-10-16T22:18:09.718711Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "pinecone",
+    "version": "10.3.0",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/pinecone/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "pinecone-10.3.0-cp310-abi3-macosx_10_12_x86_64.whl",
+        "uploaded": "2026-11-03T00:12:05.026724Z",
+        "yanked": false
+      },
+      {
+        "filename": "pinecone-10.3.0-cp310-abi3-macosx_11_0_arm64.whl",
+        "uploaded": "2026-11-03T00:12:07.097862Z",
+        "yanked": false
+      },
+      {
+        "filename": "pinecone-10.3.0-cp310-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+        "uploaded": "2026-11-03T00:12:09.475247Z",
+        "yanked": false
+      },
+      {
+        "filename": "pinecone-10.3.0-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "uploaded": "2026-11-03T00:12:11.400404Z",
+        "yanked": false
+      },
+      {
+        "filename": "pinecone-10.3.0-cp310-abi3-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-11-03T00:12:13.277935Z",
+        "yanked": false
+      },
+      {
+        "filename": "pinecone-10.3.0-cp310-abi3-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-11-03T00:12:15.198406Z",
+        "yanked": false
+      },
+      {
+        "filename": "pinecone-10.3.0-cp310-abi3-win_amd64.whl",
+        "uploaded": "2026-11-03T00:12:17.520156Z",
+        "yanked": false
+      },
+      {
+        "filename": "pinecone-10.3.0.tar.gz",
+        "uploaded": "2026-11-03T00:12:19.325595Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "pre-commit",
+    "version": "4.7.0",
+    "requires_python": ">=3.11",
+    "source": "https://pypi.org/pypi/pre-commit/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "pre_commit-4.7.0-py2.py3-none-any.whl",
+        "uploaded": "2026-10-12T20:45:38.858255Z",
+        "yanked": false
+      },
+      {
+        "filename": "pre_commit-4.7.0.tar.gz",
+        "uploaded": "2026-10-12T20:45:40.320969Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "prometheus-client",
+    "version": "0.26.0",
+    "requires_python": ">=3.9",
+    "source": "https://pypi.org/pypi/prometheus-client/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "prometheus_client-0.26.0-py3-none-any.whl",
+        "uploaded": "2026-07-24T19:36:40.854254Z",
+        "yanked": false
+      },
+      {
+        "filename": "prometheus_client-0.26.0.tar.gz",
+        "uploaded": "2026-07-24T19:36:41.893641Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "psutil",
+    "version": "7.2.2",
+    "requires_python": ">=3.6",
+    "source": "https://pypi.org/pypi/psutil/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "psutil-7.2.2-cp313-cp313t-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-01-28T18:14:57.293384Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp313-cp313t-macosx_11_0_arm64.whl",
+        "uploaded": "2026-01-28T18:14:59.732473Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp313-cp313t-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-01-28T18:15:01.884385Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp313-cp313t-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-01-28T18:15:04.436652Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp313-cp313t-win_amd64.whl",
+        "uploaded": "2026-01-28T18:15:06.378402Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp313-cp313t-win_arm64.whl",
+        "uploaded": "2026-01-28T18:15:08.030483Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp314-cp314t-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-01-28T18:15:09.469111Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp314-cp314t-macosx_11_0_arm64.whl",
+        "uploaded": "2026-01-28T18:15:11.724542Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp314-cp314t-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-01-28T18:15:13.44501Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp314-cp314t-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-01-28T18:15:16.002782Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp314-cp314t-win_amd64.whl",
+        "uploaded": "2026-01-28T18:15:18.385158Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp314-cp314t-win_arm64.whl",
+        "uploaded": "2026-01-28T18:15:19.912153Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp36-abi3-macosx_10_9_x86_64.whl",
+        "uploaded": "2026-01-28T18:15:22.16866Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp36-abi3-macosx_11_0_arm64.whl",
+        "uploaded": "2026-01-28T18:15:23.795403Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-01-28T18:15:25.97661Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp36-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-01-28T18:15:27.794675Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp36-abi3-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-01-28T18:15:29.342891Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp36-abi3-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-01-28T18:15:31.597126Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp37-abi3-win_amd64.whl",
+        "uploaded": "2026-01-28T18:15:33.849193Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2-cp37-abi3-win_arm64.whl",
+        "uploaded": "2026-01-28T18:15:36.514806Z",
+        "yanked": false
+      },
+      {
+        "filename": "psutil-7.2.2.tar.gz",
+        "uploaded": "2026-01-28T18:14:54.4284Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "psycopg",
+    "version": "3.3.8",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/psycopg/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "psycopg-3.3.8-py3-none-any.whl",
+        "uploaded": "2026-11-04T09:37:35.491551Z",
+        "yanked": false
+      },
+      {
+        "filename": "psycopg-3.3.8.tar.gz",
+        "uploaded": "2026-11-04T09:44:26.142053Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "pyarrow",
+    "version": "26.0.1",
+    "requires_python": ">=3.11",
+    "source": "https://pypi.org/pypi/pyarrow/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "pyarrow-26.0.1-cp311-cp311-macosx_12_0_arm64.whl",
+        "uploaded": "2026-11-03T09:54:01.046378Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp311-cp311-macosx_12_0_x86_64.whl",
+        "uploaded": "2026-11-03T09:57:58.046975Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp311-cp311-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-11-03T10:48:50.544961Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp311-cp311-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-11-03T10:48:58.91604Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp311-cp311-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-11-03T10:49:05.872662Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp311-cp311-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-11-03T10:49:14.145781Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp311-cp311-win_amd64.whl",
+        "uploaded": "2026-11-03T10:49:19.450972Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp312-cp312-macosx_12_0_arm64.whl",
+        "uploaded": "2026-11-03T10:49:25.185946Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp312-cp312-macosx_12_0_x86_64.whl",
+        "uploaded": "2026-11-03T10:49:30.886226Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp312-cp312-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-11-03T10:49:37.890377Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp312-cp312-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-11-03T10:49:45.732331Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp312-cp312-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-11-03T10:49:53.740419Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp312-cp312-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-11-03T10:50:01.442984Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp312-cp312-win_amd64.whl",
+        "uploaded": "2026-11-03T10:50:06.854619Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp313-cp313-macosx_12_0_arm64.whl",
+        "uploaded": "2026-11-03T10:50:12.333931Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp313-cp313-macosx_12_0_x86_64.whl",
+        "uploaded": "2026-11-03T10:50:18.254414Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp313-cp313-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-11-03T10:50:25.332595Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp313-cp313-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-11-03T10:50:32.551605Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp313-cp313-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-11-03T10:50:39.890724Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp313-cp313-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-11-03T10:50:48.029972Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp313-cp313-win_amd64.whl",
+        "uploaded": "2026-11-03T10:50:53.384364Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp314-cp314-macosx_12_0_arm64.whl",
+        "uploaded": "2026-11-03T10:50:59.462089Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp314-cp314-macosx_12_0_x86_64.whl",
+        "uploaded": "2026-11-03T10:51:05.743027Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp314-cp314-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-11-03T10:51:12.750953Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp314-cp314-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-11-03T10:51:20.417399Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp314-cp314-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-11-03T10:51:28.295994Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp314-cp314-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-11-03T10:51:36.303127Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp314-cp314t-macosx_12_0_arm64.whl",
+        "uploaded": "2026-11-03T10:51:42.419774Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp314-cp314t-macosx_12_0_x86_64.whl",
+        "uploaded": "2026-11-03T10:51:48.766746Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp314-cp314t-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-11-03T10:51:56.701039Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp314-cp314t-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-11-03T10:52:05.813396Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp314-cp314t-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-11-03T10:52:14.577395Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp314-cp314t-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-11-03T10:52:23.045877Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp314-cp314t-win_amd64.whl",
+        "uploaded": "2026-11-03T10:52:29.18814Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp314-cp314-win_amd64.whl",
+        "uploaded": "2026-11-03T10:52:35.061648Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp315-cp315-macosx_12_0_arm64.whl",
+        "uploaded": "2026-11-03T10:52:41.622058Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp315-cp315-macosx_12_0_x86_64.whl",
+        "uploaded": "2026-11-03T10:52:47.507443Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp315-cp315-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-11-03T10:52:54.590903Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp315-cp315-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-11-03T10:53:02.190499Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp315-cp315-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-11-03T10:53:09.800994Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp315-cp315-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-11-03T10:53:17.902905Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp315-cp315t-macosx_12_0_arm64.whl",
+        "uploaded": "2026-11-03T10:53:25.531995Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp315-cp315t-macosx_12_0_x86_64.whl",
+        "uploaded": "2026-11-03T10:53:33.046808Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp315-cp315t-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-11-03T10:53:41.281198Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp315-cp315t-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-11-03T10:53:49.153134Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp315-cp315t-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-11-03T10:53:56.512164Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp315-cp315t-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-11-03T10:54:04.472489Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp315-cp315t-win_amd64.whl",
+        "uploaded": "2026-11-03T10:54:09.613883Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1-cp315-cp315-win_amd64.whl",
+        "uploaded": "2026-11-03T10:54:14.582715Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyarrow-26.0.1.tar.gz",
+        "uploaded": "2026-11-03T10:54:17.563715Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "pydantic",
+    "version": "2.14.2",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/pydantic/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "pydantic-2.14.2-py3-none-any.whl",
+        "uploaded": "2026-10-29T16:37:10.181777Z",
+        "yanked": false
+      },
+      {
+        "filename": "pydantic-2.14.2.tar.gz",
+        "uploaded": "2026-10-29T16:37:12.476407Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "pymilvus",
+    "version": "3.0.2",
+    "requires_python": ">=3.9",
+    "source": "https://pypi.org/pypi/pymilvus/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "pymilvus-3.0.2-py3-none-any.whl",
+        "uploaded": "2026-09-18T08:54:12.848996Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymilvus-3.0.2.tar.gz",
+        "uploaded": "2026-09-18T08:54:14.014678Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "pymongo",
+    "version": "4.19.0",
+    "requires_python": ">=3.11",
+    "source": "https://pypi.org/pypi/pymongo/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "pymongo-4.19.0-cp311-cp311-macosx_10_9_x86_64.whl",
+        "uploaded": "2026-10-14T19:46:01.243933Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp311-cp311-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-14T19:46:04.412319Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp311-cp311-manylinux1_i686.manylinux_2_28_i686.manylinux_2_5_i686.whl",
+        "uploaded": "2026-10-14T19:46:06.33484Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-14T19:46:08.373644Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp311-cp311-manylinux2014_ppc64le.manylinux_2_17_ppc64le.manylinux_2_28_ppc64le.whl",
+        "uploaded": "2026-10-14T19:46:10.060168Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp311-cp311-manylinux2014_s390x.manylinux_2_17_s390x.manylinux_2_28_s390x.whl",
+        "uploaded": "2026-10-14T19:46:11.673237Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-14T19:46:13.27246Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp311-cp311-win32.whl",
+        "uploaded": "2026-10-14T19:46:15.120555Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp311-cp311-win_amd64.whl",
+        "uploaded": "2026-10-14T19:46:16.754881Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp311-cp311-win_arm64.whl",
+        "uploaded": "2026-10-14T19:46:18.679764Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp312-cp312-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-10-14T19:46:20.446789Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp312-cp312-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-14T19:46:21.921612Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp312-cp312-manylinux1_i686.manylinux_2_28_i686.manylinux_2_5_i686.whl",
+        "uploaded": "2026-10-14T19:46:23.669157Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-14T19:46:25.416819Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp312-cp312-manylinux2014_ppc64le.manylinux_2_17_ppc64le.manylinux_2_28_ppc64le.whl",
+        "uploaded": "2026-10-14T19:46:27.605475Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp312-cp312-manylinux2014_s390x.manylinux_2_17_s390x.manylinux_2_28_s390x.whl",
+        "uploaded": "2026-10-14T19:46:29.490036Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-14T19:46:31.230324Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp312-cp312-win32.whl",
+        "uploaded": "2026-10-14T19:46:32.885782Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp312-cp312-win_amd64.whl",
+        "uploaded": "2026-10-14T19:46:34.605372Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp312-cp312-win_arm64.whl",
+        "uploaded": "2026-10-14T19:46:36.382165Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp313-cp313-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-10-14T19:46:38.094561Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp313-cp313-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-14T19:46:39.827715Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp313-cp313-manylinux1_i686.manylinux_2_28_i686.manylinux_2_5_i686.whl",
+        "uploaded": "2026-10-14T19:46:41.742871Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-14T19:46:43.505982Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp313-cp313-manylinux2014_ppc64le.manylinux_2_17_ppc64le.manylinux_2_28_ppc64le.whl",
+        "uploaded": "2026-10-14T19:46:45.142867Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp313-cp313-manylinux2014_s390x.manylinux_2_17_s390x.manylinux_2_28_s390x.whl",
+        "uploaded": "2026-10-14T19:46:47.067894Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-14T19:46:49.138138Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp313-cp313-win32.whl",
+        "uploaded": "2026-10-14T19:46:50.861782Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp313-cp313-win_amd64.whl",
+        "uploaded": "2026-10-14T19:46:52.927992Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp313-cp313-win_arm64.whl",
+        "uploaded": "2026-10-14T19:46:55.076022Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-14T19:46:56.892944Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-14T19:46:58.842581Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314-manylinux1_i686.manylinux_2_28_i686.manylinux_2_5_i686.whl",
+        "uploaded": "2026-10-14T19:47:00.537508Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-14T19:47:02.511351Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314-manylinux2014_ppc64le.manylinux_2_17_ppc64le.manylinux_2_28_ppc64le.whl",
+        "uploaded": "2026-10-14T19:47:04.38085Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314-manylinux2014_s390x.manylinux_2_17_s390x.manylinux_2_28_s390x.whl",
+        "uploaded": "2026-10-14T19:47:06.247936Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-14T19:47:08.076144Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314t-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-14T19:47:15.76163Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314t-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-14T19:47:17.789469Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314t-manylinux1_i686.manylinux_2_28_i686.manylinux_2_5_i686.whl",
+        "uploaded": "2026-10-14T19:47:19.743684Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314t-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-14T19:47:21.617553Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314t-manylinux2014_ppc64le.manylinux_2_17_ppc64le.manylinux_2_28_ppc64le.whl",
+        "uploaded": "2026-10-14T19:47:23.572982Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314t-manylinux2014_s390x.manylinux_2_17_s390x.manylinux_2_28_s390x.whl",
+        "uploaded": "2026-10-14T19:47:25.554622Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314t-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-14T19:47:27.582367Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314t-win32.whl",
+        "uploaded": "2026-10-14T19:47:29.463232Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314t-win_amd64.whl",
+        "uploaded": "2026-10-14T19:47:31.313988Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314t-win_arm64.whl",
+        "uploaded": "2026-10-14T19:47:33.367234Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314-win32.whl",
+        "uploaded": "2026-10-14T19:47:10.086167Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314-win_amd64.whl",
+        "uploaded": "2026-10-14T19:47:12.088999Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp314-cp314-win_arm64.whl",
+        "uploaded": "2026-10-14T19:47:13.959877Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-14T19:47:35.317852Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-14T19:47:37.463279Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315-manylinux1_i686.manylinux_2_28_i686.manylinux_2_5_i686.whl",
+        "uploaded": "2026-10-14T19:47:39.539619Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-14T19:47:41.601866Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315-manylinux2014_ppc64le.manylinux_2_17_ppc64le.manylinux_2_28_ppc64le.whl",
+        "uploaded": "2026-10-14T19:47:43.87483Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315-manylinux2014_s390x.manylinux_2_17_s390x.manylinux_2_28_s390x.whl",
+        "uploaded": "2026-10-14T19:47:45.90446Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-14T19:47:47.885486Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315t-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-14T19:47:56.428758Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315t-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-14T19:47:58.457683Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315t-manylinux1_i686.manylinux_2_28_i686.manylinux_2_5_i686.whl",
+        "uploaded": "2026-10-14T19:48:00.917313Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315t-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-14T19:48:03.05065Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315t-manylinux2014_ppc64le.manylinux_2_17_ppc64le.manylinux_2_28_ppc64le.whl",
+        "uploaded": "2026-10-14T19:48:05.638134Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315t-manylinux2014_s390x.manylinux_2_17_s390x.manylinux_2_28_s390x.whl",
+        "uploaded": "2026-10-14T19:48:07.73404Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315t-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-14T19:48:09.89168Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315t-win32.whl",
+        "uploaded": "2026-10-14T19:48:11.96271Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315t-win_amd64.whl",
+        "uploaded": "2026-10-14T19:48:14.063814Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315t-win_arm64.whl",
+        "uploaded": "2026-10-14T19:48:17.534611Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315-win32.whl",
+        "uploaded": "2026-10-14T19:47:50.253744Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315-win_amd64.whl",
+        "uploaded": "2026-10-14T19:47:52.418008Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0-cp315-cp315-win_arm64.whl",
+        "uploaded": "2026-10-14T19:47:54.538434Z",
+        "yanked": false
+      },
+      {
+        "filename": "pymongo-4.19.0.tar.gz",
+        "uploaded": "2026-10-14T19:48:19.629715Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "pytest",
+    "version": "9.2.0",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/pytest/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "pytest-9.2.0-py3-none-any.whl",
+        "uploaded": "2026-10-27T21:30:19.131148Z",
+        "yanked": false
+      },
+      {
+        "filename": "pytest-9.2.0.tar.gz",
+        "uploaded": "2026-10-27T21:30:20.728655Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "pytest-socket",
+    "version": "0.8.1",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/pytest-socket/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "pytest_socket-0.8.1-py3-none-any.whl",
+        "uploaded": "2026-08-19T15:16:24.426345Z",
+        "yanked": false
+      },
+      {
+        "filename": "pytest_socket-0.8.1.tar.gz",
+        "uploaded": "2026-08-19T15:16:25.653606Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "python-dotenv",
+    "version": "1.2.4",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/python-dotenv/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "python_dotenv-1.2.4-py3-none-any.whl",
+        "uploaded": "2026-10-01T05:36:08.633003Z",
+        "yanked": false
+      },
+      {
+        "filename": "python_dotenv-1.2.4.tar.gz",
+        "uploaded": "2026-10-01T05:36:10.00089Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "pyvespa",
+    "version": "1.2.10",
+    "requires_python": "<3.16,>=3.11",
+    "source": "https://pypi.org/pypi/pyvespa/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "pyvespa-1.2.10-py3-none-any.whl",
+        "uploaded": "2026-10-30T09:43:33.97969Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyvespa-1.2.10.tar.gz",
+        "uploaded": "2026-10-30T09:43:35.587149Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "pyyaml",
+    "version": "6.0.3",
+    "requires_python": ">=3.8",
+    "source": "https://pypi.org/pypi/pyyaml/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "pyyaml-6.0.3-cp310-cp310-macosx_10_13_x86_64.whl",
+        "uploaded": "2025-09-25T21:31:46.040932Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp310-cp310-macosx_11_0_arm64.whl",
+        "uploaded": "2025-09-25T21:31:47.706282Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp310-cp310-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2025-09-25T21:31:49.210067Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp310-cp310-manylinux2014_s390x.manylinux_2_17_s390x.manylinux_2_28_s390x.whl",
+        "uploaded": "2025-09-25T21:31:50.735131Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2025-09-25T21:31:51.828716Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp310-cp310-musllinux_1_2_aarch64.whl",
+        "uploaded": "2025-09-25T21:31:53.282215Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp310-cp310-musllinux_1_2_x86_64.whl",
+        "uploaded": "2025-09-25T21:31:54.807344Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp310-cp310-win32.whl",
+        "uploaded": "2025-09-25T21:31:55.88547Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp310-cp310-win_amd64.whl",
+        "uploaded": "2025-09-25T21:31:57.406115Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp311-cp311-macosx_10_13_x86_64.whl",
+        "uploaded": "2025-09-25T21:31:58.655967Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp311-cp311-macosx_11_0_arm64.whl",
+        "uploaded": "2025-09-25T21:32:00.088486Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2025-09-25T21:32:01.310546Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp311-cp311-manylinux2014_s390x.manylinux_2_17_s390x.manylinux_2_28_s390x.whl",
+        "uploaded": "2025-09-25T21:32:03.376781Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2025-09-25T21:32:04.553491Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp311-cp311-musllinux_1_2_aarch64.whl",
+        "uploaded": "2025-09-25T21:32:06.152188Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp311-cp311-musllinux_1_2_x86_64.whl",
+        "uploaded": "2025-09-25T21:32:07.36715Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp311-cp311-win32.whl",
+        "uploaded": "2025-09-25T21:32:08.950508Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp311-cp311-win_amd64.whl",
+        "uploaded": "2025-09-25T21:32:09.960416Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp312-cp312-macosx_10_13_x86_64.whl",
+        "uploaded": "2025-09-25T21:32:11.445337Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl",
+        "uploaded": "2025-09-25T21:32:12.492377Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2025-09-25T21:32:13.652062Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp312-cp312-manylinux2014_s390x.manylinux_2_17_s390x.manylinux_2_28_s390x.whl",
+        "uploaded": "2025-09-25T21:32:15.210457Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2025-09-25T21:32:16.431392Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp312-cp312-musllinux_1_2_aarch64.whl",
+        "uploaded": "2025-09-25T21:32:17.5605Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp312-cp312-musllinux_1_2_x86_64.whl",
+        "uploaded": "2025-09-25T21:32:18.83454Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp312-cp312-win32.whl",
+        "uploaded": "2025-09-25T21:32:20.209519Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp312-cp312-win_amd64.whl",
+        "uploaded": "2025-09-25T21:32:21.167929Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp312-cp312-win_arm64.whl",
+        "uploaded": "2025-09-25T21:32:22.617377Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp313-cp313-macosx_10_13_x86_64.whl",
+        "uploaded": "2025-09-25T21:32:23.673728Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp313-cp313-macosx_11_0_arm64.whl",
+        "uploaded": "2025-09-25T21:32:25.14934Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2025-09-25T21:32:26.575286Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp313-cp313-manylinux2014_s390x.manylinux_2_17_s390x.manylinux_2_28_s390x.whl",
+        "uploaded": "2025-09-25T21:32:27.7273Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2025-09-25T21:32:28.878522Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp313-cp313-musllinux_1_2_aarch64.whl",
+        "uploaded": "2025-09-25T21:32:30.178904Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp313-cp313-musllinux_1_2_x86_64.whl",
+        "uploaded": "2025-09-25T21:32:31.353769Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp313-cp313-win32.whl",
+        "uploaded": "2025-09-25T21:32:32.580542Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp313-cp313-win_amd64.whl",
+        "uploaded": "2025-09-25T21:32:33.65912Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp313-cp313-win_arm64.whl",
+        "uploaded": "2025-09-25T21:32:34.663889Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314-macosx_10_13_x86_64.whl",
+        "uploaded": "2025-09-25T21:32:35.712547Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314-macosx_11_0_arm64.whl",
+        "uploaded": "2025-09-25T21:32:36.789261Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2025-09-25T21:32:37.96662Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314-manylinux2014_s390x.manylinux_2_17_s390x.manylinux_2_28_s390x.whl",
+        "uploaded": "2025-09-25T21:32:39.178519Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2025-09-25T21:32:40.865549Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314-musllinux_1_2_aarch64.whl",
+        "uploaded": "2025-09-25T21:32:42.084806Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314-musllinux_1_2_x86_64.whl",
+        "uploaded": "2025-09-25T21:32:43.362137Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314t-macosx_10_13_x86_64.whl",
+        "uploaded": "2025-09-25T21:32:44.377936Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314t-macosx_11_0_arm64.whl",
+        "uploaded": "2025-09-25T21:32:45.40723Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314t-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2025-09-25T21:32:48.830356Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314t-manylinux2014_s390x.manylinux_2_17_s390x.manylinux_2_28_s390x.whl",
+        "uploaded": "2025-09-25T21:32:50.149115Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314t-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2025-09-25T21:32:51.808138Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314t-musllinux_1_2_aarch64.whl",
+        "uploaded": "2025-09-25T21:32:52.941234Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314t-musllinux_1_2_x86_64.whl",
+        "uploaded": "2025-09-25T21:32:54.537913Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314t-win_amd64.whl",
+        "uploaded": "2025-09-25T21:32:55.767251Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314t-win_arm64.whl",
+        "uploaded": "2025-09-25T21:32:56.828832Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314-win_amd64.whl",
+        "uploaded": "2025-09-25T21:32:57.844103Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp314-cp314-win_arm64.whl",
+        "uploaded": "2025-09-25T21:32:59.247374Z",
+        "yanked": false
+      },
+      {
+        "filename": "PyYAML-6.0.3-cp38-cp38-macosx_10_13_x86_64.whl",
+        "uploaded": "2025-09-29T20:27:35.91876Z",
+        "yanked": false
+      },
+      {
+        "filename": "PyYAML-6.0.3-cp38-cp38-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2025-09-29T20:27:38.150744Z",
+        "yanked": false
+      },
+      {
+        "filename": "PyYAML-6.0.3-cp38-cp38-manylinux2014_s390x.manylinux_2_17_s390x.manylinux_2_28_s390x.whl",
+        "uploaded": "2025-09-29T20:27:39.715606Z",
+        "yanked": false
+      },
+      {
+        "filename": "PyYAML-6.0.3-cp38-cp38-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2025-09-29T20:27:41.44463Z",
+        "yanked": false
+      },
+      {
+        "filename": "PyYAML-6.0.3-cp38-cp38-musllinux_1_2_x86_64.whl",
+        "uploaded": "2025-09-29T20:27:42.885734Z",
+        "yanked": false
+      },
+      {
+        "filename": "PyYAML-6.0.3-cp38-cp38-win32.whl",
+        "uploaded": "2025-09-29T20:27:44.487291Z",
+        "yanked": false
+      },
+      {
+        "filename": "PyYAML-6.0.3-cp38-cp38-win_amd64.whl",
+        "uploaded": "2025-09-29T20:27:46.049234Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp39-cp39-macosx_10_13_x86_64.whl",
+        "uploaded": "2025-09-25T21:33:00.618961Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp39-cp39-macosx_11_0_arm64.whl",
+        "uploaded": "2025-09-25T21:33:02.086101Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp39-cp39-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2025-09-25T21:33:03.250809Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp39-cp39-manylinux2014_s390x.manylinux_2_17_s390x.manylinux_2_28_s390x.whl",
+        "uploaded": "2025-09-25T21:33:05.014824Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2025-09-25T21:33:06.398729Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp39-cp39-musllinux_1_2_aarch64.whl",
+        "uploaded": "2025-09-25T21:33:08.708014Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp39-cp39-musllinux_1_2_x86_64.whl",
+        "uploaded": "2025-09-25T21:33:09.876015Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp39-cp39-win32.whl",
+        "uploaded": "2025-09-25T21:33:10.983039Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3-cp39-cp39-win_amd64.whl",
+        "uploaded": "2025-09-25T21:33:15.550967Z",
+        "yanked": false
+      },
+      {
+        "filename": "pyyaml-6.0.3.tar.gz",
+        "uploaded": "2025-09-25T21:33:16.546886Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "qdrant-client",
+    "version": "1.20.0",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/qdrant-client/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "qdrant_client-1.20.0-py3-none-any.whl",
+        "uploaded": "2026-10-22T10:26:14.838659Z",
+        "yanked": false
+      },
+      {
+        "filename": "qdrant_client-1.20.0.tar.gz",
+        "uploaded": "2026-10-22T10:26:16.275127Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "redis",
+    "version": "8.1.0",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/redis/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "redis-8.1.0-py3-none-any.whl",
+        "uploaded": "2026-07-30T08:50:58.497552Z",
+        "yanked": false
+      },
+      {
+        "filename": "redis-8.1.0.tar.gz",
+        "uploaded": "2026-07-30T08:51:00.26904Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "rich",
+    "version": "15.0.0",
+    "requires_python": ">=3.9.0",
+    "source": "https://pypi.org/pypi/rich/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "rich-15.0.0-py3-none-any.whl",
+        "uploaded": "2026-04-12T08:24:02.830783Z",
+        "yanked": false
+      },
+      {
+        "filename": "rich-15.0.0.tar.gz",
+        "uploaded": "2026-04-12T08:24:00.750018Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "ruff",
+    "version": "0.17.3",
+    "requires_python": ">=3.7",
+    "source": "https://pypi.org/pypi/ruff/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "ruff-0.17.3-py3-none-linux_armv6l.whl",
+        "uploaded": "2026-10-27T00:33:29.822177Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3-py3-none-macosx_10_12_x86_64.whl",
+        "uploaded": "2026-10-27T00:33:33.949887Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3-py3-none-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-27T00:33:35.784259Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "uploaded": "2026-10-27T00:33:38.216641Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3-py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.whl",
+        "uploaded": "2026-10-27T00:33:40.181722Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3-py3-none-manylinux_2_17_i686.manylinux2014_i686.whl",
+        "uploaded": "2026-10-27T00:33:42.182212Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3-py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl",
+        "uploaded": "2026-10-27T00:33:44.190309Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3-py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl",
+        "uploaded": "2026-10-27T00:33:46.179002Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "uploaded": "2026-10-27T00:33:48.233694Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3-py3-none-manylinux_2_31_riscv64.whl",
+        "uploaded": "2026-10-27T00:33:50.284384Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3-py3-none-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-27T00:33:52.074106Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3-py3-none-musllinux_1_2_armv7l.whl",
+        "uploaded": "2026-10-27T00:33:54.061579Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3-py3-none-musllinux_1_2_i686.whl",
+        "uploaded": "2026-10-27T00:33:56.158406Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3-py3-none-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-27T00:33:58.204795Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3-py3-none-win32.whl",
+        "uploaded": "2026-10-27T00:34:00.087904Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3-py3-none-win_amd64.whl",
+        "uploaded": "2026-10-27T00:34:02.099291Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3-py3-none-win_arm64.whl",
+        "uploaded": "2026-10-27T00:34:03.84789Z",
+        "yanked": false
+      },
+      {
+        "filename": "ruff-0.17.3.tar.gz",
+        "uploaded": "2026-10-27T00:34:05.914554Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "safetensors",
+    "version": "0.8.0",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/safetensors/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "safetensors-0.8.0-cp310-abi3-macosx_10_12_x86_64.whl",
+        "uploaded": "2026-06-09T07:52:18.829558Z",
+        "yanked": false
+      },
+      {
+        "filename": "safetensors-0.8.0-cp310-abi3-macosx_11_0_arm64.whl",
+        "uploaded": "2026-06-09T07:52:17.518936Z",
+        "yanked": false
+      },
+      {
+        "filename": "safetensors-0.8.0-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "uploaded": "2026-06-09T07:52:07.624876Z",
+        "yanked": false
+      },
+      {
+        "filename": "safetensors-0.8.0-cp310-abi3-manylinux_2_17_armv7l.manylinux2014_armv7l.whl",
+        "uploaded": "2026-06-09T07:52:09.565409Z",
+        "yanked": false
+      },
+      {
+        "filename": "safetensors-0.8.0-cp310-abi3-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl",
+        "uploaded": "2026-06-09T07:52:11.128459Z",
+        "yanked": false
+      },
+      {
+        "filename": "safetensors-0.8.0-cp310-abi3-manylinux_2_17_s390x.manylinux2014_s390x.whl",
+        "uploaded": "2026-06-09T07:52:13.603359Z",
+        "yanked": false
+      },
+      {
+        "filename": "safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "uploaded": "2026-06-09T07:52:16.290212Z",
+        "yanked": false
+      },
+      {
+        "filename": "safetensors-0.8.0-cp310-abi3-manylinux_2_31_riscv64.whl",
+        "uploaded": "2026-06-09T07:52:12.370252Z",
+        "yanked": false
+      },
+      {
+        "filename": "safetensors-0.8.0-cp310-abi3-manylinux_2_5_i686.manylinux1_i686.whl",
+        "uploaded": "2026-06-09T07:52:14.743705Z",
+        "yanked": false
+      },
+      {
+        "filename": "safetensors-0.8.0-cp310-abi3-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-06-09T07:52:20.032423Z",
+        "yanked": false
+      },
+      {
+        "filename": "safetensors-0.8.0-cp310-abi3-musllinux_1_2_armv7l.whl",
+        "uploaded": "2026-06-09T07:52:21.322054Z",
+        "yanked": false
+      },
+      {
+        "filename": "safetensors-0.8.0-cp310-abi3-musllinux_1_2_i686.whl",
+        "uploaded": "2026-06-09T07:52:22.594582Z",
+        "yanked": false
+      },
+      {
+        "filename": "safetensors-0.8.0-cp310-abi3-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-06-09T07:52:23.924954Z",
+        "yanked": false
+      },
+      {
+        "filename": "safetensors-0.8.0-cp310-abi3-win32.whl",
+        "uploaded": "2026-06-09T07:52:28.895289Z",
+        "yanked": false
+      },
+      {
+        "filename": "safetensors-0.8.0-cp310-abi3-win_amd64.whl",
+        "uploaded": "2026-06-09T07:52:27.832806Z",
+        "yanked": false
+      },
+      {
+        "filename": "safetensors-0.8.0-cp310-abi3-win_arm64.whl",
+        "uploaded": "2026-06-09T07:52:26.745386Z",
+        "yanked": false
+      },
+      {
+        "filename": "safetensors-0.8.0.tar.gz",
+        "uploaded": "2026-06-09T07:52:25.563398Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "scikit-learn",
+    "version": "1.9.1",
+    "requires_python": ">=3.11",
+    "source": "https://pypi.org/pypi/scikit-learn/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "scikit_learn-1.9.1-cp311-cp311-macosx_10_9_x86_64.whl",
+        "uploaded": "2026-09-10T18:32:29.891551Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp311-cp311-macosx_12_0_arm64.whl",
+        "uploaded": "2026-09-10T18:32:32.44107Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-09-10T18:32:34.482505Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-09-10T18:32:36.581445Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp311-cp311-win_amd64.whl",
+        "uploaded": "2026-09-10T18:32:38.729614Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp311-cp311-win_arm64.whl",
+        "uploaded": "2026-09-10T18:32:40.66199Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp312-cp312-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-09-10T18:32:42.804554Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp312-cp312-macosx_12_0_arm64.whl",
+        "uploaded": "2026-09-10T18:32:45.069841Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-09-10T18:32:46.999869Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-09-10T18:32:49.343566Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp312-cp312-win_amd64.whl",
+        "uploaded": "2026-09-10T18:32:51.679233Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp312-cp312-win_arm64.whl",
+        "uploaded": "2026-09-10T18:32:53.670126Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp313-cp313-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-09-10T18:32:55.483196Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp313-cp313-macosx_12_0_arm64.whl",
+        "uploaded": "2026-09-10T18:32:57.966545Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-09-10T18:33:00.63233Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-09-10T18:33:02.82563Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp313-cp313-win_amd64.whl",
+        "uploaded": "2026-09-10T18:33:05.260824Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp313-cp313-win_arm64.whl",
+        "uploaded": "2026-09-10T18:33:07.506552Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp314-cp314-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-09-10T18:33:10.698335Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp314-cp314-macosx_12_0_arm64.whl",
+        "uploaded": "2026-09-10T18:33:12.846292Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-09-10T18:33:14.741094Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-09-10T18:33:17.436161Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp314-cp314t-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-09-10T18:33:24.396607Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp314-cp314t-macosx_12_0_arm64.whl",
+        "uploaded": "2026-09-10T18:33:26.64992Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp314-cp314t-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-09-10T18:33:28.950287Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp314-cp314t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-09-10T18:33:31.008928Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp314-cp314t-win_amd64.whl",
+        "uploaded": "2026-09-10T18:33:33.188845Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp314-cp314t-win_arm64.whl",
+        "uploaded": "2026-09-10T18:33:35.343436Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp314-cp314-win_amd64.whl",
+        "uploaded": "2026-09-10T18:33:19.941038Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp314-cp314-win_arm64.whl",
+        "uploaded": "2026-09-10T18:33:22.126257Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp315-cp315-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-09-10T18:33:37.400644Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp315-cp315-macosx_12_0_arm64.whl",
+        "uploaded": "2026-09-10T18:33:39.705279Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp315-cp315-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-09-10T18:33:41.912316Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp315-cp315-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-09-10T18:33:44.230872Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp315-cp315t-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-09-10T18:33:50.951181Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp315-cp315t-macosx_12_0_arm64.whl",
+        "uploaded": "2026-09-10T18:33:53.230594Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp315-cp315t-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-09-10T18:33:55.764493Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp315-cp315t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-09-10T18:33:58.186149Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp315-cp315t-win_amd64.whl",
+        "uploaded": "2026-09-10T18:34:00.354657Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp315-cp315t-win_arm64.whl",
+        "uploaded": "2026-09-10T18:34:02.678524Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp315-cp315-win_amd64.whl",
+        "uploaded": "2026-09-10T18:33:46.492759Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1-cp315-cp315-win_arm64.whl",
+        "uploaded": "2026-09-10T18:33:48.762856Z",
+        "yanked": false
+      },
+      {
+        "filename": "scikit_learn-1.9.1.tar.gz",
+        "uploaded": "2026-09-10T18:34:04.679234Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "sentence-transformers",
+    "version": "6.2.0",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/sentence-transformers/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "sentence_transformers-6.2.0-py3-none-any.whl",
+        "uploaded": "2026-10-21T12:26:49.022071Z",
+        "yanked": false
+      },
+      {
+        "filename": "sentence_transformers-6.2.0.tar.gz",
+        "uploaded": "2026-10-21T12:26:50.404905Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "sqlite-vec",
+    "version": "0.1.9",
+    "requires_python": null,
+    "source": "https://pypi.org/pypi/sqlite-vec/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "sqlite_vec-0.1.9-py3-none-macosx_10_6_x86_64.whl",
+        "uploaded": "2026-03-31T08:02:31.717389Z",
+        "yanked": false
+      },
+      {
+        "filename": "sqlite_vec-0.1.9-py3-none-macosx_11_0_arm64.whl",
+        "uploaded": "2026-03-31T08:02:32.712093Z",
+        "yanked": false
+      },
+      {
+        "filename": "sqlite_vec-0.1.9-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "uploaded": "2026-03-31T08:02:33.796014Z",
+        "yanked": false
+      },
+      {
+        "filename": "sqlite_vec-0.1.9-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl",
+        "uploaded": "2026-03-31T08:02:34.888252Z",
+        "yanked": false
+      },
+      {
+        "filename": "sqlite_vec-0.1.9-py3-none-win_amd64.whl",
+        "uploaded": "2026-03-31T08:02:36.035538Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "streamlit",
+    "version": "1.66.1",
+    "requires_python": ">=3.11",
+    "source": "https://pypi.org/pypi/streamlit/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "streamlit-1.66.1-py3-none-any.whl",
+        "uploaded": "2026-10-21T17:02:55.973443Z",
+        "yanked": false
+      },
+      {
+        "filename": "streamlit-1.66.1.tar.gz",
+        "uploaded": "2026-10-21T17:02:58.805207Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "torch",
+    "version": "2.15.0",
+    "requires_python": ">=3.11",
+    "source": "https://pypi.org/pypi/torch/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "torch-2.15.0-cp311-cp311-macosx_14_0_arm64.whl",
+        "uploaded": "2026-10-28T15:16:30.290742Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp311-cp311-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-28T15:16:55.208419Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp311-cp311-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-28T15:17:10.34672Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp311-cp311-win_amd64.whl",
+        "uploaded": "2026-10-28T15:16:25.498612Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp312-cp312-macosx_14_0_arm64.whl",
+        "uploaded": "2026-10-28T15:16:35.918148Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp312-cp312-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-28T15:17:27.418198Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp312-cp312-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-28T15:17:47.950453Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp312-cp312-win_amd64.whl",
+        "uploaded": "2026-10-28T15:16:40.58681Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp313-cp313-macosx_14_0_arm64.whl",
+        "uploaded": "2026-10-28T15:16:45.195799Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp313-cp313-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-28T15:18:13.892707Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp313-cp313-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-28T15:18:30.05612Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp313-cp313-win_amd64.whl",
+        "uploaded": "2026-10-28T15:17:36.768371Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp314-cp314-macosx_14_0_arm64.whl",
+        "uploaded": "2026-10-28T15:17:58.526156Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp314-cp314-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-28T15:18:51.273344Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp314-cp314-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-28T15:19:10.949409Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp314-cp314t-macosx_14_0_arm64.whl",
+        "uploaded": "2026-10-28T15:18:40.575625Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp314-cp314t-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-28T15:19:31.982979Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp314-cp314t-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-28T15:19:57.293383Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp314-cp314t-win_amd64.whl",
+        "uploaded": "2026-10-28T15:19:00.808805Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp314-cp314-win_amd64.whl",
+        "uploaded": "2026-10-28T15:18:03.587908Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp315-cp315-macosx_14_0_arm64.whl",
+        "uploaded": "2026-10-28T15:19:21.942915Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp315-cp315-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-28T15:20:13.353888Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp315-cp315-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-28T15:20:33.793962Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp315-cp315t-macosx_14_0_arm64.whl",
+        "uploaded": "2026-10-28T15:19:46.702185Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp315-cp315t-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-28T15:20:49.213492Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp315-cp315t-manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-28T15:21:05.1109Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp315-cp315t-win_amd64.whl",
+        "uploaded": "2026-10-28T15:20:23.183362Z",
+        "yanked": false
+      },
+      {
+        "filename": "torch-2.15.0-cp315-cp315-win_amd64.whl",
+        "uploaded": "2026-10-28T15:19:41.917538Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "transformers",
+    "version": "5.22.1",
+    "requires_python": ">=3.11.0",
+    "source": "https://pypi.org/pypi/transformers/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "transformers-5.22.1-py3-none-any.whl",
+        "uploaded": "2026-10-30T07:47:59.888465Z",
+        "yanked": false
+      },
+      {
+        "filename": "transformers-5.22.1.tar.gz",
+        "uploaded": "2026-10-30T07:48:03.721714Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "turbopuffer",
+    "version": "3.1.0",
+    "requires_python": ">=3.11",
+    "source": "https://pypi.org/pypi/turbopuffer/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "turbopuffer-3.1.0-py3-none-any.whl",
+        "uploaded": "2026-10-28T22:27:19.115663Z",
+        "yanked": false
+      },
+      {
+        "filename": "turbopuffer-3.1.0.tar.gz",
+        "uploaded": "2026-10-28T22:27:20.703297Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "usearch",
+    "version": "2.26.6",
+    "requires_python": ">=3.11",
+    "source": "https://pypi.org/pypi/usearch/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "usearch-2.26.6-cp311-cp311-macosx_10_9_universal2.whl",
+        "uploaded": "2026-10-25T03:12:48.043763Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp311-cp311-macosx_10_9_x86_64.whl",
+        "uploaded": "2026-10-25T03:12:50.477003Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp311-cp311-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-25T03:12:52.22509Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp311-cp311-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-25T03:12:53.751568Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp311-cp311-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-25T03:12:55.802208Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp311-cp311-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-25T03:12:57.602227Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp311-cp311-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-25T03:12:59.750587Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp311-cp311-win_amd64.whl",
+        "uploaded": "2026-10-25T03:13:01.368909Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp311-cp311-win_arm64.whl",
+        "uploaded": "2026-10-25T03:13:02.930819Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp312-cp312-macosx_10_13_universal2.whl",
+        "uploaded": "2026-10-25T03:13:04.506724Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp312-cp312-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-10-25T03:13:06.237309Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp312-cp312-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-25T03:13:07.781092Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-25T03:13:09.45951Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp312-cp312-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-25T03:13:11.557Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp312-cp312-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-25T03:13:13.230229Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp312-cp312-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-25T03:13:14.791249Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp312-cp312-win_amd64.whl",
+        "uploaded": "2026-10-25T03:13:16.605693Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp312-cp312-win_arm64.whl",
+        "uploaded": "2026-10-25T03:13:18.137595Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp313-cp313-macosx_10_13_universal2.whl",
+        "uploaded": "2026-10-25T03:13:19.784515Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp313-cp313-macosx_10_13_x86_64.whl",
+        "uploaded": "2026-10-25T03:13:21.509159Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp313-cp313-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-25T03:13:22.90081Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp313-cp313-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-25T03:13:24.41752Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp313-cp313-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-25T03:13:26.157806Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp313-cp313-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-25T03:13:28.061964Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp313-cp313-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-25T03:13:30.735667Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp313-cp313-win_amd64.whl",
+        "uploaded": "2026-10-25T03:13:32.331677Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp313-cp313-win_arm64.whl",
+        "uploaded": "2026-10-25T03:13:33.991637Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314-macosx_10_15_universal2.whl",
+        "uploaded": "2026-10-25T03:13:35.557487Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-25T03:13:37.240614Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-25T03:13:38.989191Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-25T03:13:40.632049Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-25T03:13:42.138294Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-25T03:13:44.019279Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-25T03:13:45.987611Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314t-macosx_10_15_universal2.whl",
+        "uploaded": "2026-10-25T03:13:50.55334Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314t-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-25T03:13:52.059785Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314t-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-25T03:13:53.496099Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314t-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-25T03:13:54.987628Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314t-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-25T03:13:56.67511Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314t-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-25T03:13:58.592748Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314t-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-25T03:14:00.13958Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314t-win_amd64.whl",
+        "uploaded": "2026-10-25T03:14:01.860336Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314t-win_arm64.whl",
+        "uploaded": "2026-10-25T03:14:03.228381Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314-win_amd64.whl",
+        "uploaded": "2026-10-25T03:13:47.628552Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp314-cp314-win_arm64.whl",
+        "uploaded": "2026-10-25T03:13:49.186255Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315-macosx_10_15_universal2.whl",
+        "uploaded": "2026-10-25T03:14:04.679111Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-25T03:14:06.160286Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-25T03:14:07.562116Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-25T03:14:08.924997Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-25T03:14:10.506122Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-25T03:14:12.26445Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-25T03:14:13.884147Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315t-macosx_10_15_universal2.whl",
+        "uploaded": "2026-10-25T03:14:18.07974Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315t-macosx_10_15_x86_64.whl",
+        "uploaded": "2026-10-25T03:14:19.558313Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315t-macosx_11_0_arm64.whl",
+        "uploaded": "2026-10-25T03:14:20.858159Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315t-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-10-25T03:14:22.49085Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315t-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl",
+        "uploaded": "2026-10-25T03:14:24.620803Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315t-musllinux_1_2_aarch64.whl",
+        "uploaded": "2026-10-25T03:14:26.416664Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315t-musllinux_1_2_x86_64.whl",
+        "uploaded": "2026-10-25T03:14:28.262475Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315t-win_amd64.whl",
+        "uploaded": "2026-10-25T03:14:30.035405Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315t-win_arm64.whl",
+        "uploaded": "2026-10-25T03:14:31.631326Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315-win_amd64.whl",
+        "uploaded": "2026-10-25T03:14:15.397547Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6-cp315-cp315-win_arm64.whl",
+        "uploaded": "2026-10-25T03:14:16.738845Z",
+        "yanked": false
+      },
+      {
+        "filename": "usearch-2.26.6.tar.gz",
+        "uploaded": "2026-10-25T03:14:33.156108Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "uv",
+    "version": "0.13.7",
+    "requires_python": ">=3.8",
+    "source": "https://pypi.org/pypi/uv/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "uv-0.13.7-py3-none-linux_armv6l.whl",
+        "uploaded": "2026-11-03T02:41:43.776511Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-macosx_10_12_x86_64.whl",
+        "uploaded": "2026-11-03T02:41:46.959825Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-macosx_11_0_arm64.whl",
+        "uploaded": "2026-11-03T02:41:50.208986Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl",
+        "uploaded": "2026-11-03T02:41:52.729348Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.musllinux_1_1_armv7l.whl",
+        "uploaded": "2026-11-03T02:41:55.393378Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.whl",
+        "uploaded": "2026-11-03T02:41:58.237078Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-manylinux_2_17_i686.manylinux2014_i686.whl",
+        "uploaded": "2026-11-03T02:42:01.031207Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl",
+        "uploaded": "2026-11-03T02:42:03.787429Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl",
+        "uploaded": "2026-11-03T02:42:06.604622Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "uploaded": "2026-11-03T02:42:09.344701Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-manylinux_2_28_aarch64.whl",
+        "uploaded": "2026-11-03T02:42:12.122081Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-manylinux_2_31_riscv64.musllinux_1_1_riscv64.whl",
+        "uploaded": "2026-11-03T02:42:14.745258Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-manylinux_2_31_riscv64.whl",
+        "uploaded": "2026-11-03T02:42:17.752707Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-musllinux_1_1_i686.whl",
+        "uploaded": "2026-11-03T02:42:20.530204Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-musllinux_1_1_x86_64.whl",
+        "uploaded": "2026-11-03T02:42:23.574789Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-win32.whl",
+        "uploaded": "2026-11-03T02:42:26.697568Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-win_amd64.whl",
+        "uploaded": "2026-11-03T02:42:29.422967Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7-py3-none-win_arm64.whl",
+        "uploaded": "2026-11-03T02:42:32.09507Z",
+        "yanked": false
+      },
+      {
+        "filename": "uv-0.13.7.tar.gz",
+        "uploaded": "2026-11-03T02:42:34.944854Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "uvicorn",
+    "version": "0.54.0",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/uvicorn/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "uvicorn-0.54.0-py3-none-any.whl",
+        "uploaded": "2026-09-25T06:52:35.829563Z",
+        "yanked": false
+      },
+      {
+        "filename": "uvicorn-0.54.0.tar.gz",
+        "uploaded": "2026-09-25T06:52:37.601479Z",
+        "yanked": false
+      }
+    ]
+  },
+  {
+    "name": "weaviate-client",
+    "version": "4.24.1",
+    "requires_python": ">=3.10",
+    "source": "https://pypi.org/pypi/weaviate-client/json",
+    "checked": "2026-11-04",
+    "files": [
+      {
+        "filename": "weaviate_client-4.24.1-py3-none-any.whl",
+        "uploaded": "2026-10-26T09:27:27.293529Z",
+        "yanked": false
+      }
+    ]
+  }
+]

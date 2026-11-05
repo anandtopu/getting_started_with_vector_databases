@@ -1,0 +1,60 @@
+{
+  "checked_at": "2026-11-05T16:35:53.242509+00:00",
+  "hardware": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "machine": "AMD64",
+    "cpu": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "physical_cores": 24,
+    "logical_cores": 24,
+    "ram_bytes": 33775415296,
+    "python": "3.12.13"
+  },
+  "application_runs": {
+    "search": "results/tier4/search-f18a966d.json",
+    "multilingual": "results/tier4/multilingual-31cad7d1.json",
+    "rag": "results/tier4/rag-ede10bad.json",
+    "recommendations": "results/tier4/recommendations-f7e95363.json",
+    "photo": "results/tier4/photo-2e6b43a8.json",
+    "execution": "results/tier4/execution-cb02c5e5.json"
+  },
+  "full_suite_log": ".cache/phase6-final-tests.log",
+  "base_suite_log": ".cache/phase6-final-base-tests.log",
+  "new_examples_passed": 22,
+  "new_examples_skipped": 0,
+  "new_notebooks": 4,
+  "new_notebook_cells": 26,
+  "reference_exercises": 12,
+  "custom_model_inference": "research/phase6-custom-inference.json",
+  "scope": "Local verification. CI configuration updated but hosted jobs not run. The original 17 notebooks were verified in Phase 5; this phase executed all four new notebooks.",
+  "decisions": [
+    "Single Qdrant local client per checkpoint part; native named photo vectors",
+    "Preserved raw RAG contradiction and added conservative cited-excerpt delivery",
+    "Added a labeled independent temporal fixture after original events yielded no eligible unseen-purchase users",
+    "Protected literal SKU after reranking and exposed multilingual model choice",
+    "Gallery uses 200 synthetic drawings with self ID excluded"
+  ],
+  "full_suite": {
+    "passed": 231,
+    "deselected": 11
+  },
+  "base_suite": {
+    "passed": 168,
+    "skipped": 63,
+    "deselected": 11
+  },
+  "included_artifacts": 337,
+  "local_links": "passed; 174 external URLs not exhaustively checked",
+  "cleanup": "research/phase6-runtime-cleanup.json",
+  "final_application_checks": {
+    "passed": 15,
+    "log": ".cache/phase6-app-checks-final.log"
+  },
+  "final_checks": {
+    "ruff": "passed, 516 files formatted",
+    "module_structure": "21 modules passed",
+    "artifact_inventory": "337 checksums passed",
+    "lock": "276 packages, offline check passed",
+    "local_markdown_links": "passed",
+    "comparison_plot": "visually inspected after regeneration"
+  }
+}

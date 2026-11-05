@@ -1,0 +1,6 @@
+feature: load_monitoring
+lesson: 22_performance
+example: examples/05_load.py
+native: examples/06_monitoring.py
+seed: 42
+scope: operational diagnostic, not a comparable database leaderboard

@@ -1,0 +1,6 @@
+feature: recent_methods
+lesson: bonus/B4_whats_new
+example: examples/01_from_scratch.py
+native: examples/02_production.py
+seed: 42
+scope: whole-script diagnostic; see raw bonus observations for method-specific measurements

@@ -1,0 +1,20 @@
+"""Return exact top k with deterministic ID ties.
+
+Run: uv run python modules/01_vectors_similarity/exercises/02_apply.py
+Check: uv run python scripts/check_exercise.py modules/01_vectors_similarity/exercises/02_apply.py
+Baseline runs before editing; acceptance checks may fail until solved.
+CPU: under a second. Tiny fixtures, no models, downloads, or Docker.
+"""
+
+
+def solve(matrix: list[list[float]], query: list[float], ids: list[str], k: int) -> list[str]:
+    # YOUR CODE HERE: improve the working baseline to meet the README acceptance criteria.
+    return ids[:k]
+
+
+def main() -> None:
+    print(solve([[1.0, 0.0], [0.0, 1.0]], [1.0, 0.0], ["a", "b"], 1))
+
+
+if __name__ == "__main__":
+    main()

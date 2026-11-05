@@ -1,0 +1,6 @@
+feature: deletion_audit
+lesson: 23_security_reliability
+example: examples/01_from_scratch.py
+native: examples/03_measure.py
+seed: 42
+scope: operational diagnostic, not a comparable database leaderboard

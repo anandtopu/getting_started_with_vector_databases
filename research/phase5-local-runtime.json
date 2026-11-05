@@ -1,0 +1,123 @@
+{
+  "observed_at": "2026-11-05T00:30:59.041761+00:00",
+  "runtime": "Podman rootless over WSL, pasta network, loopback-only published ports",
+  "containers": [
+    {
+      "name": "marlowe-p5-pg",
+      "image": "docker.io/pgvector/pgvector@sha256:5895949dfcdf308eb0cd31c950c93c14895c77f33fbedfecf1fa511ab1d4bcd2",
+      "image_digest": "sha256:5895949dfcdf308eb0cd31c950c93c14895c77f33fbedfecf1fa511ab1d4bcd2",
+      "status": "running"
+    },
+    {
+      "name": "marlowe-p5-qdrant",
+      "image": "docker.io/qdrant/qdrant@sha256:9bfc89f9914fc14876a88c05270685921a55b8877b254a98bcc1cc2f0a424cd2",
+      "image_digest": "sha256:9bfc89f9914fc14876a88c05270685921a55b8877b254a98bcc1cc2f0a424cd2",
+      "status": "running"
+    },
+    {
+      "name": "marlowe-p5-weaviate",
+      "image": "docker.io/semitechnologies/weaviate@sha256:e96e2e04ee6f401a8dcdf89adb80b610516e1491a33769dfed6d1318801e1129",
+      "image_digest": "sha256:e96e2e04ee6f401a8dcdf89adb80b610516e1491a33769dfed6d1318801e1129",
+      "status": "running"
+    },
+    {
+      "name": "marlowe-p5-redis",
+      "image": "docker.io/library/redis@sha256:de1068af6f552240dfab67bcc9bfef99bfc60f776bb4580ef077ea4c8c97e848",
+      "image_digest": "sha256:de1068af6f552240dfab67bcc9bfef99bfc60f776bb4580ef077ea4c8c97e848",
+      "status": "running"
+    },
+    {
+      "name": "marlowe-p5-etcd",
+      "image": "quay.io/coreos/etcd@sha256:52f17f7e56e4f7239f0320dbfcbcc24721163d7d78ae710b466af3254ccf6366",
+      "image_digest": "sha256:52f17f7e56e4f7239f0320dbfcbcc24721163d7d78ae710b466af3254ccf6366",
+      "status": "running"
+    },
+    {
+      "name": "marlowe-p5-minio",
+      "image": "docker.io/milvusdb/minio@sha256:1dce27c494a16bae114774f1cec295493f3613142713130c2d22dd5696be6ad3",
+      "image_digest": "sha256:1dce27c494a16bae114774f1cec295493f3613142713130c2d22dd5696be6ad3",
+      "status": "running"
+    },
+    {
+      "name": "marlowe-p5-milvus",
+      "image": "docker.io/milvusdb/milvus@sha256:b9b79b4a284b41cd12d60abc418310f84621fa4c977d409b38f501519a7ccf8a",
+      "image_digest": "sha256:b9b79b4a284b41cd12d60abc418310f84621fa4c977d409b38f501519a7ccf8a",
+      "status": "running"
+    },
+    {
+      "name": "marlowe-p5-elasticsearch",
+      "image": "docker.io/library/elasticsearch@sha256:764a939891119d97e130b4d5da196c330afb2338382ada9e1b9b7943ce6707df",
+      "image_digest": "sha256:764a939891119d97e130b4d5da196c330afb2338382ada9e1b9b7943ce6707df",
+      "status": "running"
+    },
+    {
+      "name": "marlowe-p5-mongodb",
+      "image": "docker.io/mongodb/mongodb-atlas-local@sha256:8886be3f095a801d22c294ca306e3821d34d39912c0839eea1df73a2ffdc1ed5",
+      "image_digest": "sha256:8886be3f095a801d22c294ca306e3821d34d39912c0839eea1df73a2ffdc1ed5",
+      "status": "running"
+    },
+    {
+      "name": "marlowe-p5-vespa",
+      "image": "docker.io/vespaengine/vespa@sha256:93268edd995b4e671be33babf7ebac55155fd0f330bb0b02123d1fbf3a9d1df0",
+      "image_digest": "sha256:93268edd995b4e671be33babf7ebac55155fd0f330bb0b02123d1fbf3a9d1df0",
+      "status": "running"
+    },
+    {
+      "name": "marlowe-p5-ai-weaviate",
+      "image": "docker.io/semitechnologies/weaviate@sha256:e96e2e04ee6f401a8dcdf89adb80b610516e1491a33769dfed6d1318801e1129",
+      "image_digest": "sha256:e96e2e04ee6f401a8dcdf89adb80b610516e1491a33769dfed6d1318801e1129",
+      "status": "running"
+    },
+    {
+      "name": "marlowe-p5-ollama",
+      "image": "docker.io/ollama/ollama@sha256:ebaef4f4c5d93660e1f25f8ad085a112f51ccfb0e8458073e71793959dba91c9",
+      "image_digest": "sha256:ebaef4f4c5d93660e1f25f8ad085a112f51ccfb0e8458073e71793959dba91c9",
+      "status": "running"
+    }
+  ],
+  "memory_samples": [
+    "marlowe-p5-pg|48.95MB / 16.48GB",
+    "marlowe-p5-qdrant|146.6MB / 16.48GB",
+    "marlowe-p5-weaviate|52.92MB / 16.48GB",
+    "marlowe-p5-redis|16.36MB / 16.48GB",
+    "marlowe-p5-etcd|19.39MB / 16.48GB",
+    "marlowe-p5-minio|129.5MB / 16.48GB",
+    "marlowe-p5-milvus|321.2MB / 16.48GB",
+    "marlowe-p5-elasticsearch|1.168GB / 16.48GB",
+    "marlowe-p5-mongodb|743.3MB / 16.48GB",
+    "marlowe-p5-vespa|2.902GB / 16.48GB",
+    "marlowe-p5-ai-weaviate|47.33MB / 16.48GB",
+    "marlowe-p5-ollama|1.736GB / 16.48GB"
+  ],
+  "memory_scope": "One post-run sample of container usage and limit, including sidecars individually. This is not peak or per-query RSS.",
+  "vm": "Linux 6.6.87.2-microsoft-standard-WSL2\n24\n               total        used        free      shared  buff/cache   available\nMem:     16477470720  7484882944   170651648    31760384  9106796544  8992587776\nSwap:     4294967296     7913472  4287053824\n",
+  "ollama": {
+    "models": [
+      {
+        "name": "qwen3:0.6b",
+        "model": "qwen3:0.6b",
+        "modified_at": "2026-11-05T00:27:48.951251593Z",
+        "size": 522653767,
+        "digest": "7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "751.63M",
+          "quantization_level": "Q4_K_M",
+          "context_length": 40960,
+          "embedding_length": 1024,
+          "runner": "ggml"
+        },
+        "capabilities": [
+          "completion",
+          "tools",
+          "thinking"
+        ]
+      }
+    ]
+  }
+}

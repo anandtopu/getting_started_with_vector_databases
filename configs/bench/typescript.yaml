@@ -1,0 +1,6 @@
+feature: typescript
+lesson: bonus/B1_other_languages
+example: examples/01_from_scratch.py
+native: examples/02_production.py
+seed: 42
+scope: whole-script diagnostic; see raw bonus observations for method-specific measurements

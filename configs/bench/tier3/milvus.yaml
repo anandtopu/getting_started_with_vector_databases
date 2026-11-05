@@ -1,0 +1,13 @@
+name: tier3-milvus
+backend: milvus
+dataset: catalog
+limit: 500
+metric: cosine
+k: 10
+split: test
+query_types: [semantic, keyword, filtered, misspelled, multilingual]
+warmup: 20
+repetitions: 5
+queries: 100
+seed: 20261104
+threads: 1

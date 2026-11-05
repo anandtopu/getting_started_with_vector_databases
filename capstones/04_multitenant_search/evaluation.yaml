@@ -1,0 +1,6 @@
+capstone: 04_multitenant_search
+seed: 42
+acceptance: tests/test_04_project.py
+reference: solution/project.py
+starter: starter/project.py
+network: explicit native flags only

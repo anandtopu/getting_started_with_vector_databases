@@ -1,0 +1,961 @@
+{
+  "created_at": "2026-11-05T21:01:08.321200+00:00",
+  "observations": [
+    {
+      "url": "https://alexgarcia.xyz/sqlite-vec/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://alexgarcia.xyz/sqlite-vec/features/vec0.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://alexgarcia.xyz/sqlite-vec/guides/binary-quant.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://alexgarcia.xyz/sqlite-vec/python.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://arxiv.org/abs/1603.09320",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://arxiv.org/abs/1908.10084",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://arxiv.org/abs/1908.10396",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://arxiv.org/abs/2004.12832",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://arxiv.org/abs/2005.11401",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://arxiv.org/abs/2310.06816",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://arxiv.org/abs/2405.12497",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://aws.amazon.com/opensearch-service/pricing/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://azure.microsoft.com/en-us/pricing/details/search/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://cloud.google.com/vertex-ai/pricing",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.astral.sh/uv/concepts/projects/sync/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.astral.sh/uv/getting-started/installation/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.lancedb.com/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.lancedb.com/search/hybrid-search",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.lancedb.com/search/vector-search",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.locust.io/en/stable/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.ollama.com/api/chat",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.pinecone.io/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.pinecone.io/guides/manage-cost/understanding-cost",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.trychroma.com/reference/python",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.trychroma.com/reference/python/client",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.vespa.ai/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.vespa.ai/en/querying/nearest-neighbor-search-guide.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.weaviate.io/weaviate",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.weaviate.io/weaviate/client-libraries/python",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.weaviate.io/weaviate/config-refs/indexing/vector-index",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://docs.weaviate.io/weaviate/manage-collections/multi-tenancy",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://doi.org/10.1109/TPAMI.2010.57",
+      "status": 202,
+      "ok": true
+    },
+    {
+      "url": "https://doi.org/10.1145/276698.276876",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://doi.org/10.1145/290941.291025",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://doi.org/10.1145/582415.582418",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/core_extensions/vss",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://duckdb.org/docs/stable/core_extensions/vss.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/actions/setup-node/releases/tag/v7.1.0",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/asg017/sqlite-vec",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/duckdb/duckdb-vss",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/erikbern/ann-benchmarks",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/facebookresearch/faiss/blob/main/faiss/IndexRaBitQ.h",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/facebookresearch/faiss/wiki",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/facebookresearch/faiss/wiki/Faiss-indexes",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/facebookresearch/faiss/wiki/Getting-started",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/facebookresearch/faiss/wiki/MetricType-and-distances",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/facebookresearch/faiss/wiki/The-index-factory",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/nmslib/hnswlib",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.14",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/pgvector/pgvector",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/pgvector/pgvector#iterative-index-scans",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/pgvector/pgvector#vacuuming",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/qdrant/qdrant-js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/timescale/pgvectorscale",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/unum-cloud/usearch",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/xhluca/bm25s",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/zalandoresearch/fashion-mnist",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://hub.docker.com/v2/repositories/grafana/grafana/tags/13.3.0",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://hub.docker.com/v2/repositories/library/elasticsearch/tags/9.5.5",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://hub.docker.com/v2/repositories/library/redis/tags/8.10.3",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://hub.docker.com/v2/repositories/milvusdb/milvus/tags/v3.0.5",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://hub.docker.com/v2/repositories/milvusdb/minio/tags/RELEASE.2024-12-18T13-15-44Z",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://hub.docker.com/v2/repositories/mongodb/mongodb-atlas-local/tags/8.3.11-20261103T091247Z",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://hub.docker.com/v2/repositories/pgvector/pgvector/tags/0.8.7-pg18-trixie",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://hub.docker.com/v2/repositories/prom/prometheus/tags/v3.15.1",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://hub.docker.com/v2/repositories/qdrant/qdrant/tags/v1.20.0",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://hub.docker.com/v2/repositories/semitechnologies/weaviate/tags/1.40.3",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://hub.docker.com/v2/repositories/vespaengine/vespa/tags/8.781.11",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B/tree/c1899de289a04d12100db370d81485cdf75e47ca",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/tree/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/tree/233902d25c440f23af6f7d6e94d2946bac0bee0a",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/model_doc/siglip2",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://huggingface.co/google/siglip2-base-patch16-224",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://huggingface.co/google/siglip2-base-patch16-224/tree/75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/tree/1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://lance.org/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://lancedb.github.io/lancedb/python/python/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://milvus.io/docs",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://milvus.io/docs/consistency.md",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://milvus.io/docs/full-text-search.md",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://milvus.io/docs/install_standalone-windows.md",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://milvus.io/docs/ivf-rabitq.md",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://milvus.io/docs/milvus_lite.md",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.save.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://prometheus.io/docs/instrumenting/exposition_formats/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://prometheus.io/docs/introduction/overview/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/bm25s/0.3.16/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/chromadb/1.5.9/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/duckdb/2.0.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/elasticsearch/9.5.1/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/faiss-cpu/1.15.1/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/faker/40.44.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/fastapi/0.162.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/h5py/3.16.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/hatchling/1.33.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/hnswlib/0.8.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/httpx/0.28.1/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/huggingface-hub/2.4.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/jupyter/1.1.1/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/lancedb/0.41.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/locust/2.47.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/matplotlib/3.11.2/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/milvus-lite/3.2.2/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/nbstripout/0.9.1/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/numpy/2.5.4/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/ollama/0.6.3/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/pandas/3.1.1/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/pgvector/0.5.1/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/pillow/13.0.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/pinecone/10.3.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/pre-commit/4.7.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/prometheus-client/0.26.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/psutil/7.2.2/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/psycopg/3.3.8/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/pyarrow/26.0.1/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/pydantic/2.14.2/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/pymilvus/3.0.2/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/pymongo/4.19.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/pytest-socket/0.8.1/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/pytest/9.2.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/python-dotenv/1.2.4/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/pyvespa/1.2.10/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/pyyaml/6.0.3/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/qdrant-client/1.20.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/redis/8.1.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/rich/15.0.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/ruff/0.17.3/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/safetensors/0.8.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/scikit-learn/1.9.1/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/sentence-transformers/6.2.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/sqlite-vec/0.1.9/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/streamlit/1.66.1/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/torch/2.15.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/transformers/5.22.1/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/turbopuffer/3.1.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/usearch/2.26.6/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/uv/0.13.7/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/uvicorn/0.54.0/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://pypi.org/project/weaviate-client/4.24.1/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/concepts/collections/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/concepts/explore/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/concepts/filtering/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/concepts/points/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/concepts/snapshots/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/distributed_deployment/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/guides/distributed_deployment/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/guides/multitenancy/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/guides/optimize/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/guides/quantization/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/guides/security/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/manage-data/quantization/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/manage-data/vectors/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/operations/security/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/operations/snapshots/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/scaling/consistency-guarantees/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/documentation/search/hybrid-queries/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://qdrant.tech/pricing/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://quay.io/api/v1/repository/coreos/etcd/tag/?specificTag=v3.5.25",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/milvus-io/milvus/v3.0.5/configs/milvus.yaml",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://redis.io/docs/latest/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://redis.io/docs/latest/interact/search-and-query/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://registry.ollama.ai/v2/library/qwen3/manifests/0.6b",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://research.google/pubs/reciprocal-rank-fusion-outperforms-condorcet-and-individual-rank-learning-methods/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://sbert.net/docs/package_reference/sentence_transformer/SentenceTransformer.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://sbert.net/examples/sentence_transformer/applications/retrieve_rerank/README.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/clustering.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/model_evaluation.html#precision-recall-f-measure-metrics",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/neighbors.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://turbopuffer.com/docs",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://turbopuffer.com/pricing",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://weaviate.github.io/typescript-client/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://weaviate.io/pricing",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.elastic.co/docs/solutions/search/vector/knn",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/research/publication/diskann-fast-accurate-billion-point-nearest-neighbor-search-on-a-single-node/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.mongodb.com/docs/search/self-managed/current/installation/quick-start/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.pinecone.io/pricing/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/backup.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/textsearch.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.sbert.net/docs/package_reference/cross_encoder/model.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.sbert.net/docs/package_reference/sentence_transformer/SentenceTransformer.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.sbert.net/docs/package_reference/sentence_transformer/model.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.sqlite.org/atomiccommit.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.sqlite.org/lang_vacuum.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.sqlite.org/wal.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://zilliz.com/pricing",
+      "status": 200,
+      "ok": true
+    }
+  ],
+  "scope": "HTTP reachability from this host; access denial does not prove a missing page"
+}

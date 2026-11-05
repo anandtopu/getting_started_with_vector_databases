@@ -1,0 +1,20 @@
+{
+  "python": "3.12.13",
+  "python_supported": true,
+  "ram_gib": 31.46,
+  "free_disk_gib": 1623.86,
+  "docker": {
+    "available": false,
+    "detail": "failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified."
+  },
+  "compose": {
+    "available": true,
+    "detail": "Docker Compose version v5.3.1"
+  },
+  "text_model": {
+    "id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "cached": true
+  },
+  "frozen_vectors": true
+}

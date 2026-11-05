@@ -1,0 +1,5 @@
+feature: object_storage
+lesson: 09_disk_scale
+example: examples/04_page_reads.py
+native: examples/02_production.py
+# This feature measures a lesson diagnostic outside ranked retrieval.

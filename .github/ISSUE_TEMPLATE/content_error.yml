@@ -1,0 +1,11 @@
+name: Content error
+description: An explanation, diagram, result, or prerequisite is confusing or incorrect
+body:
+  - type: input
+    id: location
+    attributes: {label: File and section}
+    validations: {required: true}
+  - type: textarea
+    id: problem
+    attributes: {label: What is wrong, and what would make it clearer?}
+    validations: {required: true}

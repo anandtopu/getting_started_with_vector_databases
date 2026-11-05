@@ -1,0 +1,8 @@
+INFO:     Started server process [57712]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on https://127.0.0.1:8444 (Press CTRL+C to quit)
+INFO:     Started server process [69592]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on https://127.0.0.1:8444 (Press CTRL+C to quit)

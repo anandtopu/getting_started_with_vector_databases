@@ -1,0 +1,12 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0
+rootdir: D:\Learning_Projects\getting_started_with_vector_databases
+configfile: pyproject.toml
+plugins: anyio-4.16.0, Faker-40.44.0, locust-2.47.0, platformdirs-4.14.5, socket-0.8.1
+collected 37 items / 8 deselected / 29 selected
+
+tests\test_database_stores.py ....                                       [ 13%]
+tests\test_tier4_apps.py ...............                                 [ 65%]
+tests\test_tier5.py ..........                                           [100%]
+
+====================== 29 passed, 8 deselected in 39.64s ======================

@@ -1,0 +1,14 @@
+FROM qwen3:0.6b
+PARAMETER num_ctx 512
+PARAMETER num_predict 32
+PARAMETER num_thread 4
+PARAMETER temperature 0
+PARAMETER stop <|im_end|>
+TEMPLATE """<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+"""

@@ -1,0 +1,31 @@
+[2026-11-05 12:39:23,350] ANANDTOPU-PC/INFO/locust.main: Starting Locust 2.47.0
+[2026-11-05 12:39:23,351] ANANDTOPU-PC/INFO/locust.main: Run time limit set to 20 seconds
+[2026-11-05 12:39:23,351] ANANDTOPU-PC/INFO/locust.runners: Ramping to 8 users at a rate of 8.00 per second
+[2026-11-05 12:39:23,352] ANANDTOPU-PC/INFO/locust.runners: All users spawned: {"Seller": 8} (8 total users)
+[2026-11-05 12:39:43,053] ANANDTOPU-PC/INFO/locust.main: --run-time limit reached, shutting down
+[2026-11-05 12:39:43,492] ANANDTOPU-PC/INFO/locust.main: Shutting down (exit code 0)
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+POST     /search                                                                          141   37(26.24%) |    799      71    5795    220 |    7.00        1.84
+POST     /search filtered                                                                  36    8(22.22%) |   1256      90    5791    260 |    1.79        0.40
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                       177   45(25.42%) |    892      71    5795    220 |    8.79        2.23
+
+Response time percentiles (approximated)
+Type     Name                                                                                  50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|--------------------------------------------------------------------------------|--------|------|------|------|------|------|------|------|------|------|------|------
+POST     /search                                                                               220    260    290    310   4100   5300   5800   5800   5800   5800   5800    141
+POST     /search filtered                                                                      260    320   1600   1700   4800   5800   5800   5800   5800   5800   5800     36
+--------|--------------------------------------------------------------------------------|--------|------|------|------|------|------|------|------|------|------|------|------
+         Aggregated                                                                            220    270    290    330   4100   5300   5800   5800   5800   5800   5800    177
+
+Error report
+# occurrences      Error                                                                                               
+------------------|---------------------------------------------------------------------------------------------------------------------------------------------
+3                  POST /search filtered: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)
+5                  POST /search: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)
+5                  POST /search filtered: HTTPError('429 Client Error: Too Many Requests for url: /search filtered')   
+17                 POST /search: HTTPError('429 Client Error: Too Many Requests for url: /search')                     
+15                 POST /search: HTTPError('400 Client Error: Bad Request for url: /search')                           
+------------------|---------------------------------------------------------------------------------------------------------------------------------------------
+

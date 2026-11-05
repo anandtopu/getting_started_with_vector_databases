@@ -1,0 +1,15 @@
+text:
+  model: sentence-transformers/all-MiniLM-L6-v2
+  revision: 1110a243fdf4706b3f48f1d95db1a4f5529b4d41
+  dimensions: 384
+  max_length: 256
+  normalize: true
+  query_prefix: ''
+  document_prefix: ''
+image_text:
+  model: google/siglip2-base-patch16-224
+  revision: 75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2
+  batch_size: 4
+ollama:
+  model: qwen3:0.6b
+  manifest_sha256: 7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435

@@ -1,0 +1,33 @@
+passed modules/bonus/B1_other_languages/examples/01_from_scratch.py
+passed modules/bonus/B1_other_languages/examples/02_production.py
+passed modules/bonus/B1_other_languages/examples/03_weaviate.py
+passed modules/bonus/B1_other_languages/examples/04_measure.py
+passed modules/bonus/B1_other_languages/use_case/marlowe.py
+Found 8 errors (8 fixed, 0 remaining).
+1 file reformatted
+B1_other_languages
+D:\Learning_Projects\getting_started_with_vector_databases\.venv\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+PASS B1_other_languages: 6 code cells
+Found 4 errors (4 fixed, 0 remaining).
+1 file reformatted
+B2_tinyvec_service
+D:\Learning_Projects\getting_started_with_vector_databases\.venv\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+PASS B2_tinyvec_service: 5 code cells
+Found 4 errors (4 fixed, 0 remaining).
+1 file reformatted
+B3_research_benchmarks
+D:\Learning_Projects\getting_started_with_vector_databases\.venv\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+PASS B3_research_benchmarks: 5 code cells
+Found 4 errors (4 fixed, 0 remaining).
+1 file reformatted
+B4_whats_new
+D:\Learning_Projects\getting_started_with_vector_databases\.venv\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+PASS B4_whats_new: 5 code cells

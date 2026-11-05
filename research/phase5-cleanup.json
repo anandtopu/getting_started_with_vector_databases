@@ -1,0 +1,17 @@
+{
+  "finished_at": "2026-11-05T13:27:15.614478+00:00",
+  "removed_resources": [
+    "marlowe-p5-ai-pod",
+    "marlowe-p5-milvus-pod",
+    "marlowe-p5-pg",
+    "marlowe-p5-qdrant",
+    "marlowe-p5-weaviate",
+    "marlowe-p5-redis",
+    "marlowe-p5-elasticsearch",
+    "marlowe-p5-mongodb",
+    "marlowe-p5-vespa"
+  ],
+  "remaining_owned_containers": [],
+  "scope": "Only the named Phase 5 rootless pods and labeled course containers. Downloaded image caches are retained.",
+  "rootful_verification_project": "marlowe-tier3-check: container, network and pgdata volume removed by project-scoped compose down"
+}

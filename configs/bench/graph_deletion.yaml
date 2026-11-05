@@ -1,0 +1,5 @@
+feature: graph_deletion
+lesson: 07_hnsw
+example: use_case/retire_product.py
+native: examples/05_deletions.py
+retrieval_config: tier2/hnsw.yaml

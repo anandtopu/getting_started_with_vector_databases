@@ -1,0 +1,5 @@
+feature: product_quantization
+lesson: 08_quantization
+example: examples/01_from_scratch.py
+native: examples/04_native_codes.py
+retrieval_config: tier2/pq.yaml

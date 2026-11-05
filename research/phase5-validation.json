@@ -1,0 +1,37 @@
+{
+  "verified_at": "2026-11-05T13:28:04.340647+00:00",
+  "platform": "Windows host, rootless Podman Linux VM for services",
+  "default_tests": "212 passed, 11 deselected in 34.54s",
+  "base_only_tests": "156 passed, 56 skipped, 11 deselected in 11.82s",
+  "database_contracts": "11 passed in 42.04s",
+  "notebook_code_cells": {
+    "00_setup": 5,
+    "01_vectors_similarity": 6,
+    "02_embeddings": 5,
+    "03_tinyvec": 5,
+    "04_benchmarking": 5,
+    "05_ann_lsh": 5,
+    "06_ivf": 5,
+    "07_hnsw": 7,
+    "08_quantization": 8,
+    "09_disk_scale": 6,
+    "10_filtering_hybrid": 6,
+    "11_embedded": 8,
+    "12_pgvector": 7,
+    "13_qdrant": 7,
+    "14_weaviate": 8,
+    "15_milvus": 8,
+    "16_landscape": 11
+  },
+  "script_evidence": "results/tier3/execution-df533956.json",
+  "scripts_passed": 43,
+  "included_artifacts_verified": 114,
+  "structural_checks": [
+    "ruff check",
+    "ruff format --check",
+    "check_course.py",
+    "check_links.py (local links and anchors)",
+    "uv lock --check --offline"
+  ],
+  "hosted_ci": "configured, not executed"
+}

@@ -1,0 +1,10 @@
+name: tier2-graph-budget-development
+backend: ann
+dataset: fixture
+split: development
+limit: 1000
+seed: 20261104
+warmup: 20
+queries: 100
+repetitions: 5
+parameters: {kind: hnsw, M: 12, efConstruction: 64, efSearch: 96, oversample: 1}

@@ -1,0 +1,10 @@
+{
+  "seed": 20261104,
+  "users": 100,
+  "events": 700,
+  "rule": "Per-user product kind chosen independently of embeddings. Five past events, two distinct future purchases, sampled without replacement.",
+  "cutoff": "2025-12-20T00:00:00Z",
+  "reason": "Original event generator repeats seen products and assigns only one action type per user, leaving no eligible unseen-purchase cases in the first 100-user audit.",
+  "sha256": "816e2f490b0f30858bb717edd5d9ed7c686691a679cffefc841014d0c718730f",
+  "license": "MIT synthetic data"
+}

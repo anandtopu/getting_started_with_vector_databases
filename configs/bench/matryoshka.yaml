@@ -1,0 +1,5 @@
+feature: matryoshka
+lesson: 08_quantization
+example: examples/03_measure.py
+native: examples/06_lance_prefix.py
+# This feature measures a lesson diagnostic outside ranked retrieval.

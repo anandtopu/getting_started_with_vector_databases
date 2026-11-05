@@ -1,0 +1,87 @@
+name: Foundation checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  unit:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: astral-sh/setup-uv@v10.3.3
+        with:
+          version: "0.13.7"
+          python-version: "3.12"
+      - run: uv sync --locked
+      - run: uv run --no-sync ruff check .
+      - run: uv run --no-sync ruff format --check .
+      - run: uv run --no-sync pytest
+      - run: uv run --no-sync python scripts/run_all_examples.py
+      - run: uv run --no-sync python scripts/check_links.py
+      - run: uv run --no-sync python scripts/verify_artifacts.py
+      - run: uv run --no-sync python scripts/check_course.py
+      - run: uv run --no-sync python scripts/run_bench.py configs/bench/exact_fixture.yaml --output .cache/ci-results
+      - uses: actions/upload-artifact@v7.0.2
+        with:
+          name: mini-benchmark-${{ matrix.os }}
+          path: .cache/ci-results
+          include-hidden-files: true
+  embedded:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: astral-sh/setup-uv@v10.3.3
+        with:
+          version: "0.13.7"
+          python-version: "3.12"
+      - run: uv sync --locked --extra embedded
+      - run: uv run --no-sync pytest
+  playground:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: astral-sh/setup-uv@v10.3.3
+        with:
+          version: "0.13.7"
+          python-version: "3.12"
+      - run: uv sync --locked --extra apps --extra embedded --extra qdrant
+      - run: uv run --no-sync pytest tests/test_playground.py tests/test_tier4_apps.py tests/test_tier5.py
+  teaching-tiers:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: astral-sh/setup-uv@v10.3.3
+        with: {version: "0.13.7", python-version: "3.12"}
+      - run: uv sync --locked --extra libs --extra embedded --extra notebooks
+      - run: uv run --no-sync pytest
+      - run: uv run --no-sync python scripts/run_all_examples.py
+      - run: uv run --no-sync python scripts/run_notebooks.py
+      - run: uv run --no-sync python scripts/checkpoint_tier1.py
+      - run: uv run --no-sync python scripts/checkpoint_tier2.py --family ivf --output .cache/ci-tier2
+  secure-operations:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: astral-sh/setup-uv@v10.3.3
+        with: {version: "0.13.7", python-version: "3.12"}
+      - run: uv sync --locked --extra apps --extra ops --extra qdrant
+      - run: uv run --no-sync python scripts/prepare_tier5.py
+      - run: docker compose --env-file .cache/marlowe/tier5/runtime/compose.env -f docker/compose.tier5.yaml up -d qdrant-secure
+      - run: uv run --no-sync python scripts/check_secure_profile.py
+      - run: uv run --no-sync python scripts/checkpoint_tier5.py --native
+      - run: uv run --no-sync python modules/23_security_reliability/examples/02_production.py
+      - run: uv run --no-sync pytest tests/test_tier5.py
+      - run: uv run --no-sync pytest -m docker --allow-hosts=127.0.0.1,localhost,::1 tests/test_phase8_native.py
+      - if: always()
+        run: docker compose --env-file .cache/marlowe/tier5/runtime/compose.env -f docker/compose.tier5.yaml down --volumes

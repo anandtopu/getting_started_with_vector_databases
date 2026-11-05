@@ -1,0 +1,47 @@
+[
+  {
+    "profile": "elasticsearch",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "profile": "milvus",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "profile": "mongodb",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "profile": "monitoring",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "profile": "pgvector",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "profile": "qdrant",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "profile": "redis",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "profile": "vespa",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "profile": "weaviate",
+    "returncode": 0,
+    "stderr": ""
+  }
+]

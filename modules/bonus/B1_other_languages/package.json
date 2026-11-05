@@ -1,0 +1,10 @@
+{
+  "name": "marlowe-typescript-lessons",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=22"},
+  "scripts": {"build": "tsc", "test": "node --test dist/contract.test.js", "qdrant": "node dist/native.js qdrant", "weaviate": "node dist/native.js weaviate"},
+  "dependencies": {"@qdrant/js-client-rest": "1.20.0", "weaviate-client": "3.15.3"},
+  "devDependencies": {"@types/node": "26.6.6", "typescript": "7.0.2"}
+}

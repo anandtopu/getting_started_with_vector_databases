@@ -1,0 +1,6 @@
+feature: compaction
+lesson: 21_operations
+example: examples/01_from_scratch.py
+native: examples/03_measure.py
+seed: 42
+scope: operational diagnostic, not a comparable database leaderboard

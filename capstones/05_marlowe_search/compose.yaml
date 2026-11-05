@@ -1,0 +1,3 @@
+# Compose 2.20+ resolves included paths relative to the included definition.
+include:
+  - ../../docker/compose.tier5.yaml

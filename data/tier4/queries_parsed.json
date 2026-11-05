@@ -1,0 +1,19 @@
+{
+  "format": 1,
+  "model": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "dimensions": 384,
+    "normalized": true,
+    "modality": "text",
+    "query_prefix": "",
+    "document_prefix": "",
+    "max_length": 256,
+    "dtype": "float32"
+  },
+  "space": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41:5b60aec4bb912259",
+  "role": "query",
+  "rows": 250,
+  "content_hash": "097050bbd282d60672d69099d3ca6b399e62d8f35f91e457795c6c98b4ecf2ba",
+  "sha256": "7f695c4fe03a32fdb9804e5771476013cd555c1f05711c5a3de5b3d20d5776e7"
+}

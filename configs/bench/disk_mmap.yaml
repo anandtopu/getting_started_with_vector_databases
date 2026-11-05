@@ -1,0 +1,5 @@
+feature: disk_mmap
+lesson: 09_disk_scale
+example: examples/03_measure.py
+native: examples/02_production.py
+# This feature measures a lesson diagnostic outside ranked retrieval.

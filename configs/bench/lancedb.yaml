@@ -1,0 +1,5 @@
+feature: lancedb
+lesson: 11_embedded
+example: examples/01_from_scratch.py
+native: examples/04_lancedb.py
+retrieval_config: tier3/lancedb.yaml

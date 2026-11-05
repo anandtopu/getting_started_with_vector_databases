@@ -1,0 +1,5 @@
+feature: milvus_hybrid
+lesson: 15_milvus
+example: examples/01_from_scratch.py
+native: examples/04_hybrid_bm25.py
+retrieval_config: tier3/milvus.yaml

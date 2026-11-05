@@ -1,0 +1,5 @@
+feature: duckdb_vss
+lesson: 11_embedded
+example: examples/01_from_scratch.py
+native: examples/06_duckdb.py
+retrieval_config: tier3/duckdb.yaml

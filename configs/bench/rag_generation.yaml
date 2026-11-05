@@ -1,0 +1,5 @@
+feature: rag_generation
+lesson: 18_rag
+example: examples/05_abstention.py
+native: examples/04_generation.py
+scope: Application diagnostic; compare quality and stage timings in the Tier 4 checkpoint.

@@ -1,0 +1,25 @@
+{
+  "old_space": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41:5b60aec4bb912259",
+  "new_space": "Qwen/Qwen3-Embedding-0.6B@97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3:10ec043a0fe2f68b",
+  "rows": 500,
+  "blue_ids": [
+    "p0000360",
+    "p0000280",
+    "p0000200",
+    "p0000100",
+    "p0000120"
+  ],
+  "green_ids": [
+    "p0000100",
+    "p0000420",
+    "p0000380",
+    "p0000400",
+    "p0000280"
+  ],
+  "wrong_space_rejected": "UnexpectedResponse",
+  "rollback_count": 499,
+  "snapshot_bytes": 1665536,
+  "restore_seconds": 2.4480064999952447,
+  "restored_rows": 499,
+  "rpo_deleted_rows": 0
+}

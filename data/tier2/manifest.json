@@ -1,0 +1,13 @@
+{
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "query": "something to keep my coffee warm at my desk",
+  "query_prefix": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery: ",
+  "rows": 128,
+  "dimensions": 1024,
+  "products_source": "first 128 rows of products_10k.parquet",
+  "sha256": {
+    "matryoshka.npz": "9053a1941cea908919a8744d9e90483aeca15b2697ac2661a7100ab6d861c45d",
+    "reranking.json": "430ec4fa219d44aea85f7beb237778841a595b64e29f0018947aca97a2e8c73e"
+  }
+}

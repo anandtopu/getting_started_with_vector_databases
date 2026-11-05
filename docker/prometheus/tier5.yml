@@ -1,0 +1,12 @@
+global:
+  scrape_interval: 5s
+scrape_configs:
+  - job_name: qdrant-secure
+    scheme: https
+    static_configs:
+      - targets: [qdrant-secure:6333]
+    authorization:
+      credentials_file: /etc/prometheus/qdrant-token
+    tls_config:
+      ca_file: /etc/prometheus/ca.pem
+      server_name: qdrant-secure

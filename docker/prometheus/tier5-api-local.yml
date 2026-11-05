@@ -1,0 +1,14 @@
+# Run Prometheus on the same host as serve_tier5.py, from the repository root.
+# Container localhost is not the Windows host. Do not disable TLS to bypass this.
+global:
+  scrape_interval: 5s
+scrape_configs:
+  - job_name: marlowe-api
+    scheme: https
+    static_configs:
+      - targets: [localhost:8443]
+    authorization:
+      credentials_file: .cache/marlowe/tier5/runtime/api-metrics-token
+    tls_config:
+      ca_file: .cache/marlowe/tier5/runtime/tls/ca.pem
+      server_name: localhost

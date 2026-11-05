@@ -1,0 +1,5 @@
+feature: qdrant
+lesson: 13_qdrant
+example: examples/01_from_scratch.py
+native: examples/02_production.py
+retrieval_config: tier3/qdrant.yaml

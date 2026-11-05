@@ -1,0 +1,23 @@
+{
+  "name": "fashion-mnist",
+  "revision": "b2617bb6d3ffa2e429640350f613e3291e10b141",
+  "license": "MIT",
+  "license_url": "https://raw.githubusercontent.com/zalandoresearch/fashion-mnist/b2617bb6d3ffa2e429640350f613e3291e10b141/LICENSE",
+  "license_sha256": "13ef4788476d292858fa60eb9a5f74aeca5c65770bc885ccaa05823a17ef7be1",
+  "source": "https://github.com/zalandoresearch/fashion-mnist",
+  "files": [
+    {
+      "name": "train-images-idx3-ubyte.gz",
+      "url": "https://raw.githubusercontent.com/zalandoresearch/fashion-mnist/b2617bb6d3ffa2e429640350f613e3291e10b141/data/fashion/train-images-idx3-ubyte.gz",
+      "sha256": "3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84",
+      "bytes": 26421880
+    },
+    {
+      "name": "t10k-images-idx3-ubyte.gz",
+      "url": "https://raw.githubusercontent.com/zalandoresearch/fashion-mnist/b2617bb6d3ffa2e429640350f613e3291e10b141/data/fashion/t10k-images-idx3-ubyte.gz",
+      "sha256": "346e55b948d973a97e58d2351dde16a484bd415d4595297633bb08f03db6a073",
+      "bytes": 4422102
+    }
+  ],
+  "checked": "2026-11-04"
+}
